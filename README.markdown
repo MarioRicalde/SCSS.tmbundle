@@ -10,15 +10,15 @@ It's not very good. If you can make it better, please do!
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles
     cd ~/Library/Application\ Support/TextMate/Bundles
-    git clone git://github.com/chriseppstein/SCSS.tmbundle.git "SCSS.tmbundle"
+    git clone git://github.com/kuroir/SCSS.tmbundle.git "SCSS.tmbundle"
     osascript -e 'tell app "TextMate" to reload bundles'
 
 #### Without Git:
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles
     cd ~/Library/Application\ Support/TextMate/Bundles
-    wget http://github.com/chriseppstein/SCSS.tmbundle/tarball/master
-    tar zxf chriseppstein-SCSS.tmbundle-*.tar.gz
-    rm chriseppstein-SCSS.tmbundle-*.tar.gz
-    mv chriseppstein-SCSS.tmbundle* "SCSS.tmbundle"
+    wget http://github.com/kuroir/SCSS.tmbundle/tarball/master
+    tar zxf kuroir-SCSS.tmbundle-*.tar.gz
+    rm kuroir-SCSS.tmbundle-*.tar.gz
+    mv kuroir-SCSS.tmbundle* "SCSS.tmbundle"
     osascript -e 'tell app "TextMate" to reload bundles'
