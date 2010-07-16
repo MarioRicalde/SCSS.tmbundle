@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>@import url($1);$0</string>
+	<string>@import "$1";$0</string>
 	<key>name</key>
 	<string>@import</string>
 	<key>scope</key>
