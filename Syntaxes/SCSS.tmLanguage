@@ -206,6 +206,10 @@
 			<string>#constant_oc</string>
 		</dict>
 		<dict>
+			<key>include</key>
+			<string>#include</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>\s*((@)(import)\b)</string>
 			<key>captures</key>
