@@ -51,7 +51,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>(\$)[a-zA-Z0-9_-]+</string>
+					<string>(\$)[a-zA-Z0-9_-]*</string>
 					<key>name</key>
 					<string>entity.other.attribute-name.variable.css</string>
 				</dict>
@@ -172,8 +172,22 @@
 			<string>#eol-comment</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.attribute-name.variable.css</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(\s*)(\$[a-zA-Z0-9_-]*)</string>
+			<key>name</key>
+			<string>meta.variable.css</string>
+		</dict>
+		<dict>
 			<key>begin</key>
-			<string>^\s*((@)import\b)</string>
+			<string>\s*((@)import\b)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -245,13 +259,13 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^\s*((@)mixin)\s+([a-zA-Z0-9-]+)\((\$[a-zA-Z0-9-]+)\s*:\s*([^:,)]+)\)\s*{</string>
+			<string>^\s*((@)mixin)\s+([a-zA-Z0-9_-]+)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.at-rule.media.css</string>
+					<string>keyword.control.at-rule.mixin.css</string>
 				</dict>
 				<key>2</key>
 				<dict>
@@ -266,9 +280,14 @@
 				<key>4</key>
 				<dict>
 					<key>name</key>
-					<string>variable.parameter.css</string>
+					<string>text</string>
 				</dict>
 				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.attribute-name.variable.css</string>
+				</dict>
+				<key>6</key>
 				<dict>
 					<key>name</key>
 					<string>default-value.parameter.css</string>
@@ -278,6 +297,134 @@
 			<string>\s*((?=;|\}))</string>
 			<key>name</key>
 			<string>meta.at-rule.mixin.css</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string-single</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string-double</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>meta.property-list.css</string>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>(url)\s*(\()\s*</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>support.function.url.css</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.function.css</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\s*(\))\s*</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.function.css</string>
+						</dict>
+					</dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>match</key>
+							<string>[^'") \t]+</string>
+							<key>name</key>
+							<string>variable.parameter.url.css</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#string-single</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#string-double</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>\$[A-Za-z0-9-_]*</string>
+					<key>name</key>
+					<string>entity.other.parameter.variable.css</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(-|\+)?\s*[0-9]+(\.[0-9]+)?</string>
+					<key>name</key>
+					<string>constant.numeric.css</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>(?&lt;=[\d])(px|pt|cm|mm|in|em|ex|pc)\b|%</string>
+					<key>name</key>
+					<string>keyword.other.unit.css</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>:*\s*\$[a-zA-Z0-9_-]*</string>
+					<key>name</key>
+					<string>entity.other.attribute-name.variable.css</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^\s*((@)include)\s+([a-zA-Z0-9_-]+)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.at-rule.scss-include.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.css</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.attribute-name.variable.css</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>text</string>
+				</dict>
+				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.attribute-name.variable.css</string>
+				</dict>
+				<key>6</key>
+				<dict>
+					<key>name</key>
+					<string>default-value.parameter.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\s*((?=;|\}))</string>
+			<key>name</key>
+			<string>meta.at-rule.scss-include.css</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -363,7 +510,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>(:)\s*</string>
+					<string>(:)\s{0,}(?!(\s{0,}{))</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -372,6 +519,8 @@
 							<string>punctuation.separator.key-value.css</string>
 						</dict>
 					</dict>
+					<key>comment</key>
+					<string>Kuroir: fixed nested elements for sass.</string>
 					<key>end</key>
 					<string>\s*(;|(?=\}))</string>
 					<key>endCaptures</key>
@@ -501,6 +650,20 @@
 									<string>[^'") \t]+</string>
 									<key>name</key>
 									<string>variable.parameter.misc.css</string>
+								</dict>
+								<dict>
+									<key>captures</key>
+									<dict>
+										<key>1</key>
+										<dict>
+											<key>name</key>
+											<string>punctuation.definition.entity.css</string>
+										</dict>
+									</dict>
+									<key>match</key>
+									<string>(\$)[a-zA-Z0-9_-]*</string>
+									<key>name</key>
+									<string>entity.other.attribute-name.variable.css</string>
 								</dict>
 							</array>
 						</dict>
