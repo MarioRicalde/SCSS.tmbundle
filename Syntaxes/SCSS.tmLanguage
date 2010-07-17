@@ -44,124 +44,32 @@
 					<string>#entities</string>
 				</dict>
 				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.entity.css</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(\$)[a-zA-Z0-9_-]*</string>
-					<key>name</key>
-					<string>entity.other.attribute-name.variable.css</string>
+					<key>include</key>
+					<string>#variables</string>
 				</dict>
 				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.entity.css</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(\.)[a-zA-Z0-9_-]+</string>
-					<key>name</key>
-					<string>entity.other.attribute-name.class.css</string>
+					<key>include</key>
+					<string>#attribute_c</string>
 				</dict>
 				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuationctuation.definition.entity.css</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(#)[a-zA-Z][a-zA-Z0-9_-]*</string>
-					<key>name</key>
-					<string>entity.other.attribute-name.id.css</string>
+					<key>include</key>
+					<string>#attribute_id</string>
 				</dict>
 				<dict>
-					<key>match</key>
-					<string>\*</string>
-					<key>name</key>
-					<string>entity.name.tag.wildcard.css</string>
+					<key>include</key>
+					<string>#tag_wildcard</string>
 				</dict>
 				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.entity.css</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(:+)\b(after|before|first-child|first-letter|first-line|selection)\b</string>
-					<key>name</key>
-					<string>entity.other.attribute-name.pseudo-element.css</string>
+					<key>include</key>
+					<string>#pseudo_element</string>
 				</dict>
 				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.entity.css</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(:)\b(active|hover|link|visited|focus)\b</string>
-					<key>name</key>
-					<string>entity.other.attribute-name.pseudo-class.css</string>
+					<key>include</key>
+					<string>#pseudo_class</string>
 				</dict>
 				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.entity.css</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>entity.other.attribute-name.attribute.css</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.separator.operator.css</string>
-						</dict>
-						<key>4</key>
-						<dict>
-							<key>name</key>
-							<string>string.unquoted.attribute-value.css</string>
-						</dict>
-						<key>5</key>
-						<dict>
-							<key>name</key>
-							<string>string.quoted.double.attribute-value.css</string>
-						</dict>
-						<key>6</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.string.begin.css</string>
-						</dict>
-						<key>7</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.string.end.css</string>
-						</dict>
-					</dict>
-					<key>match</key>
-					<string>(?i)(\[)\s*(-?[_a-z\\[[:^ascii:]]][_a-z0-9\-\\[[:^ascii:]]]*)(?:\s*([~|^$*]?=)\s*(?:(-?[_a-z\\[[:^ascii:]]][_a-z0-9\-\\[[:^ascii:]]]*)|((?&gt;(['"])(?:[^\\]|\\.)*?(\6)))))?\s*(\])</string>
-					<key>name</key>
-					<string>meta.attribute-selector.css</string>
+					<key>include</key>
+					<string>#attribute_selector</string>
 				</dict>
 			</array>
 		</dict>
@@ -508,6 +416,38 @@
 					<string>#include</string>
 				</dict>
 				<dict>
+					<key>include</key>
+					<string>#variables</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#attribute_c</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#attribute_id</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#tag_wildcard</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#pseudo_element</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#pseudo_class</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#attribute_selector</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#entities</string>
+				</dict>
+				<dict>
 					<key>begin</key>
 					<string>(?&lt;![-a-z])(?=[-a-z])</string>
 					<key>end</key>
@@ -517,8 +457,10 @@
 					<key>patterns</key>
 					<array>
 						<dict>
+							<key>comment</key>
+							<string>kuroir: added more complex regexp so scss doesnt get the wrong highlights.</string>
 							<key>match</key>
-							<string>\b(-?[a-zA-Z-]+)\b</string>
+							<string>\b^\s{0,}(?&gt;[\w-]+)(?!(:?\s+\{))\b</string>
 							<key>name</key>
 							<string>support.type.property-name.css</string>
 						</dict>
@@ -670,6 +612,81 @@
 	</array>
 	<key>repository</key>
 	<dict>
+		<key>attribute_c</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.entity.css</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(\.)[a-zA-Z0-9_-]+</string>
+			<key>name</key>
+			<string>entity.other.attribute-name.class.css</string>
+		</dict>
+		<key>attribute_id</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuationctuation.definition.entity.css</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(#)[a-zA-Z][a-zA-Z0-9_-]*</string>
+			<key>name</key>
+			<string>entity.other.attribute-name.id.css</string>
+		</dict>
+		<key>attribute_selector</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.entity.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.other.attribute-name.attribute.css</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.separator.operator.css</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>string.unquoted.attribute-value.css</string>
+				</dict>
+				<key>5</key>
+				<dict>
+					<key>name</key>
+					<string>string.quoted.double.attribute-value.css</string>
+				</dict>
+				<key>6</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.css</string>
+				</dict>
+				<key>7</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.css</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?i)(\[)\s*(-?[_a-z\\[[:^ascii:]]][_a-z0-9\-\\[[:^ascii:]]]*)(?:\s*([~|^$*]?=)\s*(?:(-?[_a-z\\[[:^ascii:]]][_a-z0-9\-\\[[:^ascii:]]]*)|((?&gt;(['"])(?:[^\\]|\\.)*?(\6)))))?\s*(\])</string>
+			<key>name</key>
+			<string>meta.attribute-selector.css</string>
+		</dict>
 		<key>comment-block</key>
 		<dict>
 			<key>begin</key>
@@ -845,6 +862,36 @@
 				</dict>
 			</array>
 		</dict>
+		<key>pseudo_class</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.entity.css</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(:)\b(active|hover|link|visited|focus)\b</string>
+			<key>name</key>
+			<string>entity.other.attribute-name.pseudo-class.css</string>
+		</dict>
+		<key>pseudo_element</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.entity.css</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(:+)\b(after|before|first-child|first-letter|first-line|selection)\b</string>
+			<key>name</key>
+			<string>entity.other.attribute-name.pseudo-element.css</string>
+		</dict>
 		<key>string-double</key>
 		<dict>
 			<key>begin</key>
@@ -913,6 +960,13 @@
 				</dict>
 			</array>
 		</dict>
+		<key>tag_wildcard</key>
+		<dict>
+			<key>match</key>
+			<string>\*</string>
+			<key>name</key>
+			<string>entity.name.tag.wildcard.css</string>
+		</dict>
 		<key>variable</key>
 		<dict>
 			<key>captures</key>
@@ -927,6 +981,21 @@
 			<string>(\s*)(\$[a-zA-Z0-9_-]*)</string>
 			<key>name</key>
 			<string>variable.css</string>
+		</dict>
+		<key>variables</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.entity.css</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(\$)[a-zA-Z0-9_-]*</string>
+			<key>name</key>
+			<string>entity.other.attribute-name.variable.css</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>
