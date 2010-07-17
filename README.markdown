@@ -10,6 +10,8 @@ It also includes Zen CSS ( from the Zen Coding Project ); which will help you sp
 
 ![Screen](http://u.nu/8kadd)
 
+You can get this theme on http://github.com/kuroir/TextMate-Kuroir-Theme
+
 ### Textmate (OS X)
 
 #### With Git:
