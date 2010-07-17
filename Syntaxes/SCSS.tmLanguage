@@ -860,6 +860,62 @@
 						</dict>
 					</array>
 				</dict>
+				<dict>
+					<key>begin</key>
+					<string>([\w-]{1,})(\()\s*</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>support.function.css</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.function.css</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\s*(\))\s*</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.function.css</string>
+						</dict>
+					</dict>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>match</key>
+							<string>[^'") \t]+</string>
+							<key>name</key>
+							<string>variable.parameter.url.css</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#constant_ou</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#constant_oc</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#variables</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#string-single</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#string-double</string>
+						</dict>
+					</array>
+				</dict>
 			</array>
 		</dict>
 		<key>pseudo_class</key>
