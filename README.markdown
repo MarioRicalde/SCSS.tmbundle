@@ -6,6 +6,10 @@ It also includes Zen CSS ( from the Zen Coding Project ); which will help you sp
 
 ## Installation
 
+### Preview
+
+![Screen](http://u.nu/8kadd)
+
 ### Textmate (OS X)
 
 #### With Git:
