@@ -10,7 +10,7 @@ It also includes Zen CSS ( from the Zen Coding Project ); which will help you sp
 
 ![Screen](http://u.nu/8kadd)
 
-You can get this theme on http://github.com/kuroir/TextMate-Kuroir-Theme
+You can get this theme on [My Theme Repository](http://github.com/kuroir/TextMate-Kuroir-Theme)
 
 ### Textmate (OS X)
 
@@ -30,7 +30,10 @@ You can get this theme on http://github.com/kuroir/TextMate-Kuroir-Theme
     rm kuroir-SCSS.tmbundle-*.tar.gz
     mv kuroir-SCSS.tmbundle* "SCSS.tmbundle"
     osascript -e 'tell app "TextMate" to reload bundles'
-    
+
+#### Known Issues:
+Some highlights are messed up. Also the language needs to be refactored. Help with this would be deeply appreciated. For now we're going to be on a "hackish" branch. Till I have time to the refactoring.
+
 #### Credits:
 
 This bundle has the Zen Coding Bundled within because of the scope. You can view the repository here: http://code.google.com/p/zen-coding/
