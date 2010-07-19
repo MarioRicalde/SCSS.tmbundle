@@ -13,8 +13,6 @@
 			then echo -n "'$TM_DROPPED_FILE'"
 		elif echo "$TM_SCOPE" | grep -q string.quoted.single.css
 			then echo -n "$TM_DROPPED_FILE"
-		elif echo "$TM_SCOPE" | grep -q meta.at-rule.include.css
-			then echo -n "'$TM_DROPPED_FILE', fuck"
 		else 
 			echo -n "url('$TM_DROPPED_FILE')"
 		fi
