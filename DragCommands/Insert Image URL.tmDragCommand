@@ -13,9 +13,14 @@
 			then echo -n "'$TM_DROPPED_FILE'"
 		elif echo "$TM_SCOPE" | grep -q string.quoted.single.css
 			then echo -n "$TM_DROPPED_FILE"
+		elif echo "$TM_SCOPE" | grep -q meta.at-rule.include.css
+			then echo -n "'$TM_DROPPED_FILE', fuck"
 		else 
 			echo -n "url('$TM_DROPPED_FILE')"
 		fi
+	elif echo "$TM_SCOPE" | grep -q meta.at-rule.include.css
+		then echo -n "'$TM_DROPPED_FILE', "
+		sips -g pixelWidth -g pixelHeight "$TM_DROPPED_FILE"|awk '/pixelWidth/  { printf("%dpx, ",  $2) } /pixelHeight/ { printf("%dpx\$0", $2) }'
 	else 
 		echo -ne "background:\${1: #\${2:DDD}} url('$TM_DROPPED_FILE')\${3:};\n\$0"
 	fi
