@@ -4,25 +4,24 @@ This bundle contains the grammar files for highlighting the NEW SYNTAX; the old 
 
 It also includes Zen CSS ( from the Zen Coding Project ); which will help you speed up your coding.
 
-## Installation
+## Preview
 
-### Preview
-
-Kuroir's Theme
+####Kuroir's Theme
 ![Screen](http://dl.dropbox.com/u/4651065/kuroir-theme.jpg)
+
 You can get this theme on [My Theme Repository](http://github.com/kuroir/TextMate-Kuroir-Theme)
 
-Blackboard Theme
+####Blackboard Theme
 ![Screen](http://dl.dropbox.com/u/4651065/blackboard-theme.jpg)
 
-Cobalt Theme
+####Cobalt Theme
 ![Screen](http://dl.dropbox.com/u/4651065/cobalt-theme.jpg)
 
-Dawn Theme
+####Dawn Theme
 ![Screen](http://dl.dropbox.com/u/4651065/dawn-theme.jpg)
 
+## Installation
 ### Textmate (OS X)
-
 #### With Git:
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles
