@@ -43,7 +43,7 @@ You can get this theme on [My Theme Repository](http://github.com/kuroir/TextMat
 
 - Error Highlighting sometimes fails, will need to improve the regexp.
 
-#### Credits and More:
+## Credits and More:
 Thanks to [ModernMethod](http://modernmethod.com) and [Julio Capote](http://github.com/capotej/) for introducing and guiding me to the wonderful world of Ruby and SASS.
 Thanks to [Chris Eppstein](http://github.com/chriseppstein) who developed the base SCSS.tmbundle.
 This bundle has the Zen Coding Bundled within because of the scope. You can view the repository here: [Zen Coding @ google.com](http://code.google.com/p/zen-coding/).
