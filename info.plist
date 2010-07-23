@@ -8,9 +8,7 @@
 		<array>
 			<string>49B13F70-B978-4633-AB69-8D2AB64C870E</string>
 			<string>4E2E7138-69AA-4BF1-A87E-8C45DE807B10</string>
-			<string>D51A613E-4198-4FAB-99CC-9981EF99BE39</string>
-			<string>D53B5ECC-04EA-44B7-A1F5-8B4545A6E1CD</string>
-			<string>915E1C12-76FD-4A30-A1EA-BD96839315BE</string>
+			<string>DCE97B57-A4D8-40E8-9EC9-3D8743E8B769</string>
 			<string>2CC31428-57EB-4412-9B24-8738F9AE8C3A</string>
 		</array>
 		<key>submenus</key>
@@ -502,13 +500,26 @@
 				<key>name</key>
 				<string>Zen CSS</string>
 			</dict>
+			<key>DCE97B57-A4D8-40E8-9EC9-3D8743E8B769</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>62C7FFF2-69B3-4E43-A6A8-6613F18A6E39</string>
+					<string>D53B5ECC-04EA-44B7-A1F5-8B4545A6E1CD</string>
+					<string>D51A613E-4198-4FAB-99CC-9981EF99BE39</string>
+					<string>915E1C12-76FD-4A30-A1EA-BD96839315BE</string>
+					<string>B3C8567B-16F8-4B19-AC28-630A2D436712</string>
+					<string>243FCB79-B601-45C1-AB22-7805D47BF544</string>
+				</array>
+				<key>name</key>
+				<string>Tools</string>
+			</dict>
 		</dict>
 	</dict>
 	<key>name</key>
 	<string>SCSS</string>
 	<key>ordering</key>
 	<array>
-		<string>A775DE92-24C0-4F97-9CC6-102C84F9E4E7</string>
 		<string>49B13F70-B978-4633-AB69-8D2AB64C870E</string>
 		<string>4E2E7138-69AA-4BF1-A87E-8C45DE807B10</string>
 		<string>D51A613E-4198-4FAB-99CC-9981EF99BE39</string>

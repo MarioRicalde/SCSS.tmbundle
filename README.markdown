@@ -1,4 +1,4 @@
-This is a TextMate Bundle for [SCSS](http://nex-3.com/posts/96-scss-sass-is-a-css-extension).
+This is a TextMate Bundle for [SASS](http://sass-lang.com/). 
 
 This bundle contains the grammar files for highlighting the NEW SYNTAX; the old syntax is not supported by this bundle. Sorry.
 
@@ -8,9 +8,18 @@ It also includes Zen CSS ( from the Zen Coding Project ); which will help you sp
 
 ### Preview
 
-![Screen](http://u.nu/8kadd)
-
+Kuroir's Theme
+![Screen](http://dl.dropbox.com/u/4651065/kuroir-theme.jpg)
 You can get this theme on [My Theme Repository](http://github.com/kuroir/TextMate-Kuroir-Theme)
+
+Blackboard Theme
+![Screen](http://dl.dropbox.com/u/4651065/blackboard-theme.jpg)
+
+Cobalt Theme
+![Screen](http://dl.dropbox.com/u/4651065/cobalt-theme.jpg)
+
+Dawn Theme
+![Screen](http://dl.dropbox.com/u/4651065/dawn-theme.jpg)
 
 ### Textmate (OS X)
 
@@ -32,8 +41,10 @@ You can get this theme on [My Theme Repository](http://github.com/kuroir/TextMat
     osascript -e 'tell app "TextMate" to reload bundles'
 
 #### Known Issues:
-Some highlights are messed up. Also the language needs to be refactored. Help with this would be deeply appreciated. For now we're going to be on a "hackish" branch. Till I have time to the refactoring.
 
-#### Credits:
+- Error Highlighting sometimes fails, will need to improve the regexp.
 
-This bundle has the Zen Coding Bundled within because of the scope. You can view the repository here: http://code.google.com/p/zen-coding/
+#### Credits and More:
+Thanks to [ModernMethod](http://modernmethod.com) and [Julio Capote](http://github.com/capotej/) for introducing and guiding me to the wonderful world of Ruby and SASS.
+Thanks to [Chris Eppstein](http://github.com/chriseppstein) who developed the base SCSS.tmbundle.
+This bundle has the Zen Coding Bundled within because of the scope. You can view the repository here: [Zen Coding @ google.com](http://code.google.com/p/zen-coding/).
