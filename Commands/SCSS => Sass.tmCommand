@@ -12,6 +12,8 @@
 	<string>SCSS =&gt; Sass</string>
 	<key>output</key>
 	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>source.scss</string>
 	<key>uuid</key>
 	<string>49B13F70-B978-4633-AB69-8D2AB64C870E</string>
 </dict>

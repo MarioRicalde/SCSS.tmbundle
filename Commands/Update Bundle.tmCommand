@@ -18,6 +18,8 @@ echo "&lt;/pre&gt;"</string>
 	<string>Update Bundle</string>
 	<key>output</key>
 	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.scss</string>
 	<key>uuid</key>
 	<string>D51A613E-4198-4FAB-99CC-9981EF99BE39</string>
 </dict>

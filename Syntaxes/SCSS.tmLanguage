@@ -37,6 +37,10 @@
 			<string>#general</string>
 		</dict>
 		<dict>
+			<key>include</key>
+			<string>#flow_control</string>
+		</dict>
+		<dict>
 			<key>comment</key>
 			<string>Rules</string>
 		</dict>
@@ -60,27 +64,8 @@
 			<string>Properties</string>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>\{</string>
-			<key>captures</key>
-			<dict>
-				<key>0</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.section.property-list.css</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>\}</string>
-			<key>name</key>
-			<string>meta.property-list.css</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#rules</string>
-				</dict>
-			</array>
+			<key>include</key>
+			<string>#property_list</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -119,6 +104,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#flow_control</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#rules</string>
 				</dict>
 			</array>
@@ -135,7 +124,7 @@
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.space.scss</string>
+					<string>punctuation.whitespace.comment.trailing.scss</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -273,6 +262,20 @@
 			<key>name</key>
 			<string>meta.property-value.constant.named-color.css.keyword.other.unit.css</string>
 		</dict>
+		<key>flow_control</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#if</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#else</string>
+				</dict>
+			</array>
+		</dict>
 		<key>general</key>
 		<dict>
 			<key>comment</key>
@@ -290,6 +293,44 @@
 				<dict>
 					<key>include</key>
 					<string>#comment_line</string>
+				</dict>
+			</array>
+		</dict>
+		<key>if</key>
+		<dict>
+			<key>begin</key>
+			<string>\s*((@)(if)\b)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.if.scss</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\s*((?=;|\}))</string>
+			<key>name</key>
+			<string>meta.at-rule.if.sccs</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\b(==|!=|&lt;=|&gt;=|&lt;|&gt;|not|or)\b</string>
+					<key>name</key>
+					<string>keyword.control.operator</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#variable</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#property_values</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
 				</dict>
 			</array>
 		</dict>
@@ -571,6 +612,34 @@
 					<string>[=\{\}\?\;\@]</string>
 					<key>name</key>
 					<string>invalid.illegal</string>
+				</dict>
+			</array>
+		</dict>
+		<key>property_list</key>
+		<dict>
+			<key>begin</key>
+			<string>\{</string>
+			<key>captures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.property-list.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\}</string>
+			<key>name</key>
+			<string>meta.property-list.css</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#flow_control</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#rules</string>
 				</dict>
 			</array>
 		</dict>
