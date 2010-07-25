@@ -299,10 +299,6 @@
 					<key>include</key>
 					<string>#property_values</string>
 				</dict>
-				<dict>
-					<key>include</key>
-					<string>$self</string>
-				</dict>
 			</array>
 		</dict>
 		<key>extend</key>
@@ -453,10 +449,6 @@
 				<dict>
 					<key>include</key>
 					<string>#property_values</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>$self</string>
 				</dict>
 			</array>
 		</dict>
@@ -896,10 +888,6 @@
 					<array>
 						<dict>
 							<key>include</key>
-							<string>#property_names</string>
-						</dict>
-						<dict>
-							<key>include</key>
 							<string>#include</string>
 						</dict>
 					</array>
@@ -1298,10 +1286,6 @@
 				<dict>
 					<key>include</key>
 					<string>#property_values</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>$self</string>
 				</dict>
 			</array>
 		</dict>
