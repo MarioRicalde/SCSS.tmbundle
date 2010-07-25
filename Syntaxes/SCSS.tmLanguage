@@ -42,22 +42,11 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Rules</string>
+			<string>Yes, we need the rules at root level available for nesting.</string>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>^(?=\s*[\&amp;:.*#a-zA-Z])</string>
-			<key>end</key>
-			<string>(?=\{)</string>
-			<key>name</key>
-			<string>meta.selector.css</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#selectors</string>
-				</dict>
-			</array>
+			<key>include</key>
+			<string>#rules</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -69,11 +58,11 @@
 		</dict>
 		<dict>
 			<key>comment</key>
-			<string>Mixins</string>
+			<string>Mixin with Attributes</string>
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^\s*((@)mixin)\s+([a-zA-Z0-9_-]+)</string>
+			<string>^\s*((@)mixin) ([\w-]{1,})\s{0,2}\(</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -93,7 +82,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>\s*((?=;|\}))</string>
+			<string>\)</string>
 			<key>name</key>
 			<string>meta.at-rule.mixin.scss</string>
 			<key>patterns</key>
@@ -102,15 +91,31 @@
 					<key>include</key>
 					<string>#mixin_attributes</string>
 				</dict>
-				<dict>
-					<key>include</key>
-					<string>#flow_control</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#rules</string>
-				</dict>
 			</array>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.at-rule.mixin.scss</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.scss</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.scss</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^\s*((@)mixin) ([\w-]{1,})</string>
+			<key>name</key>
+			<string>meta.at-rule.mixin.scss</string>
 		</dict>
 	</array>
 	<key>repository</key>
@@ -262,6 +267,77 @@
 			<key>name</key>
 			<string>meta.property-value.constant.named-color.css.keyword.other.unit.css</string>
 		</dict>
+		<key>else</key>
+		<dict>
+			<key>begin</key>
+			<string>\s*((@)(else)\b)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.else.scss</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?={)</string>
+			<key>name</key>
+			<string>meta.at-rule.else.sccs</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\b(==|!=|&lt;=|&gt;=|&lt;|&gt;|not|or|if)\b</string>
+					<key>name</key>
+					<string>keyword.control.operator</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#variable</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#property_values</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
+		</dict>
+		<key>extend</key>
+		<dict>
+			<key>begin</key>
+			<string>\s*((@)(extend)\b)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.at-rule.import.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\s*((?=;))</string>
+			<key>name</key>
+			<string>meta.at-rule.import.css</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#variable</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#selectors</string>
+				</dict>
+			</array>
+		</dict>
 		<key>flow_control</key>
 		<dict>
 			<key>patterns</key>
@@ -273,6 +349,56 @@
 				<dict>
 					<key>include</key>
 					<string>#else</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#warn</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#for</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#while</string>
+				</dict>
+			</array>
+		</dict>
+		<key>for</key>
+		<dict>
+			<key>begin</key>
+			<string>\s{0,}((@)(for)\b)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.for.scss</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?={)</string>
+			<key>name</key>
+			<string>meta.at-rule.for.sccs</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\b(==|!=|&lt;=|&gt;=|&lt;|&gt;|from|through)\b</string>
+					<key>name</key>
+					<string>keyword.control.operator</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#variable</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#property_values</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
 				</dict>
 			</array>
 		</dict>
@@ -299,7 +425,7 @@
 		<key>if</key>
 		<dict>
 			<key>begin</key>
-			<string>\s*((@)(if)\b)</string>
+			<string>\s{0,}((@)(if)\b)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -309,7 +435,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>\s*((?=;|\}))</string>
+			<string>(?={)</string>
 			<key>name</key>
 			<string>meta.at-rule.if.sccs</string>
 			<key>patterns</key>
@@ -568,27 +694,24 @@
 				</dict>
 			</array>
 		</dict>
-		<key>mixin_attributes</key>
+		<key>interpolation</key>
 		<dict>
 			<key>begin</key>
-			<string>(\()</string>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition</string>
-				</dict>
-			</dict>
+			<string>#\{</string>
 			<key>end</key>
-			<string>(\))\s{0,}(\{)</string>
+			<string>\}</string>
 			<key>name</key>
-			<string>variables</string>
+			<string>variable.interpolation.scss</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#variable</string>
+				</dict>
+			</array>
+		</dict>
+		<key>mixin_attributes</key>
+		<dict>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -614,6 +737,13 @@
 					<string>invalid.illegal</string>
 				</dict>
 			</array>
+		</dict>
+		<key>mixin_name</key>
+		<dict>
+			<key>match</key>
+			<string>[\w-]{1,}</string>
+			<key>name</key>
+			<string>entity.name.function.scss</string>
 		</dict>
 		<key>property_list</key>
 		<dict>
@@ -745,6 +875,10 @@
 				</dict>
 				<dict>
 					<key>include</key>
+					<string>#extend</string>
+				</dict>
+				<dict>
+					<key>include</key>
 					<string>#include</string>
 				</dict>
 				<dict>
@@ -769,10 +903,6 @@
 							<string>#include</string>
 						</dict>
 					</array>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#selectors</string>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -1049,18 +1179,17 @@
 		</dict>
 		<key>variable</key>
 		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
+			<key>patterns</key>
+			<array>
 				<dict>
-					<key>name</key>
-					<string>variable.scss</string>
+					<key>include</key>
+					<string>#variables</string>
 				</dict>
-			</dict>
-			<key>match</key>
-			<string>(\s*)(\$[a-zA-Z0-9_-]*)</string>
-			<key>name</key>
-			<string>variable.scss</string>
+				<dict>
+					<key>include</key>
+					<string>#interpolation</string>
+				</dict>
+			</array>
 		</dict>
 		<key>variable_setting</key>
 		<dict>
@@ -1088,6 +1217,91 @@
 				<dict>
 					<key>include</key>
 					<string>#property_values</string>
+				</dict>
+			</array>
+		</dict>
+		<key>variables</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>variable.scss</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(\s*)(\$[a-zA-Z0-9_-]+)</string>
+			<key>name</key>
+			<string>variable.scss</string>
+		</dict>
+		<key>warn</key>
+		<dict>
+			<key>begin</key>
+			<string>\s*((@)(warn)\b)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.warn.scss</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?=\;)</string>
+			<key>name</key>
+			<string>meta.at-rule.warn.sccs</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#variable</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string_double</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string_single</string>
+				</dict>
+			</array>
+		</dict>
+		<key>while</key>
+		<dict>
+			<key>begin</key>
+			<string>\s{0,}((@)(while)\b)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.while.scss</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?={)</string>
+			<key>name</key>
+			<string>meta.at-rule.while.sccs</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\b(==|!=|&lt;=|&gt;=|&lt;|&gt;|not)\b</string>
+					<key>name</key>
+					<string>keyword.control.operator</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#variable</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#property_values</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
 				</dict>
 			</array>
 		</dict>
