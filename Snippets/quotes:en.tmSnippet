@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>quotes:${TM_CSS_SPACE}'\201C' '\201D' '\2018' '\2019';$0</string>
+	<key>name</key>
+	<string>quotes:en</string>
+	<key>scope</key>
+	<string>source.css, source.scss</string>
+	<key>tabTrigger</key>
+	<string>q:en</string>
+	<key>uuid</key>
+	<string>F48DA41C-387B-4F3B-80C4-9F9320862F66</string>
+</dict>
+</plist>

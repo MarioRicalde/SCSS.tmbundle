@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>overflow-x:${TM_CSS_SPACE}scroll;$0</string>
+	<key>name</key>
+	<string>overflow-x:scroll</string>
+	<key>scope</key>
+	<string>source.css, source.scss</string>
+	<key>tabTrigger</key>
+	<string>ovx:s</string>
+	<key>uuid</key>
+	<string>951E6149-505D-4078-8524-F2AF3343A146</string>
+</dict>
+</plist>

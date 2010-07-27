@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>symbol list:group</string>
+	<key>scope</key>
+	<string>source.css comment.block.css -source.css.embedded,source.scss comment.block.scss -source.css.embedded</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>1</integer>
+		<key>symbolTransformation</key>
+		<string>s/\/\*\*\s*(.*?)\s*\*\//** $1 **/; s/\/\*.*?\*\*\//./; s/\/\*[^\*].*?[^\*]\*\///</string>
+	</dict>
+	<key>uuid</key>
+	<string>FE87A88E-73FB-41EA-8A1E-9F7681C0F25A</string>
+</dict>
+</plist>

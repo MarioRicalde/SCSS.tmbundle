@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>border-image:${TM_CSS_SPACE}none;$0</string>
+	<key>name</key>
+	<string>border-image:none</string>
+	<key>scope</key>
+	<string>source.css, source.scss</string>
+	<key>tabTrigger</key>
+	<string>bdi:n</string>
+	<key>uuid</key>
+	<string>7195242D-3E38-4ECD-AC0F-98E957FE9E9C</string>
+</dict>
+</plist>

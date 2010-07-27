@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>echo "$TM_SELECTED_TEXT" | sass-convert --from sass --to sass --dasherize</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Cleanup Sass</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>uuid</key>
+	<string>5AC218D8-49AC-4E26-B793-FDC7EC833F93</string>
+</dict>
+</plist>

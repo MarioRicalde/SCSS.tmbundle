@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>cd "$TM_BUNDLE_PATH"
+
+echo "&lt;pre&gt;"
+[ -d ".git" ] &amp;&amp; git pull
+[ ! -d .git ] &amp;&amp; echo "You must install the bundle using Git in order to update via this command."
+osascript -e 'tell app "TextMate" to reload bundles'
+echo "&lt;/pre&gt;"</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Update Bundle</string>
+	<key>output</key>
+	<string>showAsHTML</string>
+	<key>scope</key>
+	<string>source.scss</string>
+	<key>uuid</key>
+	<string>D51A613E-4198-4FAB-99CC-9981EF99BE39</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>text-justify:${TM_CSS_SPACE}inter-word;$0</string>
+	<key>name</key>
+	<string>text-justify:inter-word</string>
+	<key>scope</key>
+	<string>source.css, source.scss</string>
+	<key>tabTrigger</key>
+	<string>tj:iw</string>
+	<key>uuid</key>
+	<string>77078508-3BD7-4D6F-96A9-559404296643</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>outline-color:${TM_CSS_SPACE}invert;$0</string>
+	<key>name</key>
+	<string>outline-color:invert</string>
+	<key>scope</key>
+	<string>source.css, source.scss</string>
+	<key>tabTrigger</key>
+	<string>oc:i</string>
+	<key>uuid</key>
+	<string>64E30825-2648-4427-8008-3FD2672C239C</string>
+</dict>
+</plist>
