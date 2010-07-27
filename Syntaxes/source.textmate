@@ -372,9 +372,7 @@
 				2 = { name = 'punctuation.definition.keyword.css'; };
 			};
 			patterns = (
-				{	include = '#variable'; },
-				{	include = '#string_single'; },
-				{	include = '#string_double'; },
+
 				{	begin = '(url)\s*(\()\s*';
 					end = '\s*(\))\s*';
 					beginCaptures = {
