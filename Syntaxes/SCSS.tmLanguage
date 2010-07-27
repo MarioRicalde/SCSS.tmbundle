@@ -680,6 +680,14 @@
 							<key>name</key>
 							<string>variable.parameter.url.css</string>
 						</dict>
+						<dict>
+							<key>include</key>
+							<string>#string_single</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#string_double</string>
+						</dict>
 					</array>
 				</dict>
 			</array>

@@ -392,6 +392,8 @@
 						{	name = 'variable.parameter.url.css';
 							match = '[^''") \t]+';
 						},
+						{	include = '#string_single'; },
+						{	include = '#string_double'; },
 					);
 				},
 			);
