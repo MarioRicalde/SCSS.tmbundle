@@ -6,7 +6,7 @@
 	<string>/* $1
 ---------------------------------------- */</string>
 	<key>keyEquivalent</key>
-	<string>@/</string>
+	<string>~@/</string>
 	<key>name</key>
 	<string>Divisor</string>
 	<key>scope</key>

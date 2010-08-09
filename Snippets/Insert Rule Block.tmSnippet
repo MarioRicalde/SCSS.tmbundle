@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>${1:selector} {
   ${0}
-} //end ${1}</string>
+} //${1}</string>
 	<key>keyEquivalent</key>
 	<string>@b</string>
 	<key>name</key>
