@@ -7,6 +7,10 @@ It also includes Zen CSS ( from the Zen Coding Project ); which will help you sp
 # New Feature: XHTML to SCSS Converter
 You can see the new feature in action in [this screencast](http://screenr.com/TZ0). Sorry for my engrish.. I need to practice more heh.
 
+Notes about this feature:
+
+Yo shouldn't use this feature to convert the whole XHTML to SCSS. It is meant to selectively copy and paste your XHTML to SCSS Document. In the Screencast I did a complete layout parse for the sake of demonstration. However this is a bad practice since it generates unnecessary nesting and of course bloat.
+
 ## Preview
 
 ####Kuroir's Theme
