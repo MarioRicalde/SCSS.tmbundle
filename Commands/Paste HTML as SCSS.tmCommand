@@ -6,6 +6,7 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/ruby
+# Needs Nokogiri (gem install Nokogiri)
 require  ENV['TM_BUNDLE_SUPPORT'] + '/bin/command'</string>
 	<key>input</key>
 	<string>none</string>
