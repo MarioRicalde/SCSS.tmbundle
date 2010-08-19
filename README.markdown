@@ -4,6 +4,11 @@ This bundle contains the grammar files for highlighting the NEW SYNTAX; the old 
 
 It also includes Zen CSS ( from the Zen Coding Project ); which will help you speed up your coding.
 
+# New Feature: XHTML to SCSS Converter
+Sorry for the ENGRISH, hopefully the feature will help you :)
+
+<object classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,115,0' width='560' height='345'><param name='movie' value='http://screenr.com/Content/assets/screenr_1116090935.swf' /><param name='flashvars' value='i=98084' /><param name='allowFullScreen' value='true' /><embed src='http://screenr.com/Content/assets/screenr_1116090935.swf' flashvars='i=98084' allowFullScreen='true' width='560' height='345' pluginspage='http://www.macromedia.com/go/getflashplayer'></embed></object>
+
 ## Preview
 
 ####Kuroir's Theme

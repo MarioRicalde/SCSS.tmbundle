@@ -1,0 +1,3 @@
+[submodule "Support/bin/Nokogiri-to-Hash"]
+	path = Support/bin/Nokogiri-to-Hash
+	url = git@github.com:kuroir/Nokogiri-to-Hash.git

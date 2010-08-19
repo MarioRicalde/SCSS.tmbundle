@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:selector} {
-  ${0}
+	<string>${1:selector} {${0}
 } //${1}</string>
 	<key>keyEquivalent</key>
 	<string>@b</string>
