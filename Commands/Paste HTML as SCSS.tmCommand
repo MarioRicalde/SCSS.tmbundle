@@ -11,7 +11,7 @@ require  ENV['TM_BUNDLE_SUPPORT'] + '/bin/command'</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
-	<string>@V</string>
+	<string>@v</string>
 	<key>name</key>
 	<string>Paste HTML as SCSS</string>
 	<key>output</key>
