@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>background:${TM_CSS_SPACE}$1;$0</string>
+	<string>background:${1:${2:transparent} image-url('${3:image.png}') ${4:left} ${5:top} ${6:no-repeat}};</string>
 	<key>name</key>
 	<string>background</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.scss</string>
 	<key>tabTrigger</key>
 	<string>bg</string>
 	<key>uuid</key>
