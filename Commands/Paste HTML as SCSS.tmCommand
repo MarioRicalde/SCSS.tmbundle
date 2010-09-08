@@ -7,11 +7,11 @@
 	<key>command</key>
 	<string>#!/usr/bin/ruby
 # Needs Nokogiri (gem install Nokogiri)
-require  ENV['TM_BUNDLE_SUPPORT'] + '/bin/command'</string>
+require  ENV['TM_BUNDLE_SUPPORT'] + '/bin/command'w</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
-	<string>@v</string>
+	<string>^@v</string>
 	<key>name</key>
 	<string>Paste HTML as SCSS</string>
 	<key>output</key>

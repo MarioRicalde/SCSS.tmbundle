@@ -237,7 +237,7 @@
 		};
 		// Constant Functions: url() etc
 		constant_functions = {
-			begin = '(rgb|url|attr|counter|counters)\s*(\()';
+			begin = '(rgb|url|attr|counter|counters|image-(?:width|height|url)|append-selector|color-stops|elements-of-type|enumerate|font-(?:files|url)|headings|inline-(?:font-files|image)|nest|stylesheet-url)\s*(\()';
 			end = '(\))';
 			beginCaptures = {
 				1 = { name = 'support.function.misc.css'; };
@@ -272,7 +272,7 @@
 		};
 		// Unit 30<px> <- this
 		constant_unit = {
-			name = 'meta.property-value.constant.named-color.css.keyword.other.unit.css';
+			name = 'keyword.other.unit.css';
 			match = '(?<=[\d])(px|pt|cm|mm|in|em|ex|pc)\b|%';
 		};
 		// Keywords for values
@@ -282,7 +282,7 @@
 		};
 		// Numbers: 1337
 		constant_number = {
-			name = 'meta.property-value.constant.numeric.css';
+			name = 'constant.numeric.css';
 			match = '(-|\+)?\s*[0-9]+(\.[0-9]+)?';
 		};
 		// Fonts: arial, comic
@@ -346,13 +346,13 @@
 		// Pseudo Class a:hover
 		selector_pseudo_class = {
 			name = 'entity.other.attribute-name.pseudo-class.css';
-			match = '(:)\b(active|hover|link|visited|focus)\b';
+			match = '(:)\b(link|visited|hover|active|focus|target|lang|disabled|enabled|checked|indeterminate|root|nth-child()|nth-last-child()|nth-of-type()|nth-last-of-type()|first-child|last-child|first-of-type|last-of-type|only-child|only-of-type|empty|not)\b';
 			captures = { 1 = { name = 'punctuation.definition.entity.css'; }; };
 		};
 		// Pseudo Element a:after
 		selector_pseudo_element = {
 			name = 'entity.other.attribute-name.pseudo-element.css';
-			match = '(:+)\b(after|before|first-child|first-letter|first-line|selection)\b';
+			match = '(:+)\b(after|before|first-letter|first-line|selection)\b';
 			captures = { 1 = { name = 'punctuation.definition.entity.css'; }; };
 		};
 		// Include
@@ -395,6 +395,10 @@
 						{	include = '#string_single'; },
 						{	include = '#string_double'; },
 					);
+				},
+				{
+					name = 'support.function.css';
+					match = '([\w-]{1,})';
 				},
 			);
 		};

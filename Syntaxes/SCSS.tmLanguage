@@ -180,7 +180,7 @@
 		<key>constant_functions</key>
 		<dict>
 			<key>begin</key>
-			<string>(rgb|url|attr|counter|counters)\s*(\()</string>
+			<string>(rgb|url|attr|counter|counters|image-(?:width|height|url)|append-selector|color-stops|elements-of-type|enumerate|font-(?:files|url)|headings|inline-(?:font-files|image)|nest|stylesheet-url)\s*(\()</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -247,7 +247,7 @@
 			<key>match</key>
 			<string>(-|\+)?\s*[0-9]+(\.[0-9]+)?</string>
 			<key>name</key>
-			<string>meta.property-value.constant.numeric.css</string>
+			<string>constant.numeric.css</string>
 		</dict>
 		<key>constant_property_value</key>
 		<dict>
@@ -275,7 +275,7 @@
 			<key>match</key>
 			<string>(?&lt;=[\d])(px|pt|cm|mm|in|em|ex|pc)\b|%</string>
 			<key>name</key>
-			<string>meta.property-value.constant.named-color.css.keyword.other.unit.css</string>
+			<string>keyword.other.unit.css</string>
 		</dict>
 		<key>else</key>
 		<dict>
@@ -690,6 +690,12 @@
 						</dict>
 					</array>
 				</dict>
+				<dict>
+					<key>match</key>
+					<string>([\w-]{1,})</string>
+					<key>name</key>
+					<string>support.function.css</string>
+				</dict>
 			</array>
 		</dict>
 		<key>interpolation</key>
@@ -1036,7 +1042,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(:)\b(active|hover|link|visited|focus)\b</string>
+			<string>(:)\b(link|visited|hover|active|focus|target|lang|disabled|enabled|checked|indeterminate|root|nth-child()|nth-last-child()|nth-of-type()|nth-last-of-type()|first-child|last-child|first-of-type|last-of-type|only-child|only-of-type|empty|not)\b</string>
 			<key>name</key>
 			<string>entity.other.attribute-name.pseudo-class.css</string>
 		</dict>
@@ -1051,7 +1057,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>(:+)\b(after|before|first-child|first-letter|first-line|selection)\b</string>
+			<string>(:+)\b(after|before|first-letter|first-line|selection)\b</string>
 			<key>name</key>
 			<string>entity.other.attribute-name.pseudo-element.css</string>
 		</dict>
