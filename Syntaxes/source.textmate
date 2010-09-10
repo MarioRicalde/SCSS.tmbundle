@@ -389,11 +389,15 @@
 					};
 					endCaptures = { 1 = { name = 'punctuation.section.function.css'; }; };
 					patterns = (
-						{	name = 'variable.parameter.url.css';
-							match = '[^''") \t]+';
+						{	include = '#variable'; },
+						// Aqui: Don't highlight errors, just highlight values
+						{	name = 'punctuation.css';
+							match = ',';
 						},
-						{	include = '#string_single'; },
-						{	include = '#string_double'; },
+						{	include = '#property_values';},
+						{	name = 'variable.parameter.url.css';
+							match = '[^''",) \t]+';
+						},
 					);
 				},
 				{
