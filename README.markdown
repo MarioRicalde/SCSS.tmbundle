@@ -32,8 +32,6 @@ You can get this theme on [My Theme Repository](http://github.com/kuroir/TextMat
     cd ~/Library/Application\ Support/TextMate/Bundles
     git clone git://github.com/kuroir/SCSS.tmbundle.git "SCSS.tmbundle"
     gem install nokogiri
-    git submodule init
-    git submodule update
     osascript -e 'tell app "TextMate" to reload bundles'
 
 #### Without Git:
@@ -45,8 +43,6 @@ You can get this theme on [My Theme Repository](http://github.com/kuroir/TextMat
     rm kuroir-SCSS.tmbundle-*.tar.gz
     mv kuroir-SCSS.tmbundle* "SCSS.tmbundle"
     gem install nokogiri
-    git submodule init
-    git submodule update
     osascript -e 'tell app "TextMate" to reload bundles'
 
 
