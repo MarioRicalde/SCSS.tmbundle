@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>border-radius:${TM_CSS_SPACE}$1;$0</string>
+	<string>@include border-radius(${1:4px 4px});</string>
 	<key>name</key>
 	<string>border-radius</string>
 	<key>scope</key>
 	<string>source.css, source.scss</string>
 	<key>tabTrigger</key>
-	<string>bdrz</string>
+	<string>+br</string>
 	<key>uuid</key>
 	<string>FAFE06D0-F889-405E-B72B-CC7266AF2A6C</string>
 </dict>

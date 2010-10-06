@@ -2,6 +2,8 @@
 # Library that uses the Nokogiri to Hash Mixin I developed, it will convert any
 # given html file to SCSS.
 # Author: Mario "Kuroir" Ricalde (http://kuroir.com)
+#
+# 3 Oct 2010 - Added support for inline styles.
 
 class XHTMLtoSCSS
   attr_accessor :comment_selector
@@ -22,8 +24,20 @@ class XHTMLtoSCSS
         selector = build_selector(name, data)
         set_selector selector
         open_bracket
+        inline_style data
         parse data[:children].uniq if data[:children].any?
         close_bracket selector
+      end
+    end
+  end
+  
+  # Inline Styles.
+  def inline_style(data)
+    unless data[:style].nil?
+      styles = data[:style].join(' ').split(';')
+      styles.each do |e|
+        indentation = styles.first == e.first ? '' : indent_level
+        @output << indentation << e.strip << ";\n"
       end
     end
   end
@@ -49,6 +63,10 @@ class XHTMLtoSCSS
   def indent(int = 1)
     nesting(int)
     TAB * @nesting
+  end
+  
+  def indent_level
+    TAB * @nesting 
   end
   
   # Unindent.
@@ -81,7 +99,7 @@ class Nokogiri::XML::Node
   def collect_attributes
     output = {}
     self.attributes.each { |name, value|
-      output = output.merge({ name.to_sym => value.to_s.split(/\s+/) }) if name == 'class' or name == 'id'
+      output = output.merge({ name.to_sym => value.to_s.split(/\s+/) }) if name == 'class' or name == 'id' or name == 'style'
     }
     output
   end

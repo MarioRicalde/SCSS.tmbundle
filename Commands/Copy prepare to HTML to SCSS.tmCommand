@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+# Remove style tags from the html.
+# Support for Mac only (for now)
+exit unless RUBY_PLATFORM.match('darwin')
+
+# Put contents to clipboard
+paste = IO.popen('pbcopy', 'r+').puts ENV['TM_SELECTED_TEXT']
+string = ENV['TM_SELECTED_TEXT'].dup
+regexp = %q{style=".+"}
+string.gsub!(/#{regexp} /, '')
+string.gsub!(/ #{regexp}&gt;/, '&gt;')
+print string</string>
+	<key>fallbackInput</key>
+	<string>none</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>^@c</string>
+	<key>name</key>
+	<string>Copy prepare to HTML to SCSS</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>uuid</key>
+	<string>662FA490-E14C-496F-A668-09CFD0521D2F</string>
+</dict>
+</plist>

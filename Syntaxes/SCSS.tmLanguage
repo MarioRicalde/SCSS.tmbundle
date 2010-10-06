@@ -208,15 +208,7 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#general</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#string_single</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#string_double</string>
+					<string>#property_values</string>
 				</dict>
 			</array>
 		</dict>
