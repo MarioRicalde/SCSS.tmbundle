@@ -346,7 +346,7 @@
 		// Pseudo Class a:hover
 		selector_pseudo_class = {
 			name = 'entity.other.attribute-name.pseudo-class.css';
-			match = '(:)\b(link|visited|hover|active|focus|target|lang|disabled|enabled|checked|indeterminate|root|nth-child()|nth-last-child()|nth-of-type()|nth-last-of-type()|first-child|last-child|first-of-type|last-of-type|only-child|only-of-type|empty|not)\b';
+			match = '(:)\b(link|visited|hover|active|focus|target|lang|disabled|enabled|checked|indeterminate|root|nth-child()|nth-last-child()|nth-of-type()|nth-last-of-type()|first-child|last-child|first-of-type|last-of-type|only-child|only-of-type|empty|not|valid|invalid)\b';
 			captures = { 1 = { name = 'punctuation.definition.entity.css'; }; };
 		};
 		// Pseudo Element a:after
