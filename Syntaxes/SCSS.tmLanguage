@@ -689,6 +689,14 @@
 							<string>#property_values</string>
 						</dict>
 						<dict>
+							<key>include</key>
+							<string>#comment_line</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#comment_block</string>
+						</dict>
+						<dict>
 							<key>match</key>
 							<string>[^'",) \t]+</string>
 							<key>name</key>

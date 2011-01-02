@@ -395,6 +395,8 @@
 							match = ',';
 						},
 						{	include = '#property_values';},
+						{	include = '#comment_line';},
+						{	include = '#comment_block';},
 						{	name = 'variable.parameter.url.css';
 							match = '[^''",) \t]+';
 						},
