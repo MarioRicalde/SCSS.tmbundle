@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleUUID</key>
+	<string>A4FDD1ED-D13D-4AF6-99B9-C9AD0D262149</string>
+	<key>name</key>
+	<string>symbol list for scss</string>
+	<key>scope</key>
+	<string>source.scss entity</string>
+	<key>settings</key>
+	<dict>
+		<key>showInSymbolList</key>
+		<integer>1</integer>
+	</dict>
+	<key>uuid</key>
+	<string>FCC5C2D2-A56A-49DF-958C-BCECB5F24D74</string>
+</dict>
+</plist>
