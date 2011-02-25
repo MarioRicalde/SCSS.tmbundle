@@ -879,10 +879,6 @@
 					<key>include</key>
 					<string>#constant_depracated_color</string>
 				</dict>
-				<dict>
-					<key>include</key>
-					<string>#constant_mathematical_symbols</string>
-				</dict>
 			</array>
 		</dict>
 		<key>rules</key>

@@ -93,7 +93,6 @@
 				{ include = '#constant_font'; },
 				{ include = '#constant_color'; },
 				{ include = '#constant_depracated_color'; },
-				{ include = '#constant_mathematical_symbols'; },
 			);
 		};
 		property_names = {
