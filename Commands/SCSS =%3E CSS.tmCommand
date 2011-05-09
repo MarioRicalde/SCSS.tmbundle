@@ -12,8 +12,6 @@ SASS_OPTS="-t compact"
 sass ${SASS_OPTS} --update "${TM_FILEPATH}":"${CSS}"</string>
 	<key>input</key>
 	<string>none</string>
-	<key>keyEquivalent</key>
-	<string>^@r</string>
 	<key>name</key>
 	<string>SCSS =&gt; CSS</string>
 	<key>output</key>

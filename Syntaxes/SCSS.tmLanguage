@@ -180,7 +180,7 @@
 		<key>constant_functions</key>
 		<dict>
 			<key>begin</key>
-			<string>(rgb|url|attr|counter|counters|image-(?:width|height|url)|append-selector|color-stops|elements-of-type|enumerate|font-(?:files|url)|headings|inline-(?:font-files|image)|nest|stylesheet-url)\s*(\()</string>
+			<string>([\w-]{1,})\s*(\()</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
@@ -212,11 +212,7 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#string_single</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#string_double</string>
+					<string>#mixin_attributes</string>
 				</dict>
 			</array>
 		</dict>
@@ -1258,7 +1254,7 @@
 		<key>warn</key>
 		<dict>
 			<key>begin</key>
-			<string>\s*((@)(warn)\b)</string>
+			<string>\s*((@)(warn|debug)\b)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>

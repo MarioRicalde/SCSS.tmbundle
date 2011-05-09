@@ -3,16 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>//
-// ${1:Name}
-// </string>
+	<string>
+// $0</string>
+	<key>keyEquivalent</key>
+	<string>@</string>
 	<key>name</key>
-	<string>doc</string>
+	<string>// new line</string>
 	<key>scope</key>
-	<string>source.scss</string>
-	<key>tabTrigger</key>
-	<string>doc</string>
+	<string>comment.line.scss</string>
 	<key>uuid</key>
-	<string>3596D813-959C-4530-A117-82C7C77245A2</string>
+	<string>6200148A-B48C-4DAD-9394-BF17652F9CEF</string>
 </dict>
 </plist>

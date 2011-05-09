@@ -236,7 +236,7 @@
 		};
 		// Constant Functions: url() etc
 		constant_functions = {
-			begin = '(rgb|url|attr|counter|counters|image-(?:width|height|url)|append-selector|color-stops|elements-of-type|enumerate|font-(?:files|url)|headings|inline-(?:font-files|image)|nest|stylesheet-url)\s*(\()';
+			begin = '([\w-]{1,})\s*(\()';
 			end = '(\))';
 			beginCaptures = {
 				1 = { name = 'support.function.misc.css'; };
@@ -245,8 +245,7 @@
 			endCaptures = { 1 = { name = 'punctuation.section.function.css'; }; };
 			patterns = (
 				{	include = '#general'; },
-				{	include = '#string_single'; },
-				{	include = '#string_double'; },
+				{	include = '#mixin_attributes'; },
 			);
 		};
 		// Hex #FFFFFF
@@ -396,6 +395,7 @@
 						{	include = '#property_values';},
 						{	include = '#comment_line';},
 						{	include = '#comment_block';},
+						//AQUI
 						{	name = 'variable.parameter.url.css';
 							match = '[^''",) \t]+';
 						},
@@ -509,7 +509,7 @@
 		};
 		warn = {
 			name = 'meta.at-rule.warn.sccs';
-			begin = '\s*((@)(warn)\b)';
+			begin = '\s*((@)(warn|debug)\b)';
 			end = '(?=\;)';
 			captures = {
 				1 = { name = 'keyword.control.warn.scss';};
