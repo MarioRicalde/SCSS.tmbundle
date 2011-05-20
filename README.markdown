@@ -24,7 +24,7 @@ See it in action! [Screencast](http://screenr.com/fP4).
 ## Preview of the Syntax Highlighter
 
 ####Kuroir's Theme
-![Screen](http://dl.dropbox.com/u/4651065/kuroir-theme.jpg)
+![Screen](http://dl.dropbox.com/u/4651065/kuroir-theme.png)
 
 You can get this theme on [My Theme Repository](http://github.com/kuroir/TextMate-Kuroir-Theme)
 
