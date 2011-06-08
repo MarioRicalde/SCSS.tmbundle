@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>completions</string>
 	<key>scope</key>
-	<string>source.css -meta.property-list</string>
+	<string>source.scss -meta.property-list</string>
 	<key>settings</key>
 	<dict>
 		<key>completions</key>
