@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleUUID</key>
+	<string>A4FDD1ED-D13D-4AF6-99B9-C9AD0D262149</string>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>argument</key>
+			<dict>
+				<key>commands</key>
+				<array>
+					<dict>
+						<key>command</key>
+						<string>moveToEndOfParagraph:</string>
+					</dict>
+					<dict>
+						<key>command</key>
+						<string>insertNewline:</string>
+					</dict>
+				</array>
+			</dict>
+			<key>command</key>
+			<string>playMacroWithOptions:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<string>/</string>
+			<key>command</key>
+			<string>insertText:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<string>/</string>
+			<key>command</key>
+			<string>insertText:</string>
+		</dict>
+		<dict>
+			<key>argument</key>
+			<string> </string>
+			<key>command</key>
+			<string>insertText:</string>
+		</dict>
+	</array>
+	<key>keyEquivalent</key>
+	<string>@</string>
+	<key>name</key>
+	<string>// new line</string>
+	<key>scope</key>
+	<string>comment.line.scss</string>
+	<key>uuid</key>
+	<string>4CA78ABB-3400-48AD-AB32-3B4E7014345E</string>
+</dict>
+</plist>
