@@ -74,6 +74,7 @@
 				{ include = '#constant_font'; },
 				{ include = '#constant_color'; },
 				{ include = '#constant_depracated_color'; },
+				{ include = '#logical_operators';},
 			);
 		};
 		property_names = {
@@ -463,10 +464,7 @@
 				1 = { name = 'keyword.control.if.scss';};
 			};
 			patterns = (
-				{
-					name = 'keyword.control.operator';
-					match = '\b(==|!=|<=|>=|<|>|not|or)\b';
-				},
+				{ include = '#logical_operators';},
 				{	include = '#variable'; },
 				{	include = '#property_values';},
 
@@ -480,10 +478,7 @@
 				1 = { name = 'keyword.control.else.scss';};
 			};
 			patterns = (
-				{
-					name = 'keyword.control.operator';
-					match = '\b(==|!=|<=|>=|<|>|not|or|if)\b';
-				},
+				{ include = '#logical_operators';},
 				{	include = '#variable'; },
 				{	include = '#property_values';},
 			);
@@ -511,7 +506,7 @@
 			patterns = (
 				{
 					name = 'keyword.control.operator';
-					match = '\b(==|!=|<=|>=|<|>|from|through)\b';
+					match = '(\=\=|\!\=|\<\=|\>\=|\<|\>|from|through)';
 				},
 				{	include = '#variable'; },
 				{	include = '#property_values';},
@@ -526,10 +521,7 @@
 				1 = { name = 'keyword.control.while.scss';};
 			};
 			patterns = (
-				{
-					name = 'keyword.control.operator';
-					match = '\b(==|!=|<=|>=|<|>|not)\b';
-				},
+				{ include = '#logical_operators';},
 				{	include = '#variable'; },
 				{	include = '#property_values';},
 			);
@@ -564,6 +556,11 @@
 				2 = { name = 'punctuation.definition.keyword.scss'; };
 				3 = { name = 'entity.name.function.scss'; };
 			};
+		};
+
+		logical_operators = {
+			name = 'keyword.control.operator';
+			match = '(\=\=|\!\=|\<\=|\>\=|\<|\>|not|or|and)';
 		};
 	};
 }

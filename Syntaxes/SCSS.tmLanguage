@@ -239,10 +239,8 @@
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>match</key>
-					<string>\b(==|!=|&lt;=|&gt;=|&lt;|&gt;|not|or|if)\b</string>
-					<key>name</key>
-					<string>keyword.control.operator</string>
+					<key>include</key>
+					<string>#logical_operators</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -333,7 +331,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(==|!=|&lt;=|&gt;=|&lt;|&gt;|from|through)\b</string>
+					<string>(\=\=|\!\=|\&lt;\=|\&gt;\=|\&lt;|\&gt;|from|through)</string>
 					<key>name</key>
 					<string>keyword.control.operator</string>
 				</dict>
@@ -390,10 +388,8 @@
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>match</key>
-					<string>\b(==|!=|&lt;=|&gt;=|&lt;|&gt;|not|or)\b</string>
-					<key>name</key>
-					<string>keyword.control.operator</string>
+					<key>include</key>
+					<string>#logical_operators</string>
 				</dict>
 				<dict>
 					<key>include</key>
@@ -671,6 +667,13 @@
 				</dict>
 			</array>
 		</dict>
+		<key>logical_operators</key>
+		<dict>
+			<key>match</key>
+			<string>(\=\=|\!\=|\&lt;\=|\&gt;\=|\&lt;|\&gt;|not|or|and)</string>
+			<key>name</key>
+			<string>keyword.control.operator</string>
+		</dict>
 		<key>mixin</key>
 		<dict>
 			<key>comment</key>
@@ -896,6 +899,10 @@
 				<dict>
 					<key>include</key>
 					<string>#constant_depracated_color</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#logical_operators</string>
 				</dict>
 			</array>
 		</dict>
@@ -1328,10 +1335,8 @@
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>match</key>
-					<string>\b(==|!=|&lt;=|&gt;=|&lt;|&gt;|not)\b</string>
-					<key>name</key>
-					<string>keyword.control.operator</string>
+					<key>include</key>
+					<string>#logical_operators</string>
 				</dict>
 				<dict>
 					<key>include</key>
