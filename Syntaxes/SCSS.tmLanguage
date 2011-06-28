@@ -63,61 +63,8 @@
 			<string>Mixin with Attributes</string>
 		</dict>
 		<dict>
-			<key>begin</key>
-			<string>^\s*((@)mixin) ([\w-]{1,})\s{0,2}\(</string>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.control.at-rule.mixin.scss</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.keyword.scss</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.function.scss</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>\)</string>
-			<key>name</key>
-			<string>meta.at-rule.mixin.scss</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#mixin_attributes</string>
-				</dict>
-			</array>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.control.at-rule.mixin.scss</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.keyword.scss</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.function.scss</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>^\s*((@)mixin) ([\w-]{1,})</string>
-			<key>name</key>
-			<string>meta.at-rule.mixin.scss</string>
+			<key>include</key>
+			<string>#mixin</string>
 		</dict>
 	</array>
 	<key>repository</key>
@@ -724,6 +671,22 @@
 				</dict>
 			</array>
 		</dict>
+		<key>mixin</key>
+		<dict>
+			<key>comment</key>
+			<string>Include the Mixin variants</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#misin_params</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#mixin_solo</string>
+				</dict>
+			</array>
+		</dict>
 		<key>mixin_attributes</key>
 		<dict>
 			<key>patterns</key>
@@ -758,6 +721,65 @@
 			<string>[\w-]{1,}</string>
 			<key>name</key>
 			<string>entity.name.function.scss</string>
+		</dict>
+		<key>mixin_params</key>
+		<dict>
+			<key>begin</key>
+			<string>^\s*((@)mixin) ([\w-]{1,})\s{0,2}\(</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.at-rule.mixin.scss</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.scss</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.scss</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\)</string>
+			<key>name</key>
+			<string>meta.at-rule.mixin.scss</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#mixin_attributes</string>
+				</dict>
+			</array>
+		</dict>
+		<key>mixin_solo</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.at-rule.mixin.scss</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.scss</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.scss</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^\s*((@)mixin) ([\w-]{1,})</string>
+			<key>name</key>
+			<string>meta.at-rule.mixin.scss</string>
 		</dict>
 		<key>property_list</key>
 		<dict>
@@ -892,6 +914,10 @@
 				<dict>
 					<key>include</key>
 					<string>#include</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#mixin</string>
 				</dict>
 				<dict>
 					<key>include</key>
