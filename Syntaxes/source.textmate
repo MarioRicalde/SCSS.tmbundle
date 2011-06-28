@@ -15,8 +15,27 @@
 		{ comment="Properties";},
 		{ include = '#property_list';},
 		{ comment="Mixin with Attributes";},
-		{ include = '#mixin'; },
-		
+		{	name = 'meta.at-rule.mixin.scss';
+		// Tienes que poner el nombre dle mixin dentro de la regla
+		 begin = "^\s*((@)mixin) ([\w-]{1,})\s{0,2}\(";
+		 end = '\)';
+		 captures = {
+			 1 = { name = 'keyword.control.at-rule.mixin.scss'; };
+			 2 = { name = 'punctuation.definition.keyword.scss'; };
+			 3 = { name = 'entity.name.function.scss'; };
+		 };
+		 patterns = (
+			 { include = '#mixin_attributes';},
+		 );
+		},
+		{	name = 'meta.at-rule.mixin.scss';
+		 match = "^\s*((@)mixin) ([\w-]{1,})";
+		 captures = {
+			 1 = { name = 'keyword.control.at-rule.mixin.scss'; };
+			 2 = { name = 'punctuation.definition.keyword.scss'; };
+			 3 = { name = 'entity.name.function.scss'; };
+		 };
+		},
 	);
 	comment = 'The Magic happens here. Rewrite by Mario "Kuroir" Ricalde';
 	repository = {
@@ -34,7 +53,6 @@
 				{ include = '#general'; },
 				{ include = '#extend';},
 				{ include = '#include'; },
-				{ include = '#mixin'; },
 				{ include = '#selectors'; },
 				{ name = 'meta.property-name.css';
 					begin = '(?<![-a-z])(?=[-a-z])';
@@ -188,6 +206,7 @@
 			patterns = (
 				{	include = '#flow_control'; },
 				{	include = '#rules'; },
+				{	include = '#mixin';},
 			);
 		};
 		// String Double "stringor"
