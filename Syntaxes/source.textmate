@@ -52,7 +52,8 @@
 		rules = {
 			patterns = (
 				{	include = '#general'; },
-				{ include = '#extend';},
+				{	include = '#extend';},
+				{	include = '#return'; },
 				{	include = '#include'; },
 				{	include = '#selectors'; },
 				{	name = 'meta.property-name.css';
@@ -464,6 +465,20 @@
 				{	include = '#selectors';}
 			);	
 		};
+		// @return
+		return = {
+			name = 'meta.at-rule.import.css';
+			begin = '\s*((@)(return)\b)';
+			end = '\s*((?=;))';
+			captures = {
+				1 = { name = 'keyword.control.at-rule.return.css'; };
+				2 = { name = 'punctuation.definition.keyword.css'; };
+			};
+			patterns = (
+				{	include = '#variable'; },
+				{	include = '#selectors'; },
+			);
+		};
 		flow_control = {
 			patterns = (
 				{ include = '#if';},
@@ -471,6 +486,8 @@
 				{ include = '#warn';},
 				{ include = '#for';},
 				{ include = '#while';},
+				{ include = '#each';},
+				{ include = '#function';},
 			);
 		};
 		// IF
@@ -551,6 +568,33 @@
 				},
 				{	include = '#variable'; },
 				{	include = '#property_values';},
+			);
+		};
+		each = {
+			name = 'meta.at-rule.each.sccs';
+			begin = '\s{0,}((@)(each)\b)';
+			end = '(?={)';
+			captures = { 1 = { name = 'keyword.control.each.scss'; }; };
+			patterns = (
+				{
+					name = 'keyword.control.operator';
+					match = '\b(in|\,)\b';
+				},
+				{	include = '#variable'; },
+				{	include = '#property_values'; },
+				{	include = '$self'; },
+			);
+		};
+		function = {
+			name = 'meta.at-rule.function.sccs';
+			begin = '\s{0,}((@)(function)\b)';
+			end = '(?={)';
+			captures = { 1 = { name = 'keyword.control.function.scss'; }; };
+			patterns = (
+				{	name = 'keyword.control.operator'; },
+				{	include = '#variable'; },
+				{	include = '#property_values'; },
+				{	include = '$self'; },
 			);
 		};
 	};
