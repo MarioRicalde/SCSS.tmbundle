@@ -273,6 +273,44 @@
 			<key>name</key>
 			<string>keyword.other.unit.css</string>
 		</dict>
+		<key>each</key>
+		<dict>
+			<key>begin</key>
+			<string>\s{0,}((@)(each)\b)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.each.scss</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?={)</string>
+			<key>name</key>
+			<string>meta.at-rule.each.sccs</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>\b(in|\,)\b</string>
+					<key>name</key>
+					<string>keyword.control.operator</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#variable</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#property_values</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
+		</dict>
 		<key>else</key>
 		<dict>
 			<key>begin</key>
@@ -362,6 +400,14 @@
 					<key>include</key>
 					<string>#while</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#each</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#function</string>
+				</dict>
 			</array>
 		</dict>
 		<key>for</key>
@@ -385,6 +431,42 @@
 				<dict>
 					<key>match</key>
 					<string>(\=\=|\!\=|\&lt;\=|\&gt;\=|\&lt;|\&gt;|from|through)</string>
+					<key>name</key>
+					<string>keyword.control.operator</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#variable</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#property_values</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
+		</dict>
+		<key>function</key>
+		<dict>
+			<key>begin</key>
+			<string>\s{0,}((@)(function)\b)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.function.scss</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?={)</string>
+			<key>name</key>
+			<string>meta.at-rule.function.sccs</string>
+			<key>patterns</key>
+			<array>
+				<dict>
 					<key>name</key>
 					<string>keyword.control.operator</string>
 				</dict>
@@ -963,6 +1045,39 @@
 				</dict>
 			</array>
 		</dict>
+		<key>return</key>
+		<dict>
+			<key>begin</key>
+			<string>\s*((@)(return)\b)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.at-rule.return.css</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\s*((?=;))</string>
+			<key>name</key>
+			<string>meta.at-rule.import.css</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#variable</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#selectors</string>
+				</dict>
+			</array>
+		</dict>
 		<key>rules</key>
 		<dict>
 			<key>patterns</key>
@@ -974,6 +1089,10 @@
 				<dict>
 					<key>include</key>
 					<string>#extend</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#return</string>
 				</dict>
 				<dict>
 					<key>include</key>
