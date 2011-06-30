@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string># just to remind you of some useful environment variables
+# see Help / Environment Variables for the full list
+echo File: "$TM_FILEPATH"
+echo Word: "$TM_CURRENT_WORD"
+echo Selection: "$TM_SELECTED_TEXT"</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>untitled</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>uuid</key>
+	<string>C95FC594-ADEB-4932-BF79-66B007A8DAB7</string>
+</dict>
+</plist>
