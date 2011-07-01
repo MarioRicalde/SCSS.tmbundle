@@ -119,6 +119,12 @@
 			<key>name</key>
 			<string>meta.at-rule.mixin.scss</string>
 		</dict>
+		<dict>
+			<key>match</key>
+			<string>\}\s+</string>
+			<key>name</key>
+			<string>punctuation.definition.end</string>
+		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
@@ -923,16 +929,16 @@
 		<dict>
 			<key>begin</key>
 			<string>\{</string>
-			<key>captures</key>
+			<key>end</key>
+			<string>\}\s+</string>
+			<key>endCaptures</key>
 			<dict>
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.section.property-list.css</string>
+					<string>punctuation.definition.end</string>
 				</dict>
 			</dict>
-			<key>end</key>
-			<string>\}</string>
 			<key>name</key>
 			<string>meta.property-list.css</string>
 			<key>patterns</key>

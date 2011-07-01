@@ -36,6 +36,10 @@
 			 3 = { name = 'entity.name.function.scss'; };
 		 };
 		},
+		{
+			name = 'punctuation.definition.end';
+			match = "\}";
+		},
 	);
 	comment = 'The Magic happens here. Rewrite by Mario "Kuroir" Ricalde';
 	repository = {
@@ -203,7 +207,7 @@
 		property_list = {	name = 'meta.property-list.css';
 			begin = '\{';
 			end = '\}';
-			captures = { 0 = { name = 'punctuation.section.property-list.css'; }; };
+			endCaptures = { 0 = { name = 'punctuation.definition.end'; }; };
 			patterns = (
 				{	include = '#flow_control'; },
 				{	include = '#rules'; },
