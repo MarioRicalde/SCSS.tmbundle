@@ -823,7 +823,7 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#misin_params</string>
+					<string>#mixin_params</string>
 				</dict>
 				<dict>
 					<key>include</key>

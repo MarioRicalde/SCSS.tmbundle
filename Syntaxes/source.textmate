@@ -608,7 +608,7 @@
 		mixin = {
 			comment = 'Include the Mixin variants';
 			patterns = (
-				{ include = '#misin_params'; },
+				{ include = '#mixin_params'; },
 				{ include = '#mixin_solo'; },
 			);
 		};
