@@ -7,15 +7,22 @@
 	<key>command</key>
 	<string>#!/bin/sh
 PATH=$PATH:$SASS_DIR
-CSS=${TM_FILEPATH/.scss/.css}
+SOURCE=./app/sass
+CSS=./public/stylesheets
 SASS_OPTS="-t compact"
-sass ${SASS_OPTS} --update "${TM_FILEPATH}":"${CSS}"</string>
+cd ${TM_PROJECT_DIRECTORY}
+sass ${SASS_OPTS} --update "${SOURCE}":"${CSS}"
+</string>
 	<key>input</key>
 	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@s</string>
 	<key>name</key>
 	<string>SCSS =&gt; CSS</string>
 	<key>output</key>
 	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>source.scss</string>
 	<key>uuid</key>
 	<string>78345399-B86D-4A76-B211-BF75190906EA</string>
 </dict>
