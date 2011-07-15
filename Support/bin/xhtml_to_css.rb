@@ -13,7 +13,7 @@ class XHTMLtoSCSS
     @hash = Nokogiri.HTML(html).to_hash.uniq
     @output = ''
     @nesting = 0
-    @comment_selector = true
+    @comment_selector = false
     parse
   end
   
