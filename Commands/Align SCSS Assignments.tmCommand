@@ -136,8 +136,6 @@ end
 	<string>Align SCSS Assignments</string>
 	<key>output</key>
 	<string>replaceSelectedText</string>
-	<key>scope</key>
-	<string>source.scss</string>
 	<key>uuid</key>
 	<string>C5012C1B-2078-47B2-9E60-1CDE6B555AB8</string>
 </dict>

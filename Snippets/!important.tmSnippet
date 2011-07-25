@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string> !important$0</string>
+	<string>!important$0</string>
 	<key>name</key>
 	<string>!important</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>meta.property-value.css</string>
 	<key>tabTrigger</key>
 	<string>!</string>
 	<key>uuid</key>
