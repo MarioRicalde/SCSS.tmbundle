@@ -4,6 +4,9 @@ This bundle contains the grammar files for highlighting the NEW SYNTAX; the old 
 
 It also includes Zen CSS ( from the Zen Coding Project ); which will help you speed up your coding.
 
+
+# Good News: We're compatible with SublimeText2!
+
 # New Feature: XHTML to SCSS Converter
 You can see the new feature in action in [this screencast](http://screenr.com/TZ0). Sorry for my engrish.. I need to practice more heh.
 
@@ -62,9 +65,14 @@ If you want your patches merged to the main branch, **please** do the following:
 - Error Highlighting sometimes fails, will need to improve the regexp.
 
 ## Credits and More:
-Thanks to [Chris Eppstein](http://github.com/chriseppstein) who developed the base SCSS.tmbundle.
 
-This bundle has the Zen Coding Bundled within because of the scope. You can view the repository here: [Zen Coding @ google.com](http://code.google.com/p/zen-coding/).
+- [Chris Eppstein](http://github.com/chriseppstein) who developed the base SCSS.tmbundle.
+
+- This bundle has the Zen Coding Bundled within because of the scope. You can view the repository here: [Zen Coding @ google.com](http://code.google.com/p/zen-coding/).
+
+- [doctyepr](http://github.com/doctyper) 
+
+- [Mario Ricalde](http://github.com/kuroir)
 
 ##### SCSS.tmbundle Copyright (c) 2011 Mario "Kuroir" Ricalde
 
