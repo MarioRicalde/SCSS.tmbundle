@@ -7,6 +7,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>scss</string>
+		<string>scss.erb</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>/\*\*(?!\*)|\{\s*($|/\*(?!.*?\*/.*\S))</string>
