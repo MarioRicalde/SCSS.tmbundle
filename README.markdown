@@ -70,7 +70,7 @@ If you want your patches merged to the main branch, **please** do the following:
 
 - This bundle has the Zen Coding Bundled within because of the scope. You can view the repository here: [Zen Coding @ google.com](http://code.google.com/p/zen-coding/).
 
-- [doctyepr](http://github.com/doctyper) 
+- [doctyper](http://github.com/doctyper) 
 
 - [Mario Ricalde](http://github.com/kuroir)
 
