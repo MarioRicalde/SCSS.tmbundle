@@ -54,7 +54,7 @@ You can get this theme on [My Theme Repository](http://github.com/kuroir/TextMat
 
 ### SublimeText2
 
-    cd ~/Library/Application\ Support/Sublime\ Text\ 2
+    cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
     git clone git://github.com/kuroir/SCSS.tmbundle.git "SCSS"
 
 ## Before Forking
