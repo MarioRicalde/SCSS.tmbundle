@@ -52,6 +52,10 @@ You can get this theme on [My Theme Repository](http://github.com/kuroir/TextMat
     gem install nokogiri
     osascript -e 'tell app "TextMate" to reload bundles'
 
+### SublimeText2
+
+    cd ~/Library/Application\ Support/Sublime\ Text\ 2
+    git clone git://github.com/kuroir/SCSS.tmbundle.git "SCSS"
 
 ## Before Forking
 
