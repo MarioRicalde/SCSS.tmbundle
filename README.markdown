@@ -14,8 +14,29 @@ Get this theme [here](http://github.com/kuroir/TextMate-Kuroir-Theme)
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles
     cd ~/Library/Application\ Support/TextMate/Bundles
     git clone -b TextMate git://github.com/kuroir/SCSS.git "SCSS.tmbundle"
-    gem install nokogiri
     osascript -e 'tell app "TextMate" to reload bundles'
+
+### Extra Features
+#### New Feature: XHTML to SCSS Converter
+You can see the new feature in action in [this screencast](http://screenr.com/TZ0). Sorry for my engrish.. I need to practice more heh.
+
+Notes about this feature:
+
+Yo shouldn't use this feature to convert the whole XHTML to SCSS. It is meant to selectively copy and paste your XHTML to SCSS Document. In the Screencast I did a complete layout parse for the sake of demonstration. However this is a bad practice since it generates unnecessary nesting and of course bloat.
+
+#### New Feature: XHTML to SCSS Converter now uses style declarations!
+
+See it in action! [Screencast](http://screenr.com/fP4).
+
+#### The minimum requirements for this command to work:
+
+- [Nokogiri](http://nokogiri.org/)
+- Ruby 1.8.7 or higher (it comes by default with Snow Leopard)
+- Mac OS X (No support for Windows yet. I didn't implement the clipboard method for it.)
+
+#### Installation:
+
+    gem install nokogiri
 
 ## Before Forking
 
