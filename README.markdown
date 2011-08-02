@@ -16,7 +16,7 @@ This is a Sublime Text package for [Sass](http://sass-lang.com/) SCSS syntax.
 
 ## Before Forking
 
-[READ THE README ON THE MASTER BRANCH!]()
+[READ THE README ON THE MASTER BRANCH!](https://github.com/kuroir/SCSS/blob/master/README.markdown)
 
 ## Credits and More:
 
