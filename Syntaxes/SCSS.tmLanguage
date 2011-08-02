@@ -13,7 +13,7 @@
 	<key>foldingStopMarker</key>
 	<string>(?&lt;!\*)\*\*/|^\s*\}</string>
 	<key>keyEquivalent</key>
-	<string>~@c</string>
+	<string>^~S</string>
 	<key>name</key>
 	<string>SCSS</string>
 	<key>patterns</key>
