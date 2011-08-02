@@ -13,15 +13,23 @@ This is a Sublime Text package for [Sass](http://sass-lang.com/) SCSS syntax.
     cd %APPDATA%\Sublime Text 2\Packages
     git clone -b SublimeText2 git://github.com/kuroir/SCSS.git
 
+
+## Before Forking
+
+[READ THE README ON THE MASTER BRANCH!]()
+
 ## Credits and More:
 
-- [Mario Ricalde](http://github.com/kuroir) has done most of the work behind this package. This Sublime Text version is merely a repackaging of his excellent work.
-
-- [Chris Eppstein](http://github.com/chriseppstein) who developed the base SCSS.tmbundle.
-
-- This bundle has the Zen Coding Bundled within because of the scope. You can view the repository here: [Zen Coding @ google.com](http://code.google.com/p/zen-coding/).
-
-- [doctyper](http://github.com/doctyper) 
+#### [Mario Ricalde](http://github.com/kuroir)
+Rewrote the SCSS Grammar file and made the first release of the bundle.
+#### [Charles Roper](http://github.com/charlesr)
+Is the mantainer of the SublimeText2 Branch and contributed with the E-TextEditor compatibility on early stages.
+#### [Chris Eppstein](http://github.com/chriseppstein)
+Developed the first SCSS TextMate Bundle. Mario based his grammar of his and got a lot of feedback from him (he's SASS Core Dev)
+#### [Zen Coding @ google.com](http://code.google.com/p/zen-coding/).
+This bundle has the Zen Coding Bundled within because of the scope.
+#### [doctyper](http://github.com/doctyper) 
+Contributed with the first SublimeText2 hotfix to the original SCSS.tmbundle.
 
 ##### SCSS.tmbundle Copyright (c) 2011 Mario "Kuroir" Ricalde
 
