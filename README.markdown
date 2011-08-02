@@ -13,7 +13,7 @@ Get this theme [here](http://github.com/kuroir/TextMate-Kuroir-Theme)
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles
     cd ~/Library/Application\ Support/TextMate/Bundles
-    git clone -b SublimeText2 git://github.com/kuroir/SCSS.git "SCSS.tmbundle"
+    git clone -b TextMate git://github.com/kuroir/SCSS.git "SCSS.tmbundle"
     gem install nokogiri
     osascript -e 'tell app "TextMate" to reload bundles'
 
