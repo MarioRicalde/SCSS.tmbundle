@@ -1,21 +1,9 @@
-This is a TextMate Bundle for [Sass](http://sass-lang.com/) SCSS Syntax.
-
-This bundle contains the grammar files for highlighting the NEW SYNTAX; the old syntax is not supported by this bundle. Sorry.
-
-It also includes Zen CSS ( from the Zen Coding Project ); which will help you speed up your coding.
-
-## Preview of the Syntax Highlighter
-
-![Screen](http://dl.dropbox.com/u/4651065/kuroir-theme.png)
-Get this theme [here](http://github.com/kuroir/TextMate-Kuroir-Theme)
+# NOTICE
+We're looking for a dedicated mantainer for this package, if you're interested please make a new issue stating it!
 
 ### Installation Instructions
 
-    mkdir -p ~/Library/Application\ Support/TextMate/Bundles
-    cd ~/Library/Application\ Support/TextMate/Bundles
-    git clone -b SublimeText2 git://github.com/kuroir/SCSS.git "SCSS.tmbundle"
-    gem install nokogiri
-    osascript -e 'tell app "TextMate" to reload bundles'
+Needed!
 
 ## Before Forking
 
