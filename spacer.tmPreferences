@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>spacer</string>
+	<key>scope</key>
+	<string>source.css, source.scss</string>
+	<key>settings</key>
+	<dict>
+		<key>shellVariables</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>TM_CSS_SPACE</string>
+				<key>value</key>
+				<string><![CDATA[ ]]></string>
+			</dict>
+		</array>
+	</dict>
+	<key>uuid</key>
+	<string>0ef292cd-943a-4fb0-b43d-65959c5e6b06</string>
+</dict>
+</plist>
