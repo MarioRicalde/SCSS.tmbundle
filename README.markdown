@@ -1,9 +1,8 @@
-This is a Sublime Text for [SASS](http://sass-lang.com/). 
-
+This is a Sublime Text package for [Sass](http://sass-lang.com/) SCSS syntax.
 
 ## Preview of the Syntax Highlighter
 
-![Screen](http://i.imgur.com/QF91q.png)
+![Screen](http://i.imgur.com/YHzAk.png)
 
 ### Installation Instructions
 
