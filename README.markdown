@@ -19,7 +19,7 @@ Get this theme [here](http://github.com/kuroir/TextMate-Kuroir-Theme)
 
 ## Before Forking
 
-[READ THE README ON THE MASTER BRANCH!]()
+[READ THE README ON THE MASTER BRANCH!](https://github.com/kuroir/SCSS/blob/master/README.markdown)
 
 ## Credits and More:
 
