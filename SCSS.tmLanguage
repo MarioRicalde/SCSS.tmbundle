@@ -222,19 +222,19 @@
 		<key>comment_block</key>
 		<dict>
 			<key>begin</key>
-			<string>\s{0,}/\*</string>
+			<string>/\*</string>
 			<key>captures</key>
 			<dict>
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.whitespace.comment.trailing.scss</string>
+					<string>punctuation.definition.comment.scss</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>Revamped Comment block.</string>
 			<key>end</key>
-			<string>(\*/)\s{0,}</string>
+			<string>\*/</string>
 			<key>name</key>
 			<string>comment.block.scss</string>
 		</dict>
