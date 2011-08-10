@@ -404,7 +404,7 @@
 		<key>constant_unit</key>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=[\d])(px|pt|cm|mm|in|em|ex|pc)\b|%</string>
+			<string>(?&lt;=[\d])(px|pt|cm|mm|in|em|ex|pc|deg)\b|%</string>
 			<key>name</key>
 			<string>keyword.other.unit.css</string>
 		</dict>
