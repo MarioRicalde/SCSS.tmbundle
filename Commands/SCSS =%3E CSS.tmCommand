@@ -15,8 +15,6 @@ sass ${SASS_OPTS} --update "${SOURCE}":"${CSS}"
 </string>
 	<key>input</key>
 	<string>none</string>
-	<key>keyEquivalent</key>
-	<string>@s</string>
 	<key>name</key>
 	<string>SCSS =&gt; CSS</string>
 	<key>output</key>
