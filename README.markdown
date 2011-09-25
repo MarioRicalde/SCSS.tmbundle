@@ -16,7 +16,7 @@ This is a Sublime Text package for [Sass](http://sass-lang.com/) SCSS syntax.
 
 ## Before Forking
 
-[READ THE README ON THE MASTER BRANCH!](https://github.com/kuroir/SCSS/blob/master/README.markdown)
+[READ THE README ON THE MASTER BRANCH!](https://github.com/kuroir/SCSS.tmbundle/blob/master/README.markdown)
 
 ## Troubleshooting
 
@@ -26,7 +26,7 @@ If you get an "Error loading syntax file" ([example](http://d.pr/RSdi)), perform
 2. From the menu, select: View → Syntax → CSS
 3. From the menu, select: View → Syntax → SCSS
 
-This will clear the ST2 syntax cache for SCSS. See [issue #48](https://github.com/kuroir/SCSS/issues/48#issuecomment-1710508) for background information.
+This will clear the ST2 syntax cache for SCSS. See [issue #48](https://github.com/kuroir/SCSS.tmbundle/issues/48#issuecomment-1710508) for background information.
 
 ## Credits and More:
 
