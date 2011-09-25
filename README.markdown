@@ -1,13 +1,9 @@
-This is a TextMate Bundle for [Sass](http://sass-lang.com/) SCSS Syntax.
+This is the TextMate Bundle for [Sass](http://sass-lang.com/) SCSS Syntax. Using [SublimeText2?, click here!](https://github.com/kuroir/SCSS/tree/SublimeText2)
 
 This bundle contains the grammar files for highlighting the NEW SYNTAX; the old syntax is not supported by this bundle. Sorry.
 
 It also includes Zen CSS ( from the Zen Coding Project ); which will help you speed up your coding.
 
-## Preview of the Syntax Highlighter
-
-![Screen](http://dl.dropbox.com/u/4651065/kuroir-theme.png)
-Get this theme [here](http://github.com/kuroir/TextMate-Kuroir-Theme)
 
 ### Installation Instructions
 
@@ -40,7 +36,7 @@ See it in action! [Screencast](http://screenr.com/fP4).
 
 ## Before Forking
 
-[READ THE README ON THE MASTER BRANCH!](https://github.com/kuroir/SCSS/blob/master/README.markdown)
+[READ THE README ON THE MASTER OLD](https://github.com/kuroir/SCSS/tree/master-old)
 
 ## Credits and More:
 
