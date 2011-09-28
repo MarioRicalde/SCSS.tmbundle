@@ -8,10 +8,10 @@ This is a Sublime Text package for [Sass](http://sass-lang.com/) SCSS syntax.
 
 #### OS X
     cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
-    git clone -b SublimeText2 git://github.com/kuroir/SCSS.git
+    git clone -b SublimeText2 git://github.com/kuroir/SCSS.tmbundle.git SCSS
 #### Windows
     cd %APPDATA%\Sublime Text 2\Packages
-    git clone -b SublimeText2 git://github.com/kuroir/SCSS.git
+    git clone -b SublimeText2 git://github.com/kuroir/SCSS.tmbundle.git SCSS
 
 
 ## Before Forking
