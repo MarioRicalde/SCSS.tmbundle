@@ -9,7 +9,7 @@ It also includes Zen CSS ( from the Zen Coding Project ); which will help you sp
 
     mkdir -p ~/Library/Application\ Support/TextMate/Bundles
     cd ~/Library/Application\ Support/TextMate/Bundles
-    git clone -b TextMate git://github.com/kuroir/SCSS.tmbundle.git "SCSS.tmbundle"
+    git clone git://github.com/kuroir/SCSS.tmbundle.git "SCSS.tmbundle"
     osascript -e 'tell app "TextMate" to reload bundles'
 
 ### Extra Features
