@@ -12,6 +12,12 @@ It also includes Zen CSS ( from the Zen Coding Project ); which will help you sp
     git clone git://github.com/kuroir/SCSS.tmbundle.git "SCSS.tmbundle"
     osascript -e 'tell app "TextMate" to reload bundles'
 
+If you are using pre-release textmate2, the bundle should be installed in:
+
+    mkdir -p ~/Library/Application\ Support/Avian/Bundles
+    cd ~/Library/Application\ Support/Avian/Bundles
+    git clone git://github.com/kuroir/SCSS.tmbundle.git "SCSS.tmbundle"
+
 ### Extra Features
 #### New Feature: XHTML to SCSS Converter
 You can see the new feature in action in [this screencast](http://screenr.com/TZ0). Sorry for my engrish.. I need to practice more heh.
