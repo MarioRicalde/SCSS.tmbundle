@@ -2,212 +2,224 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>changed</key>
+	<key>comment</key>
+	<string>Complete Rewrite of the SCSS Grammar by Mario "Kuroir" Ricalde (http://kuroir.com)</string>
+	<key>fileTypes</key>
+	<array>
+		<string>scss</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>/\*\*(?!\*)|\{\s*($|/\*(?!.*?\*/.*\S))</string>
+	<key>foldingStopMarker</key>
+	<string>(?&lt;!\*)\*\*/|^\s*\}</string>
+	<key>keyEquivalent</key>
+	<string>^~S</string>
+	<key>name</key>
+	<string>SCSS</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Variable setting</string>
+			<key>include</key>
+			<string>#variable_setting</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#include</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#import</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#general</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#flow_control</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Yes, we need the rules at root level available for nesting.</string>
+			<key>include</key>
+			<string>#rules</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Properties</string>
+			<key>include</key>
+			<string>#property_list</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^\s*((@)mixin) ([\w-]{1,})\s{0,2}\(</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.at-rule.mixin.scss</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.scss</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.scss</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Mixin with Attributes</string>
+			<key>end</key>
+			<string>\)</string>
+			<key>name</key>
+			<string>meta.at-rule.mixin.scss</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#function_attributes</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.at-rule.mixin.scss</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.css</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.scss</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Simple Mixin</string>
+			<key>match</key>
+			<string>^\s*((@)mixin) ([\w-]{1,})</string>
+			<key>name</key>
+			<string>meta.at-rule.mixin.scss</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^\s*((@)function) ([\w-]{1,})\s{0,2}\(</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.at-rule.function.scss</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.css</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.scss</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Function with Attributes</string>
+			<key>end</key>
+			<string>\)</string>
+			<key>name</key>
+			<string>meta.at-rule.function.scss</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#function_attributes</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.at-rule.function.scss</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.css</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.scss</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Simple Function</string>
+			<key>match</key>
+			<string>^\s*((@)function) ([\w-]{1,})</string>
+			<key>name</key>
+			<string>meta.at-rule.function.scss</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.at-rule.charset.scss</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.css</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Charset</string>
+			<key>match</key>
+			<string>^\s*((@)charset\b)\s*</string>
+			<key>name</key>
+			<string>meta.at-rule.charset.scss</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.at-rule.charset.scss</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.css</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Option</string>
+			<key>match</key>
+			<string>^\s*((@)option\b)\s*</string>
+			<key>name</key>
+			<string>meta.at-rule.option.scss</string>
+		</dict>
+	</array>
+	<key>repository</key>
 	<dict>
-		<key>comment</key>
-		<string>Complete Rewrite of the SCSS Grammar by Mario "Kuroir" Ricalde (http://kuroir.com)</string>
-		<key>patterns</key>
-		<array>
-			<dict>
-				<key>comment</key>
-				<string>Variable setting</string>
-				<key>include</key>
-				<string>#variable_setting</string>
-			</dict>
-			<dict>
-				<key>include</key>
-				<string>#include</string>
-			</dict>
-			<dict>
-				<key>include</key>
-				<string>#import</string>
-			</dict>
-			<dict>
-				<key>include</key>
-				<string>#general</string>
-			</dict>
-			<dict>
-				<key>include</key>
-				<string>#flow_control</string>
-			</dict>
-			<dict>
-				<key>comment</key>
-				<string>Yes, we need the rules at root level available for nesting.</string>
-				<key>include</key>
-				<string>#rules</string>
-			</dict>
-			<dict>
-				<key>comment</key>
-				<string>Properties</string>
-				<key>include</key>
-				<string>#property_list</string>
-			</dict>
-			<dict>
-				<key>begin</key>
-				<string>^\s*((@)mixin) ([\w-]{1,})\s{0,2}\(</string>
-				<key>captures</key>
-				<dict>
-					<key>1</key>
-					<dict>
-						<key>name</key>
-						<string>keyword.control.at-rule.mixin.scss</string>
-					</dict>
-					<key>2</key>
-					<dict>
-						<key>name</key>
-						<string>punctuation.definition.keyword.scss</string>
-					</dict>
-					<key>3</key>
-					<dict>
-						<key>name</key>
-						<string>entity.name.function.scss</string>
-					</dict>
-				</dict>
-				<key>comment</key>
-				<string>Mixin with Attributes</string>
-				<key>end</key>
-				<string>\)</string>
-				<key>name</key>
-				<string>meta.at-rule.mixin.scss</string>
-				<key>patterns</key>
-				<array>
-					<dict>
-						<key>include</key>
-						<string>#function_attributes</string>
-					</dict>
-				</array>
-			</dict>
-			<dict>
-				<key>captures</key>
-				<dict>
-					<key>1</key>
-					<dict>
-						<key>name</key>
-						<string>keyword.control.at-rule.mixin.scss</string>
-					</dict>
-					<key>2</key>
-					<dict>
-						<key>name</key>
-						<string>punctuation.definition.keyword.css</string>
-					</dict>
-					<key>3</key>
-					<dict>
-						<key>name</key>
-						<string>entity.name.function.scss</string>
-					</dict>
-				</dict>
-				<key>comment</key>
-				<string>Simple Mixin</string>
-				<key>match</key>
-				<string>^\s*((@)mixin) ([\w-]{1,})</string>
-				<key>name</key>
-				<string>meta.at-rule.mixin.scss</string>
-			</dict>
-			<dict>
-				<key>begin</key>
-				<string>^\s*((@)function) ([\w-]{1,})\s{0,2}\(</string>
-				<key>captures</key>
-				<dict>
-					<key>1</key>
-					<dict>
-						<key>name</key>
-						<string>keyword.control.at-rule.function.scss</string>
-					</dict>
-					<key>2</key>
-					<dict>
-						<key>name</key>
-						<string>punctuation.definition.keyword.css</string>
-					</dict>
-					<key>3</key>
-					<dict>
-						<key>name</key>
-						<string>entity.name.function.scss</string>
-					</dict>
-				</dict>
-				<key>comment</key>
-				<string>Function with Attributes</string>
-				<key>end</key>
-				<string>\)</string>
-				<key>name</key>
-				<string>meta.at-rule.function.scss</string>
-				<key>patterns</key>
-				<array>
-					<dict>
-						<key>include</key>
-						<string>#function_attributes</string>
-					</dict>
-				</array>
-			</dict>
-			<dict>
-				<key>captures</key>
-				<dict>
-					<key>1</key>
-					<dict>
-						<key>name</key>
-						<string>keyword.control.at-rule.function.scss</string>
-					</dict>
-					<key>2</key>
-					<dict>
-						<key>name</key>
-						<string>punctuation.definition.keyword.css</string>
-					</dict>
-					<key>3</key>
-					<dict>
-						<key>name</key>
-						<string>entity.name.function.scss</string>
-					</dict>
-				</dict>
-				<key>comment</key>
-				<string>Simple Function</string>
-				<key>match</key>
-				<string>^\s*((@)function) ([\w-]{1,})</string>
-				<key>name</key>
-				<string>meta.at-rule.function.scss</string>
-			</dict>
-			<dict>
-				<key>captures</key>
-				<dict>
-					<key>1</key>
-					<dict>
-						<key>name</key>
-						<string>keyword.control.at-rule.charset.scss</string>
-					</dict>
-					<key>2</key>
-					<dict>
-						<key>name</key>
-						<string>punctuation.definition.keyword.css</string>
-					</dict>
-				</dict>
-				<key>comment</key>
-				<string>Charset</string>
-				<key>match</key>
-				<string>^\s*((@)charset\b)\s*</string>
-				<key>name</key>
-				<string>meta.at-rule.charset.scss</string>
-			</dict>
-			<dict>
-				<key>captures</key>
-				<dict>
-					<key>1</key>
-					<dict>
-						<key>name</key>
-						<string>keyword.control.at-rule.charset.scss</string>
-					</dict>
-					<key>2</key>
-					<dict>
-						<key>name</key>
-						<string>punctuation.definition.keyword.css</string>
-					</dict>
-				</dict>
-				<key>comment</key>
-				<string>Option</string>
-				<key>match</key>
-				<string>^\s*((@)option\b)\s*</string>
-				<key>name</key>
-				<string>meta.at-rule.option.scss</string>
-			</dict>
-		</array>
-		<key>repository.comment_block</key>
+		<key>comment_block</key>
 		<dict>
 			<key>begin</key>
 			<string>\s{0,}/\*</string>
@@ -226,7 +238,7 @@
 			<key>name</key>
 			<string>comment.block.scss</string>
 		</dict>
-		<key>repository.comment_line</key>
+		<key>comment_line</key>
 		<dict>
 			<key>begin</key>
 			<string>(\s{0,})//</string>
@@ -237,7 +249,7 @@
 			<key>name</key>
 			<string>comment.line.scss</string>
 		</dict>
-		<key>repository.constant_color</key>
+		<key>constant_color</key>
 		<dict>
 			<key>comment</key>
 			<string>http://www.w3.org/TR/CSS21/syndata.html#value-def-color</string>
@@ -246,7 +258,7 @@
 			<key>name</key>
 			<string>support.constant.color.w3c-standard-color-name.css</string>
 		</dict>
-		<key>repository.constant_depracated_color</key>
+		<key>constant_depracated_color</key>
 		<dict>
 			<key>comment</key>
 			<string>These colours are mostly recognised but will not validate. ref: http://www.w3schools.com/css/css_colornames.asp</string>
@@ -255,14 +267,14 @@
 			<key>name</key>
 			<string>invalid.deprecated.color.w3c-non-standard-color-name.css</string>
 		</dict>
-		<key>repository.constant_font</key>
+		<key>constant_font</key>
 		<dict>
 			<key>match</key>
 			<string>(\b(?i:arial|century|comic|courier|garamond|georgia|helvetica|impact|lucida|symbol|system|tahoma|times|trebuchet|utopia|verdana|webdings|sans-serif|serif|monospace)\b)</string>
 			<key>name</key>
 			<string>support.constant.font-name.css</string>
 		</dict>
-		<key>repository.constant_functions</key>
+		<key>constant_functions</key>
 		<dict>
 			<key>begin</key>
 			<string>([\w-]{1,})\s*(\()</string>
@@ -297,7 +309,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.constant_hex</key>
+		<key>constant_hex</key>
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -312,49 +324,49 @@
 			<key>name</key>
 			<string>constant.other.color.rgb-value.css</string>
 		</dict>
-		<key>repository.constant_important</key>
+		<key>constant_important</key>
 		<dict>
 			<key>match</key>
 			<string>\!\s*important</string>
 			<key>name</key>
 			<string>keyword.other.important.css</string>
 		</dict>
-		<key>repository.constant_mathematical_symbols</key>
+		<key>constant_mathematical_symbols</key>
 		<dict>
 			<key>match</key>
 			<string>(\b(\+|-|\*|/)\b)</string>
 			<key>name</key>
 			<string>support.constant.mathematical-symbols.css</string>
 		</dict>
-		<key>repository.constant_number</key>
+		<key>constant_number</key>
 		<dict>
 			<key>match</key>
 			<string>[+-]?\s*([0-9]+(\.[0-9]+)?|\.[0-9]+)</string>
 			<key>name</key>
 			<string>constant.numeric.css</string>
 		</dict>
-		<key>repository.constant_property_value</key>
+		<key>constant_property_value</key>
 		<dict>
 			<key>match</key>
 			<string>\b(absolute|all-scroll|always|armenian|auto|baseline|below|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|capitalize|center|char|circle|cjk-ideographic|col-resize|collapse|crosshair|dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|e-resize|ellipsis|fixed|georgian|groove|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|inline-block|inline|inset|inside|inter-ideograph|inter-word|italic|justify|katakana-iroha|katakana|keep-all|left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|medium|middle|move|n-resize|ne-resize|newspaper|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|oblique|outset|outside|overline|pointer|progress|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|s-resize|scroll|se-resize|separate|small-caps|solid|square|static|strict|super|sw-resize|table-footer-group|table-header-group|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical-ideographic|vertical-text|visible|w-resize|wait|whitespace|zero|true|false)\b</string>
 			<key>name</key>
 			<string>support.constant.property-value.css</string>
 		</dict>
-		<key>repository.constant_rgb</key>
+		<key>constant_rgb</key>
 		<dict>
 			<key>match</key>
 			<string>(\b0*((1?[0-9]{1,2})|(2([0-4][0-9]|5[0-5])))\s*,\s*)(0*((1?[0-9]{1,2})|(2([0-4][0-9]|5[0-5])))\s*,\s*)(0*((1?[0-9]{1,2})|(2([0-4][0-9]|5[0-5])))\b)</string>
 			<key>name</key>
 			<string>constant.other.color.rgb-value.css</string>
 		</dict>
-		<key>repository.constant_rgb_percentage</key>
+		<key>constant_rgb_percentage</key>
 		<dict>
 			<key>match</key>
 			<string>\b([0-9]{1,2}|100)\s*%,\s*([0-9]{1,2}|100)\s*%,\s*([0-9]{1,2}|100)\s*%</string>
 			<key>name</key>
 			<string>constant.other.color.rgb-percentage.css</string>
 		</dict>
-		<key>repository.constant_sass_functions</key>
+		<key>constant_sass_functions</key>
 		<dict>
 			<key>begin</key>
 			<string>(headings|stylesheet-url|rgba?|hsla?|ie-hex-str|red|green|blue|alpha|opacity|hue|saturation|lightness|prefixed|prefix|-moz|-svg|-css2|-pie|-webkit|-ms|-o|font-(?:files|url)|grid-image|image-(?:width|height|url|color)|sprites?|sprite-(?:map|map-name|file|url|position)|inline-(?:font-files|image)|opposite-position|grad-point|grad-end-position|color-stops|color-stops-in-percentages|grad-color-stops|(?:radial|linear)-(?:gradient|svg-gradient)|opacify|fade-?in|transparentize|fade-?out|lighten|darken|saturate|desaturate|grayscale|adjust-(?:hue|lightness|saturation|color)|scale-(?:lightness|saturation|color)|change-color|spin|complement|invert|mix|-compass-(?:list|space-list|slice|nth|list-size)|blank|compact|nth|first-value-of|join|length|append|nest|append-selector|headers|enumerate|range|percentage|unitless|unit|if|type-of|comparable|elements-of-type|quote|unquote|escape|e|sin|cos|tan|abs|round|ceil|floor|pi)\s*(\()</string>
@@ -389,14 +401,14 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.constant_unit</key>
+		<key>constant_unit</key>
 		<dict>
 			<key>match</key>
 			<string>(?&lt;=[\d])(px|pt|cm|mm|in|em|ex|pc)\b|%</string>
 			<key>name</key>
 			<string>keyword.other.unit.css</string>
 		</dict>
-		<key>repository.each</key>
+		<key>each</key>
 		<dict>
 			<key>begin</key>
 			<string>\s{0,}((@)(each)\b)</string>
@@ -439,7 +451,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.else</key>
+		<key>else</key>
 		<dict>
 			<key>begin</key>
 			<string>\s*((@)(else)\b)</string>
@@ -476,7 +488,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.extend</key>
+		<key>extend</key>
 		<dict>
 			<key>begin</key>
 			<string>\s*((@)(extend)\b)</string>
@@ -509,7 +521,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.flow_control</key>
+		<key>flow_control</key>
 		<dict>
 			<key>patterns</key>
 			<array>
@@ -543,7 +555,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.for</key>
+		<key>for</key>
 		<dict>
 			<key>begin</key>
 			<string>\s{0,}((@)(for)\b)</string>
@@ -586,7 +598,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.function_attributes</key>
+		<key>function_attributes</key>
 		<dict>
 			<key>patterns</key>
 			<array>
@@ -614,7 +626,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.functions</key>
+		<key>functions</key>
 		<dict>
 			<key>patterns</key>
 			<array>
@@ -660,7 +672,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.general</key>
+		<key>general</key>
 		<dict>
 			<key>comment</key>
 			<string>Stuff that should be everywhere</string>
@@ -680,7 +692,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.if</key>
+		<key>if</key>
 		<dict>
 			<key>begin</key>
 			<string>\s{0,}((@)(if)\b)</string>
@@ -717,7 +729,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.import</key>
+		<key>import</key>
 		<dict>
 			<key>begin</key>
 			<string>\s*((@)(import)\b)</string>
@@ -758,7 +770,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.include</key>
+		<key>include</key>
 		<dict>
 			<key>begin</key>
 			<string>\s*((@)(include)\b)</string>
@@ -787,7 +799,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.interpolation</key>
+		<key>interpolation</key>
 		<dict>
 			<key>begin</key>
 			<string>#\{</string>
@@ -807,14 +819,14 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.logical_operators</key>
+		<key>logical_operators</key>
 		<dict>
 			<key>match</key>
 			<string>(\=\=|\!\=|\&lt;\=|\&gt;\=|\&lt;|\&gt;|not|or|and)</string>
 			<key>name</key>
 			<string>keyword.control.operator</string>
 		</dict>
-		<key>repository.parameters</key>
+		<key>parameters</key>
 		<dict>
 			<key>patterns</key>
 			<array>
@@ -848,7 +860,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.property_list</key>
+		<key>property_list</key>
 		<dict>
 			<key>begin</key>
 			<string>\{</string>
@@ -876,7 +888,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.property_name</key>
+		<key>property_name</key>
 		<dict>
 			<key>comment</key>
 			<string>Reversal order is important; KEEP IT. Also when adding new properties add them to the error checker below!</string>
@@ -885,14 +897,14 @@
 			<key>name</key>
 			<string>support.type.property-name.css</string>
 		</dict>
-		<key>repository.property_name_error</key>
+		<key>property_name_error</key>
 		<dict>
 			<key>match</key>
 			<string>(?&lt;![a-z-])(?!z-index\b|y\b|x\b|wrap\b|word-wrap\b|word-spacing\b|word-break\b|word\b|width\b|widows\b|white-space-collapse\b|white-space\b|white\b|weight\b|volume\b|voice-volume\b|voice-stress\b|voice-rate\b|voice-pitch-range\b|voice-pitch\b|voice-family\b|voice-duration\b|voice-balance\b|voice\b|visibility\b|vertical-align\b|variant\b|user-select\b|up\b|unicode-bidi\b|unicode\b|trim\b|transition-timing-function\b|transition-property\b|transition-duration\b|transition-delay\b|transition\b|transform\b|top-width\b|top-style\b|top-right-radius\b|top-left-radius\b|top-color\b|top\b|timing-function\b|text-wrap\b|text-transform\b|text-shadow\b|text-replace\b|text-outline\b|text-justify\b|text-indent\b|text-height\b|text-emphasis\b|text-decoration\b|text-align-last\b|text-align\b|text\b|target-position\b|target-new\b|target-name\b|target\b|table-layout\b|tab-side\b|style-type\b|style-position\b|style-image\b|style\b|string-set\b|stretch\b|stress\b|stacking-strategy\b|stacking-shift\b|stacking-ruby\b|stacking\b|speed\b|speech-rate\b|speech\b|speak-punctuation\b|speak-numeral\b|speak-header\b|speak\b|span\b|spacing\b|space-collapse\b|space\b|sizing\b|size-adjust\b|size\b|shadow\b|rule-width\b|rule-style\b|rule-color\b|rule\b|ruby-span\b|ruby-position\b|ruby-overhang\b|ruby-align\b|ruby\b|rows\b|rotation-point\b|rotation\b|role\b|right-width\b|right-style\b|right-color\b|right\b|richness\b|rest-before\b|rest-after\b|rest\b|resource\b|resolution\b|resize\b|reset\b|replace\b|repeat\b|rendering-intent\b|rate\b|radius\b|quotes\b|punctuation-trim\b|punctuation\b|property\b|profile\b|presentation-level\b|presentation\b|position\b|point\b|play-state\b|play-during\b|play-count\b|pitch-range\b|pitch\b|phonemes\b|pause-before\b|pause-after\b|pause\b|page-policy\b|page-break-inside\b|page-break-before\b|page-break-after\b|page\b|padding-top\b|padding-right\b|padding-left\b|padding-bottom\b|padding\b|pack\b|overhang\b|overflow-y\b|overflow-x\b|overflow-style\b|overflow\b|outline-width\b|outline-style\b|outline-offset\b|outline-color\b|outline\b|orphans\b|origin\b|orientation\b|orient\b|ordinal-group\b|opacity\b|offset\b|numeral\b|new\b|nav-up\b|nav-right\b|nav-left\b|nav-index\b|nav-down\b|nav\b|name\b|move-to\b|model\b|min-width\b|min-height\b|min\b|max-width\b|max-height\b|max\b|marquee-style\b|marquee-speed\b|marquee-play-count\b|marquee-direction\b|marquee\b|marks\b|mark-before\b|mark-after\b|mark\b|margin-top\b|margin-right\b|margin-left\b|margin-bottom\b|margin\b|list-style-type\b|list-style-position\b|list-style-image\b|list-style\b|list\b|lines\b|line-stacking-strategy\b|line-stacking-shift\b|line-stacking-ruby\b|line-stacking\b|line-height\b|line\b|level\b|letter-spacing\b|length\b|left-width\b|left-style\b|left-color\b|left\b|label\b|justify\b|iteration-count\b|inline-box-align\b|initial-value\b|initial-size\b|initial-before-align\b|initial-before-adjust\b|initial-after-align\b|initial-after-adjust\b|index\b|indent\b|increment\b|image-resolution\b|image-orientation\b|image\b|icon\b|hyphens\b|hyphenate-resource\b|hyphenate-lines\b|hyphenate-character\b|hyphenate-before\b|hyphenate-after\b|hyphenate\b|height\b|header\b|hanging-punctuation\b|grid-rows\b|grid-columns\b|grid\b|gap\b|font-weight\b|font-variant\b|font-style\b|font-stretch\b|font-size-adjust\b|font-size\b|font-family\b|font\b|float-offset\b|float\b|flex-group\b|flex\b|fit-position\b|fit\b|fill\b|family\b|empty-cells\b|emphasis\b|elevation\b|duration\b|drop-initial-value\b|drop-initial-size\b|drop-initial-before-align\b|drop-initial-before-adjust\b|drop-initial-after-align\b|drop-initial-after-adjust\b|drop\b|down\b|dominant-baseline\b|display-role\b|display-model\b|display\b|direction\b|delay\b|decoration-break\b|decoration\b|cursor\b|cue-before\b|cue-after\b|cue\b|crop\b|counter-reset\b|counter-increment\b|counter\b|count\b|content\b|columns\b|column-width\b|column-span\b|column-rule-width\b|column-rule-style\b|column-rule-color\b|column-rule\b|column-gap\b|column-fill\b|column-count\b|column-break-before\b|column-break-after\b|column\b|color-profile\b|color\b|collapse\b|clip\b|clear\b|character\b|caption-side\b|break-inside\b|break-before\b|break-after\b|break\b|box-sizing\b|box-shadow\b|box-pack\b|box-orient\b|box-ordinal-group\b|box-lines\b|box-flex-group\b|box-flex\b|box-direction\b|box-decoration-break\b|box-align\b|box\b|bottom-width\b|bottom-style\b|bottom-right-radius\b|bottom-left-radius\b|bottom-color\b|bottom\b|border-width\b|border-top-width\b|border-top-style\b|border-top-right-radius\b|border-top-left-radius\b|border-top-color\b|border-top\b|border-style\b|border-spacing\b|border-right-width\b|border-right-style\b|border-right-color\b|border-right\b|border-radius\b|border-length\b|border-left-width\b|border-left-style\b|border-left-color\b|border-left\b|border-image\b|border-color\b|border-collapse\b|border-bottom-width\b|border-bottom-style\b|border-bottom-right-radius\b|border-bottom-left-radius\b|border-bottom-color\b|border-bottom\b|border\b|bookmark-target\b|bookmark-level\b|bookmark-label\b|bookmark\b|binding\b|bidi\b|before\b|baseline-shift\b|baseline\b|balance\b|background-size\b|background-repeat\b|background-position\b|background-origin\b|background-image\b|background-color\b|background-clip\b|background-break\b|background-attachment\b|background\b|azimuth\b|attachment\b|appearance\b|animation-timing-function\b|animation-play-state\b|animation-name\b|animation-iteration-count\b|animation-duration\b|animation-direction\b|animation-delay\b|animation\b|alignment-baseline\b|alignment-adjust\b|alignment\b|align-last\b|align\b|after\b|adjust\b)[a-z\-\_]+</string>
 			<key>name</key>
 			<string>invalid.illegal</string>
 		</dict>
-		<key>repository.property_names</key>
+		<key>property_names</key>
 		<dict>
 			<key>patterns</key>
 			<array>
@@ -906,7 +918,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.property_values</key>
+		<key>property_values</key>
 		<dict>
 			<key>comment</key>
 			<string>Stuff that should only be available on values.</string>
@@ -974,7 +986,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.return</key>
+		<key>return</key>
 		<dict>
 			<key>begin</key>
 			<string>\s*((@)(return)\b)</string>
@@ -1007,7 +1019,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.rules</key>
+		<key>rules</key>
 		<dict>
 			<key>patterns</key>
 			<array>
@@ -1085,7 +1097,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.selector_attribute</key>
+		<key>selector_attribute</key>
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -1130,7 +1142,7 @@
 			<key>name</key>
 			<string>meta.attribute-selector.css</string>
 		</dict>
-		<key>repository.selector_class</key>
+		<key>selector_class</key>
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -1145,14 +1157,14 @@
 			<key>name</key>
 			<string>entity.other.attribute-name.class.css</string>
 		</dict>
-		<key>repository.selector_entities</key>
+		<key>selector_entities</key>
 		<dict>
 			<key>match</key>
 			<string>\b(a|abbr|address|area|article|aside|audio|b|base|bdo|blockquote|body|br|button|canvas|caption|cite|code|col|colgroup|command|datalist|dd|del|details|dfn|div|dl|dt|em|embed|fieldset|figcaption|figure|footer|form|(h[1-6])|head|header|hgroup|hr|html|i|iframe|img|input|ins|keygen|kbd|label|legend|li|link|map|mark|menu|meta|meter|nav|noscript|object|ol|optgroup|option|output|p|param|pre|progress|q|rp|rt|ruby|samp|script|section|select|small|source|span|strong|style|sub|summary|sup|table|tbody|td|textarea|tfoot|th|thead|time|title|tr|ul|var|video)\b</string>
 			<key>name</key>
 			<string>entity.name.tag.css</string>
 		</dict>
-		<key>repository.selector_id</key>
+		<key>selector_id</key>
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -1167,7 +1179,7 @@
 			<key>name</key>
 			<string>entity.other.attribute-name.id.css</string>
 		</dict>
-		<key>repository.selector_pseudo_class</key>
+		<key>selector_pseudo_class</key>
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -1182,7 +1194,7 @@
 			<key>name</key>
 			<string>entity.other.attribute-name.pseudo-class.css</string>
 		</dict>
-		<key>repository.selector_pseudo_element</key>
+		<key>selector_pseudo_element</key>
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -1197,7 +1209,7 @@
 			<key>name</key>
 			<string>entity.other.attribute-name.pseudo-element.css</string>
 		</dict>
-		<key>repository.selectors</key>
+		<key>selectors</key>
 		<dict>
 			<key>comment</key>
 			<string>Stuff for Selectors.</string>
@@ -1237,7 +1249,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.string_double</key>
+		<key>string_double</key>
 		<dict>
 			<key>begin</key>
 			<string>"</string>
@@ -1271,7 +1283,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.string_single</key>
+		<key>string_single</key>
 		<dict>
 			<key>begin</key>
 			<string>'</string>
@@ -1305,21 +1317,21 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.tag_parent_reference</key>
+		<key>tag_parent_reference</key>
 		<dict>
 			<key>match</key>
 			<string>\&amp;</string>
 			<key>name</key>
 			<string>entity.name.tag.reference.css</string>
 		</dict>
-		<key>repository.tag_wildcard</key>
+		<key>tag_wildcard</key>
 		<dict>
 			<key>match</key>
 			<string>\*</string>
 			<key>name</key>
 			<string>entity.name.tag.wildcard.css</string>
 		</dict>
-		<key>repository.variable</key>
+		<key>variable</key>
 		<dict>
 			<key>patterns</key>
 			<array>
@@ -1333,7 +1345,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.variable_setting</key>
+		<key>variable_setting</key>
 		<dict>
 			<key>begin</key>
 			<string>(\$[\w\-]+)\s{0,}(:)</string>
@@ -1366,7 +1378,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.variables</key>
+		<key>variables</key>
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -1381,7 +1393,7 @@
 			<key>name</key>
 			<string>variable.scss</string>
 		</dict>
-		<key>repository.warn</key>
+		<key>warn</key>
 		<dict>
 			<key>begin</key>
 			<string>\s*((@)(warn|debug)\b)</string>
@@ -1418,7 +1430,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>repository.while</key>
+		<key>while</key>
 		<dict>
 			<key>begin</key>
 			<string>\s{0,}((@)(while)\b)</string>
@@ -1460,22 +1472,9 @@
 			</array>
 		</dict>
 	</dict>
-	<key>deleted</key>
-	<array>
-		<string>repository.color-values</string>
-		<string>repository.comment-block</string>
-		<string>repository.media-query</string>
-		<string>repository.media-query-list</string>
-		<string>repository.numeric-values</string>
-		<string>repository.property-values</string>
-		<string>repository.rule-list</string>
-		<string>repository.selector</string>
-		<string>repository.string-double</string>
-		<string>repository.string-single</string>
-	</array>
-	<key>isDelta</key>
-	<true/>
+	<key>scopeName</key>
+	<string>source.scss</string>
 	<key>uuid</key>
-	<string>69AA0917-B7BB-11D9-A7E2-000D93C8BE28</string>
+	<string>3D9ADE5E-ADC5-460F-97B3-B61EF5A18273</string>
 </dict>
 </plist>
