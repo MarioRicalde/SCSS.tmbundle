@@ -13,7 +13,7 @@
 	<key>foldingStopMarker</key>
 	<string>(?&lt;!\*)\*\*/|^\s*\}</string>
 	<key>keyEquivalent</key>
-	<string>~@c</string>
+	<string>^~S</string>
 	<key>name</key>
 	<string>SCSS</string>
 	<key>patterns</key>
@@ -222,19 +222,19 @@
 		<key>comment_block</key>
 		<dict>
 			<key>begin</key>
-			<string>/\*</string>
+			<string>\s{0,}/\*</string>
 			<key>captures</key>
 			<dict>
 				<key>0</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.comment.scss</string>
+					<string>punctuation.whitespace.comment.trailing.scss</string>
 				</dict>
 			</dict>
 			<key>comment</key>
 			<string>Revamped Comment block.</string>
 			<key>end</key>
-			<string>\*/</string>
+			<string>(\*/)\s{0,}</string>
 			<key>name</key>
 			<string>comment.block.scss</string>
 		</dict>
@@ -788,7 +788,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>\s*((?=;|\}))</string>
+			<string>\s*((;)|(?=\}))</string>
 			<key>name</key>
 			<string>meta.at-rule.include.css</string>
 			<key>patterns</key>
