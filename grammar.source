@@ -441,7 +441,7 @@
 		include = {
 			name = 'meta.at-rule.include.css';
 			begin = '\s*((@)(include)\b)';
-			end = '\s*((?=;|\}))';
+			end = '\s*((;)|(?=\}))';
 			captures = {
 				1 = { name = 'keyword.control.at-rule.import.css'; };
 				2 = { name = 'punctuation.definition.keyword.css'; };
