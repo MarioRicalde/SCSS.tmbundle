@@ -506,7 +506,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>\s*((?=;))</string>
+			<string>\s*((;)|(?=\}))</string>
 			<key>name</key>
 			<string>meta.at-rule.import.css</string>
 			<key>patterns</key>
@@ -747,7 +747,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>\s*((?=;|\}))</string>
+			<string>\s*((;)|(?=\}))</string>
 			<key>name</key>
 			<string>meta.at-rule.import.css</string>
 			<key>patterns</key>
