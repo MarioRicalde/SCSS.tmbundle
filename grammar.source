@@ -454,7 +454,7 @@
 		import = {
 			name = 'meta.at-rule.import.css';
 			begin = '\s*((@)(import)\b)';
-			end = '\s*((?=;|\}))';
+			end = '\s*((;)|(?=\}))';
 			captures = {
 				1 = { name = 'keyword.control.at-rule.import.css'; };
 				2 = { name = 'punctuation.definition.keyword.css'; };
@@ -470,7 +470,7 @@
 		extend = {
 			name = 'meta.at-rule.import.css';
 			begin = '\s*((@)(extend)\b)';
-			end = '\s*((?=;))';
+			end = '\s*((;)|(?=\}))';
 			captures = {
 				1 = { name = 'keyword.control.at-rule.import.css'; };
 				2 = { name = 'punctuation.definition.keyword.css'; };
