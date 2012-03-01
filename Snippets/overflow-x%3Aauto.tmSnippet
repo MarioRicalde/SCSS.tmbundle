@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>overflow-x:auto</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>ovx:a</string>
 	<key>uuid</key>

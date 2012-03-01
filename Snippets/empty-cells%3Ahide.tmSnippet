@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>empty-cells:hide</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>ec:h</string>
 	<key>uuid</key>

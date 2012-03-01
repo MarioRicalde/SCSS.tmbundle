@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>text-transform:uppercase</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>tt:u</string>
 	<key>uuid</key>

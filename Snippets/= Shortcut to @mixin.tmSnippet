@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>// 
+	<string>//
 // @TODO: Add docs to $1!
 //
 @mixin ${1:mixin-name}${2:(${3:\$params})} {
@@ -12,7 +12,7 @@
 	<key>name</key>
 	<string>= Shortcut to @mixin</string>
 	<key>scope</key>
-	<string>source.scss</string>
+	<string>source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>=</string>
 	<key>uuid</key>

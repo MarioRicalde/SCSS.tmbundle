@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>-webkit-border-image+</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>bdi:w+</string>
 	<key>uuid</key>

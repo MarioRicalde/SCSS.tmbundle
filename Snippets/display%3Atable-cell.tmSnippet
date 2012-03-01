@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>display:table-cell</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>d:tbc</string>
 	<key>uuid</key>

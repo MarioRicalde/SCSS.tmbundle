@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>border-top-style</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>bdts</string>
 	<key>uuid</key>

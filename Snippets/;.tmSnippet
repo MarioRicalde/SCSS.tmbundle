@@ -10,7 +10,7 @@
 	<key>name</key>
 	<string>;</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>;</string>
 	<key>uuid</key>

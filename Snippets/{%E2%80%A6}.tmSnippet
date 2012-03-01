@@ -12,7 +12,7 @@
 	<key>name</key>
 	<string>{…}</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>uuid</key>
 	<string>FEBF166E-DD43-405A-8893-D9413E6FB790</string>
 </dict>

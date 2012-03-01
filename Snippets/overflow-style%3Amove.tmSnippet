@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>overflow-style:move</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>ovs:mv</string>
 	<key>uuid</key>

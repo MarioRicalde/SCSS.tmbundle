@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>counter-reset</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>cor</string>
 	<key>uuid</key>

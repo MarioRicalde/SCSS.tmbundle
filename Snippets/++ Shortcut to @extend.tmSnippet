@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>++ Shortcut to @extend</string>
 	<key>scope</key>
-	<string>source.scss</string>
+	<string>source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>++</string>
 	<key>uuid</key>

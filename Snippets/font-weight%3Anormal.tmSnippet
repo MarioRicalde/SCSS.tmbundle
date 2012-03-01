@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>font-weight:normal</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>fw:n</string>
 	<key>uuid</key>

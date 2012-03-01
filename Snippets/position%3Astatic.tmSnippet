@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>position:static</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>pos:s</string>
 	<key>uuid</key>

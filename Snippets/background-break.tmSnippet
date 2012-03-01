@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>background-break</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>bgbk</string>
 	<key>uuid</key>

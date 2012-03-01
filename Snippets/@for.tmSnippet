@@ -11,7 +11,7 @@
 	<key>name</key>
 	<string>@for</string>
 	<key>scope</key>
-	<string>source.scss</string>
+	<string>source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>for</string>
 	<key>uuid</key>

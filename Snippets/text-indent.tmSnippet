@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>text-indent</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>ti</string>
 	<key>uuid</key>

@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>visibility:hidden</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>v:h</string>
 	<key>uuid</key>

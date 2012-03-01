@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>text-decoration:underline</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>td:u</string>
 	<key>uuid</key>

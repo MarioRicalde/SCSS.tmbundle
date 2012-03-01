@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>opacity:ie</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>op:ie</string>
 	<key>uuid</key>

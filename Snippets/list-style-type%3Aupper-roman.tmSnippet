@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>list-style-type:upper-roman</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>list:ur</string>
 	<key>uuid</key>

@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>text-height:text-size</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>th:t</string>
 	<key>uuid</key>

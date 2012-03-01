@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>box-sizing</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>bxz</string>
 	<key>uuid</key>

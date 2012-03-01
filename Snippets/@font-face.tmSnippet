@@ -10,7 +10,7 @@
 	<key>name</key>
 	<string>@font-face</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>@f</string>
 	<key>uuid</key>

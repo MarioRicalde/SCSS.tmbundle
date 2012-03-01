@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>background-size:auto</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>bgz:a</string>
 	<key>uuid</key>

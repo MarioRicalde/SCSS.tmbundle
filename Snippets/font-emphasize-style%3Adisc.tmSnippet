@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>font-emphasize-style:disc</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>fems:ds</string>
 	<key>uuid</key>

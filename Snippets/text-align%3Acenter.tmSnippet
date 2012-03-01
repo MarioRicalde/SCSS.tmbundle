@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>text-align:center</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>ta:c</string>
 	<key>uuid</key>

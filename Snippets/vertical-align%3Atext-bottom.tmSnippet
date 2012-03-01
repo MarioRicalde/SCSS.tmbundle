@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>vertical-align:text-bottom</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>va:tb</string>
 	<key>uuid</key>

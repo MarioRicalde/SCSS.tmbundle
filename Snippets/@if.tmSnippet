@@ -9,7 +9,7 @@
 	<key>name</key>
 	<string>@if</string>
 	<key>scope</key>
-	<string>source.scss</string>
+	<string>source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>if</string>
 	<key>uuid</key>

@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>padding:0 0 0</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>p:3</string>
 	<key>uuid</key>

@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>outline-color:invert</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>oc:i</string>
 	<key>uuid</key>

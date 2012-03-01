@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>background:ie</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>bg:ie</string>
 	<key>uuid</key>

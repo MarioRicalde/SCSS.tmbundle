@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>text-justify:inter-cluster</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>tj:ic</string>
 	<key>uuid</key>

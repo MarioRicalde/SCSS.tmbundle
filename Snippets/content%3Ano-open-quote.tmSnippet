@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>content:no-open-quote</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>ct:noq</string>
 	<key>uuid</key>

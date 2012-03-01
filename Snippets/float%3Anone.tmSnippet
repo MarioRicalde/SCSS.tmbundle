@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>float:none</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>fl:n</string>
 	<key>uuid</key>

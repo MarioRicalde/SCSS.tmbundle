@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>max-width</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>maw</string>
 	<key>uuid</key>

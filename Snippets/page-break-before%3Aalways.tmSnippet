@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>page-break-before:always</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>pgbb:aw</string>
 	<key>uuid</key>

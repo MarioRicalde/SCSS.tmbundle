@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>background-repeat:repeat-y</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>bgr:y</string>
 	<key>uuid</key>

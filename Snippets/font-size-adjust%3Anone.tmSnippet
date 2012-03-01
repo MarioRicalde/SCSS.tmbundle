@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>font-size-adjust:none</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>fza:n</string>
 	<key>uuid</key>

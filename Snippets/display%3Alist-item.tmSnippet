@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>display:list-item</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>d:li</string>
 	<key>uuid</key>

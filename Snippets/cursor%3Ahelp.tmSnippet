@@ -7,7 +7,7 @@
 	<key>name</key>
 	<string>cursor:help</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.css, source.css.scss</string>
 	<key>tabTrigger</key>
 	<string>cur:he</string>
 	<key>uuid</key>
