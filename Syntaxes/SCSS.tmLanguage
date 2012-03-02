@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>comment</key>
-	<string>Complete Rewrite of the SCSS Grammar by Mario "Kuroir" Ricalde (http://kuroir.com)</string>
+	<string>SCSS Version 2 Grammar by Mario "Kuroir" Ricalde (http://kuroir.com)</string>
 	<key>fileTypes</key>
 	<array>
 		<string>scss</string>
