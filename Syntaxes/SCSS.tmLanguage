@@ -1399,6 +1399,10 @@
 					<key>name</key>
 					<string>constant.character.escape.css</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#interpolation</string>
+				</dict>
 			</array>
 		</dict>
 		<key>string_single</key>
@@ -1466,7 +1470,7 @@
 		<key>variable_setting</key>
 		<dict>
 			<key>begin</key>
-			<string>(\$[\w\-]+)\s{0,}(:)</string>
+			<string>(\$[\w\-\#\{\}]+)\s{0,}(:)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
