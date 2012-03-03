@@ -1470,7 +1470,7 @@
 		<key>variable_setting</key>
 		<dict>
 			<key>begin</key>
-			<string>(\$[\w\-\#\{\}]+)\s{0,}(:)</string>
+			<string>(\$.+)\s{0,}(:)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
