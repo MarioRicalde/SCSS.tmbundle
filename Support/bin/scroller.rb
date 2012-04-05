@@ -5,7 +5,7 @@ def scroller(type, q = 1)
     when 'add'
       int += q
     when 'substract'
-      int -= 1
+      int -= q
     end
     print int.to_s << result[2].to_s
   end
