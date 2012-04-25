@@ -49,6 +49,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#at_rule_media</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#at_rule_function</string>
 		</dict>
 		<dict>
@@ -416,6 +420,71 @@
 				<dict>
 					<key>include</key>
 					<string>#functions</string>
+				</dict>
+			</array>
+		</dict>
+		<key>at_rule_media</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>^\s*((@)media) ([\w\s-]*)\(</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.at-rule.media.scss</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.keyword.scss</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.scss</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\)</string>
+					<key>name</key>
+					<string>meta.at-rule.media.scss</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#media_attributes</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.at-rule.mixin.scss</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.keyword.css</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.scss</string>
+						</dict>
+					</dict>
+					<key>comment</key>
+					<string>Simple Mixin</string>
+					<key>match</key>
+					<string>^\s*((@)mixin) ([\w-]{1,})</string>
+					<key>name</key>
+					<string>meta.at-rule.mixin.scss</string>
 				</dict>
 			</array>
 		</dict>
@@ -962,6 +1031,38 @@
 			<string>(\=\=|\!\=|\&lt;\=|\&gt;\=|\&lt;|\&gt;|not|or|and)</string>
 			<key>name</key>
 			<string>keyword.control.operator</string>
+		</dict>
+		<key>media_attributes</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>match</key>
+					<string>:</string>
+					<key>name</key>
+					<string>punctuation.definition</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#general</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#property_name</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#property_values</string>
+				</dict>
+				<dict>
+					<key>comment</key>
+					<string>We even have error highlighting &lt;3</string>
+					<key>match</key>
+					<string>[=\{\}\?\@]</string>
+					<key>name</key>
+					<string>invalid.illegal</string>
+				</dict>
+			</array>
 		</dict>
 		<key>parameters</key>
 		<dict>
