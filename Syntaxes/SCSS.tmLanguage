@@ -61,7 +61,7 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>#option</string>
+			<string>#at_rule_option</string>
 		</dict>
 	</array>
 	<key>repository</key>
