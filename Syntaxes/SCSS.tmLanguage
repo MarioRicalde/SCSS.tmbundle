@@ -873,7 +873,7 @@
 		<key>constant_unit</key>
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=[\d])(px|pt|cm|mm|in|em|ex|pc)\b|%</string>
+			<string>(?&lt;=[\d])(ch|cm|em|ex|in|mm|pc|pt|px|rem|vh|vmin|vw)\b|%</string>
 			<key>name</key>
 			<string>keyword.other.unit.css</string>
 		</dict>
