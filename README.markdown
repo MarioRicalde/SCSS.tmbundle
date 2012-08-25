@@ -23,6 +23,10 @@ Is the maintainer of the SublimeText2 Branch and contributed with the E-TextEdit
 Developed the first SCSS TextMate Bundle. Mario based his grammar of his and got a lot of feedback from him (he's SASS Core Dev)
 #### [doctyper](http://github.com/doctyper)
 Contributed with the first SublimeText2 hotfix to the original SCSS.tmbundle.
+#### [Vadim Makeev](https://github.com/pepelsbey)
+Major Contributor to the project.
+
+And many more!
 
 ##### SCSS.tmbundle Copyright (c) 2010-2012 Mario "Kuroir" Ricalde
 
