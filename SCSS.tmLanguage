@@ -1428,6 +1428,21 @@
 			<key>name</key>
 			<string>entity.other.attribute-name.pseudo-element.css</string>
 		</dict>
+		<key>selector_placeholder</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.entity.css</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(\%)[a-zA-Z0-9_-]+</string>
+			<key>name</key>
+			<string>entity.other.attribute-name.placeholder.css</string>
+		</dict>
 		<key>selectors</key>
 		<dict>
 			<key>comment</key>
@@ -1465,6 +1480,10 @@
 				<dict>
 					<key>include</key>
 					<string>#selector_attribute</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#selector_placeholder</string>
 				</dict>
 			</array>
 		</dict>
