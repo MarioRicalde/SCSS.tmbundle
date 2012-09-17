@@ -204,6 +204,10 @@
 					<key>include</key>
 					<string>#selectors</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#property_values</string>
+				</dict>
 			</array>
 		</dict>
 		<key>at_rule_for</key>
