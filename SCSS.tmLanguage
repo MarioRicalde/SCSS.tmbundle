@@ -204,6 +204,10 @@
 					<key>include</key>
 					<string>#selectors</string>
 				</dict>
+				<dict>
+					<key>include</key>
+					<string>#property_values</string>
+				</dict>
 			</array>
 		</dict>
 		<key>at_rule_for</key>
@@ -800,6 +804,20 @@
 			<key>name</key>
 			<string>keyword.other.important.css</string>
 		</dict>
+		<key>constant_default</key>
+		<dict>
+			<key>match</key>
+			<string>\!\s*default</string>
+			<key>name</key>
+			<string>keyword.other.default.css</string>
+		</dict>
+		<key>constant_optional</key>
+		<dict>
+			<key>match</key>
+			<string>\!\s*optional</string>
+			<key>name</key>
+			<string>keyword.other.optional.css</string>
+		</dict>
 		<key>constant_mathematical_symbols</key>
 		<dict>
 			<key>match</key>
@@ -1263,6 +1281,14 @@
 				<dict>
 					<key>include</key>
 					<string>#constant_important</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#constant_default</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#constant_optional</string>
 				</dict>
 				<dict>
 					<key>include</key>
