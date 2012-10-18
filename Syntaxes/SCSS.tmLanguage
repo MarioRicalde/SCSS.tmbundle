@@ -1164,6 +1164,14 @@
 		<dict>
 			<key>begin</key>
 			<string>\{</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.property-list.begin.css</string>
+				</dict>
+			</dict>
 			<key>captures</key>
 			<dict>
 				<key>0</key>
@@ -1174,6 +1182,14 @@
 			</dict>
 			<key>end</key>
 			<string>\}</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.property-list.end.css</string>
+				</dict>
+			</dict>
 			<key>name</key>
 			<string>meta.property-list.css</string>
 			<key>patterns</key>
