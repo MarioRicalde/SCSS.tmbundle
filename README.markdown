@@ -1,18 +1,23 @@
-This is a Sublime Text package for [Sass](http://sass-lang.com/) SCSS syntax.
+Sass Syntax Package
+===================
 
-## Preview of the Syntax Highlighter
+A [Sass & SCSS](http://sass-lang.com/) syntax package for [Sublime Text 2](http://www.sublimetext.com)
+
+## Preview
 
 ![Screen](http://i.imgur.com/YHzAk.png)
 
-### Installation Instructions
+## Installation
 
-#### OS X
+### OS X
+
     cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
     git clone -b SublimeText2 git://github.com/kuroir/SCSS.tmbundle.git SCSS
-#### Windows
+    
+### Windows
+
     cd %APPDATA%\Sublime Text 2\Packages
     git clone -b SublimeText2 git://github.com/kuroir/SCSS.tmbundle.git SCSS
-
 
 ## Before Forking
 
@@ -28,18 +33,24 @@ If you get an "Error loading syntax file" ([example](http://d.pr/RSdi)), perform
 
 This will clear the ST2 syntax cache for SCSS. See [issue #48](https://github.com/kuroir/SCSS.tmbundle/issues/48#issuecomment-1710508) for background information.
 
-## Credits and More:
+## Credits
 
 #### [Mario Ricalde](http://github.com/kuroir)
-Rewrote the SCSS Grammar file and made the first release of the bundle.
+Rewrote the SCSS Grammar file, made the first release of the bundle, worked on support for Sublime Text 2, and TextMate 2.
+### [Stephen Way](http://github.com/stephenway)
+Maintainer of this Sass syntax bundle.
 #### [Charles Roper](http://github.com/charlesr)
-Is the mantainer of the SublimeText2 Branch and contributed with the E-TextEditor compatibility on early stages.
+Contributed to the SublimeText2 Branch and worked on E-TextEditor compatibility on early stages.
 #### [Chris Eppstein](http://github.com/chriseppstein)
 Developed the first SCSS TextMate Bundle. Mario based his grammar of his and got a lot of feedback from him (he's SASS Core Dev)
-#### [Zen Coding @ google.com](http://code.google.com/p/zen-coding/).
-This bundle has the Zen Coding Bundled within because of the scope.
-#### [doctyper](http://github.com/doctyper) 
+#### [doctyper](http://github.com/doctyper)
 Contributed with the first SublimeText2 hotfix to the original SCSS.tmbundle.
+#### [Vadim Makeev](https://github.com/pepelsbey)
+Major Contributor to the project.
+
+And many more!
+
+## License
 
 ##### SCSS.tmbundle Copyright (c) 2011 Mario "Kuroir" Ricalde
 
