@@ -5,7 +5,7 @@ A [Sass & SCSS](http://sass-lang.com/) syntax package for [Sublime Text 2](http:
 
 ## Preview
 
-![Screen](http://imgur.com/CNiv3)
+![Screen](http://i.imgur.com/CNiv3.png)
 
 ## Installation
 
