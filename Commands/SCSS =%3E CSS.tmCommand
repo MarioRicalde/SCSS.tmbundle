@@ -6,22 +6,28 @@
 	<string>saveActiveFile</string>
 	<key>command</key>
 	<string>#!/bin/sh
-PATH=$PATH:$SASS_DIR
-SOURCE=./app/sass
-CSS=./public/stylesheets
-SASS_OPTS="-t compact"
+SASS_OPTS="-t expanded --scss"
+
 cd ${TM_PROJECT_DIRECTORY}
-sass ${SASS_OPTS} --update "${SOURCE}":"${CSS}"
-</string>
+sass ${SASS_OPTS} "${TM_FILEPATH}":"${TM_FILENAME%.*}.css"
+echo "exported ${TM_FILENAME%.*}.css"</string>
 	<key>input</key>
 	<string>none</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>name</key>
 	<string>SCSS =&gt; CSS</string>
-	<key>output</key>
-	<string>showAsTooltip</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
 	<key>scope</key>
 	<string>source.scss</string>
 	<key>uuid</key>
 	<string>78345399-B86D-4A76-B211-BF75190906EA</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
