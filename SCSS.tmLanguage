@@ -692,6 +692,47 @@
 				</dict>
 			</array>
 		</dict>
+		<key>at_rule_content</key>
+		<dict>
+			<key>begin</key>
+			<string>\s{0,}((@)(content)\b)</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.content.scss</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.css</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(?={)</string>
+			<key>name</key>
+			<string>meta.at-rule.content.scss</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#logical_operators</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#variable</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#property_values</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>$self</string>
+				</dict>
+			</array>
+		</dict>
 		<key>comment_block</key>
 		<dict>
 			<key>begin</key>
@@ -1331,6 +1372,10 @@
 				<dict>
 					<key>include</key>
 					<string>#at_rule_extend</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#at_rule_content</string>
 				</dict>
 				<dict>
 					<key>include</key>
