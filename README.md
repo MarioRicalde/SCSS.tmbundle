@@ -14,11 +14,8 @@ A [Sass & SCSS](http://sass-lang.com/) syntax bundle for [TextMate](https://gith
 ### Git with TextMate 1
 
 1. Make a **new bundles folder** `mkdir -p ~/Library/Application\ Support/TextMate/Bundles`
-
 2. **Open** the new folder `cd ~/Library/Application\ Support/TextMate/Bundles`
-
 3. **Clone** to your new folder `git clone git://github.com/kuroir/SCSS.tmbundle.git "SCSS.tmbundle"`
-
 4. **Reload** TextMate Bundles `osascript -e 'tell app "TextMate" to reload bundles'`
 
 ## How to Upgrade
