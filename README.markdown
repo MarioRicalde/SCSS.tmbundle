@@ -1,58 +1,66 @@
-Sass Syntax Package
-===================
+Sass for Sublime Text 2 Plugin
+==============================
 
 A [Sass & SCSS](http://sass-lang.com/) syntax package for [Sublime Text 2](http://www.sublimetext.com)
 
-## Preview
+## How to Install
 
-![Screen](http://i.imgur.com/CNiv3.png)
+### Package Control *(Recommended)*
 
-## Installation
-
-### OS X
-
-    cd ~/Library/Application\ Support/Sublime\ Text\ 2/Packages
-    git clone -b SublimeText2 git://github.com/kuroir/SCSS.tmbundle.git SCSS
+1. Package Control: **Install Package** `SCSS`
+2. **Restart** Sublime Text
     
-### Windows
+### Git
 
-    cd %APPDATA%\Sublime Text 2\Packages
-    git clone -b SublimeText2 git://github.com/kuroir/SCSS.tmbundle.git SCSS
+1. **Clone** to your packages folder `git clone -b SublimeText2 git://github.com/kuroir/SCSS.tmbundle.git SCSS`
+2. **Restart** Sublime Text
 
-## Before Forking
+### Download
 
-[READ THE README ON THE MASTER BRANCH!](https://github.com/kuroir/SCSS.tmbundle/blob/master/README.markdown)
+1. **Download** this **[ZIP file](https://github.com/kuroir/SCSS.tmbundle/zipball/SublimeText2)**
+2. Move to packages folder *(In the **Sublime Text 2** menu → **Preferences** → **Browse Packages…**)*
+3. **Restart** Sublime Text
 
-## Troubleshooting
+## How to Upgrade
 
-If you get an "Error loading syntax file" ([example](http://d.pr/RSdi)), perform the following steps:
+### Package Control
 
-1. Open any .scss file
-2. From the menu, select: View → Syntax → CSS
-3. From the menu, select: View → Syntax → SCSS
+1. Package Control: **Upgrade Package** `SCSS`
+2. **Restart** Sublime Text
 
-This will clear the ST2 syntax cache for SCSS. See [issue #48](https://github.com/kuroir/SCSS.tmbundle/issues/48#issuecomment-1710508) for background information.
+### Git and Download Methods
+
+Repeat Install
+
+## Error loading syntax file?
+
+If your getting this error ([screenshot](http://d.pr/RSdi)), follow these steps to clear the syntax cache:
+
+1. **Open** a .scss file
+2. In the **View** menu → **Syntax** → **CSS**
+3. Then **switch back to SCSS** syntax mode
+
+*Related [issue #48](https://github.com/kuroir/SCSS.tmbundle/issues/48#issuecomment-1710508)*
 
 ## Credits
 
-#### [Mario Ricalde](http://github.com/kuroir)
-Rewrote the SCSS Grammar file, made the first release of the bundle, worked on support for Sublime Text 2, and TextMate 2.
-### [Stephen Way](http://github.com/stephenway)
-Maintainer of this Sass syntax bundle.
-#### [Charles Roper](http://github.com/charlesr)
-Contributed to the SublimeText2 Branch and worked on E-TextEditor compatibility on early stages.
-#### [Chris Eppstein](http://github.com/chriseppstein)
-Developed the first SCSS TextMate Bundle. Mario based his grammar of his and got a lot of feedback from him (he's SASS Core Dev)
-#### [doctyper](http://github.com/doctyper)
-Contributed with the first SublimeText2 hotfix to the original SCSS.tmbundle.
-#### [Vadim Makeev](https://github.com/pepelsbey)
-Major Contributor to the project.
+**[Stephen Way](http://github.com/stephenway)** **Current Maintainer** of this Sass syntax highlighter. Currently performing maintenance on the grammar file and improving the experience.
 
-And many more!
+**[Mario Ricalde](http://github.com/kuroir)** Rewrote the SCSS Grammar file, made the first release of the bundle, worked on support for Sublime Text 2, and TextMate 2.
+
+**[Charles Roper](http://github.com/charlesr)** Contributed to the Sublime Text 2 Branch and worked on E-TextEditor compatibility in early stages.
+
+**[Chris Eppstein](http://github.com/chriseppstein)** *(Sass Core Dev Team)* Developed the first TextMate SCSS Bundle. Mario based his grammar off Chris's and also got a lot of feedback from Chris
+
+**[doctyper](http://github.com/doctyper)** Contributed with the first Sublime Text 2 hotfix to the original SCSS.tmbundle.
+
+**[Vadim Makeev](https://github.com/pepelsbey)** Major Contributor to the project.
+
+*And many more!*
 
 ## License
 
-##### SCSS.tmbundle Copyright (c) 2011 Mario "Kuroir" Ricalde
+##### SCSS.tmbundle Copyright (c) 2012 Mario "Kuroir" Ricalde
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
