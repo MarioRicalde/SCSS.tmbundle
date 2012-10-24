@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>@extend $0;</string>
+	<string>@warn "$0";</string>
 	<key>name</key>
-	<string>++ Shortcut to @extend</string>
+	<string>@warn</string>
 	<key>scope</key>
 	<string>source.scss</string>
 	<key>tabTrigger</key>
-	<string>++</string>
+	<string>warn</string>
 	<key>uuid</key>
-	<string>C2197513-C7E2-43A6-B3CB-84EFBBEC89D1</string>
+	<string>47B44086-762D-4E80-90DB-9E1D51A23C57</string>
 </dict>
 </plist>

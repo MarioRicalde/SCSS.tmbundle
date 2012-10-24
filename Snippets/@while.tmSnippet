@@ -3,14 +3,18 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>background:${1:${2:transparent} image-url('${3:image.png}') ${4:left} ${5:top} ${6:no-repeat}};</string>
+	<string>\$${3:i}: ${2:6};
+@while \$${3:i} &gt; ${1:0} {
+	${4:.item-#{\$${3:i}\}} { width: 2em * \$${3:i}; }
+	$0
+}</string>
 	<key>name</key>
-	<string>Background</string>
+	<string>@while</string>
 	<key>scope</key>
 	<string>source.scss</string>
 	<key>tabTrigger</key>
-	<string>background</string>
+	<string>while</string>
 	<key>uuid</key>
-	<string>0D6354D0-B50E-47A8-9F42-C9B452660340</string>
+	<string>1A521B99-F070-4B8A-9727-E58133D76CEB</string>
 </dict>
 </plist>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>smart typing pairs</string>
+	<string>Smart Typing Pairs</string>
 	<key>scope</key>
 	<string>source.scss, meta.property-list.css</string>
 	<key>settings</key>

@@ -14,7 +14,7 @@ echo "$TM_SELECTED_TEXT" | sass-convert --from sass --to sass --dasherize</strin
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
-	<string>Cleanup Sass</string>
+	<string>Clean Sass</string>
 	<key>outputCaret</key>
 	<string>heuristic</string>
 	<key>outputFormat</key>

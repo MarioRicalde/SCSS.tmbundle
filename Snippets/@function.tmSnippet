@@ -3,14 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>@include ${0};</string>
+	<string>// 
+// @TODO: Add docs to $2!
+//
+@function ${2:function-name}(\$${1:n}) {
+	@return \$${1:n} $0;
+}</string>
 	<key>name</key>
-	<string>+ Shortcut to @include</string>
+	<string>@function</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.scss</string>
 	<key>tabTrigger</key>
-	<string>+</string>
+	<string>function</string>
 	<key>uuid</key>
-	<string>ECD46162-8C51-4E8C-A859-CC0B5AD320AC</string>
+	<string>30892348-4559-49B9-BE5F-9C2C0A04ACC5</string>
 </dict>
 </plist>

@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>@import url($1);$0</string>
+	<string>@import "$0";</string>
 	<key>name</key>
 	<string>@import</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.scss</string>
 	<key>tabTrigger</key>
-	<string>@i</string>
+	<string>+++</string>
 	<key>uuid</key>
-	<string>6764DCFD-20D0-4838-BDA0-7CE38A3AFE0C</string>
+	<string>CFEDC20F-4714-4C88-81B4-1C5D149DA04D</string>
 </dict>
 </plist>

@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>symbol list:group</string>
+	<string>Symbol List: Group</string>
 	<key>scope</key>
-	<string>source.css comment.block.css -source.css.embedded,source.scss comment.block.scss -source.css.embedded</string>
+	<string>source.scss comment.block.scss -source.scss.embedded</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>

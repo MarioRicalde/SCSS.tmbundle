@@ -3,30 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>beforeRunningCommand</key>
-	<string>saveActiveFile</string>
+	<string>nop</string>
 	<key>command</key>
-	<string>#!/bin/sh
-SASS_OPTS="-t expanded --scss"
+	<string>#!/usr/bin/env bash
+[[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
-cd ${TM_PROJECT_DIRECTORY}
-sass ${SASS_OPTS} "${TM_FILEPATH}":"${TM_FILENAME%.*}.css"
-echo "exported ${TM_FILENAME%.*}.css"</string>
+echo "$TM_SELECTED_TEXT" | sass-convert --from scss --to scss --dasherize</string>
 	<key>input</key>
-	<string>none</string>
+	<string>selection</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
-	<string>SCSS =&gt; CSS</string>
+	<string>Clean SCSS</string>
 	<key>outputCaret</key>
-	<string>afterOutput</string>
+	<string>heuristic</string>
 	<key>outputFormat</key>
 	<string>text</string>
 	<key>outputLocation</key>
-	<string>toolTip</string>
+	<string>replaceInput</string>
 	<key>scope</key>
 	<string>source.scss</string>
 	<key>uuid</key>
-	<string>78345399-B86D-4A76-B211-BF75190906EA</string>
+	<string>AD999AE1-2723-4F8C-AEA3-222568BBF3FA</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>

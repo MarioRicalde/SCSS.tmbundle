@@ -181,9 +181,9 @@ end
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
-	<string>@C</string>
+	<string>^c</string>
 	<key>name</key>
-	<string>Insert Color…</string>
+	<string>Insert Color</string>
 	<key>outputCaret</key>
 	<string>heuristic</string>
 	<key>outputFormat</key>

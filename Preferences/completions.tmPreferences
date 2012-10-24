@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>completions</string>
+	<string>Completions</string>
 	<key>scope</key>
 	<string>source.scss -meta.property-list</string>
 	<key>settings</key>

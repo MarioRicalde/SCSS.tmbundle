@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>background:${1:${2:transparent} image-url('${3:image.png}') ${4:left} ${5:top} ${6:no-repeat}};</string>
+	<string>@extend $0;</string>
 	<key>name</key>
-	<string>Background</string>
+	<string>@extend</string>
 	<key>scope</key>
 	<string>source.scss</string>
 	<key>tabTrigger</key>
-	<string>background</string>
+	<string>++</string>
 	<key>uuid</key>
-	<string>0D6354D0-B50E-47A8-9F42-C9B452660340</string>
+	<string>C2197513-C7E2-43A6-B3CB-84EFBBEC89D1</string>
 </dict>
 </plist>

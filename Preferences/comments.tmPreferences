@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>comments</string>
+	<string>Comments</string>
 	<key>scope</key>
 	<string>source.css, source.scss</string>
 	<key>settings</key>
