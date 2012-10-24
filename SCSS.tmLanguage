@@ -732,7 +732,7 @@
 						</dict>
 					</array>
 				</dict>
-				</array>
+			</array>
 		</dict>
 		<key>at_rule_media</key>
 		<dict>
@@ -740,13 +740,13 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>\s*((@)(media)\s*([\w-]+)?\b)</string>
+					<string>\s*((@)media)[\w]*\b\s*</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.at-rule.media.scss</string>
+							<string>keyword.control.at-rule.include.scss</string>
 						</dict>
 						<key>2</key>
 						<dict>
@@ -756,18 +756,11 @@
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>entity.other.text.scss</string>
-						</dict>
-						<key>4</key>
-						<dict>
-							<key>name</key>
-							<string>support.function.misc.css</string>
+							<string>keyword.control.operator</string>
 						</dict>
 					</dict>
-					<key>comment</key>
-					<string>Media with Selector</string>
 					<key>end</key>
-					<string>(\})?</string>
+					<string>[\)|\s\;]</string>
 					<key>name</key>
 					<string>meta.at-rule.media.scss</string>
 					<key>patterns</key>
@@ -776,27 +769,15 @@
 							<key>include</key>
 							<string>#function_attributes</string>
 						</dict>
+						<dict>
+							<key>include</key>
+							<string>#functions</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#logical_operators</string>
+						</dict>
 					</array>
-				</dict>
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.control.at-rule.import.css</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.keyword.css</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.function.scss</string>
-						</dict>
-					</dict>
 				</dict>
 			</array>
 		</dict>
@@ -962,7 +943,7 @@
 		<key>at_rule_while</key>
 		<dict>
 			<key>begin</key>
-			<string>\s{0,}((@)(while)\b)</string>
+			<string>\s*((@)(while)\b)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -1003,7 +984,7 @@
 		<key>at_rule_content</key>
 		<dict>
 			<key>begin</key>
-			<string>\s*((@)(content)\b)</string>
+			<string>\s*((@)(content))\b</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -1013,7 +994,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>\s*((;)|(?=\}))</string>
+			<string>\;</string>
 			<key>name</key>
 			<string>meta.at-rule.import.css</string>
 			<key>patterns</key>
@@ -1175,7 +1156,7 @@
 		<key>constant_property_value</key>
 		<dict>
 			<key>match</key>
-			<string>\b(absolute|all-scroll|always|armenian|auto|baseline|below|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|capitalize|center|char|circle|cjk-ideographic|col-resize|collapse|crosshair|dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|e-resize|ellipsis|fixed|georgian|groove|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|inline-block|inline|inset|inside|inter-ideograph|inter-word|italic|justify|katakana-iroha|katakana|keep-all|left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|medium|middle|move|n-resize|ne-resize|newspaper|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|oblique|outset|outside|overline|pointer|progress|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|s-resize|scroll|se-resize|separate|small-caps|solid|square|static|strict|super|sw-resize|table-footer-group|table-header-group|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical-ideographic|vertical-text|visible|w-resize|wait|whitespace|zero|true|false)\b</string>
+			<string>\b(absolute|all-scroll|always|armenian|auto|baseline|below|bidi-override|block|bold|bolder|both|bottom|break-all|break-word|capitalize|center|char|circle|cjk-ideographic|col-resize|collapse|crosshair|dashed|decimal-leading-zero|decimal|default|disabled|disc|distribute-all-lines|distribute-letter|distribute-space|distribute|dotted|double|e-resize|ellipsis|fixed|georgian|groove|hand|hebrew|help|hidden|hiragana-iroha|hiragana|horizontal|ideograph-alpha|ideograph-numeric|ideograph-parenthesis|ideograph-space|inactive|inherit|inline-block|inline|inset|inside|inter-ideograph|inter-word|italic|justify|katakana-iroha|katakana|keep-all|left|lighter|line-edge|line-through|line|list-item|loose|lower-alpha|lower-greek|lower-latin|lower-roman|lowercase|lr-tb|ltr|medium|middle|move|n-resize|ne-resize|newspaper|no-drop|no-repeat|nw-resize|none|normal|not-allowed|nowrap|oblique|outset|outside|overline|pointer|progress|relative|repeat-x|repeat-y|repeat|right|ridge|row-resize|rtl|s-resize|scroll|se-resize|separate|small-caps|solid|square|static|strict|super|sw-resize|table-footer-group|table-header-group|tb-rl|text-bottom|text-top|text|thick|thin|top|transparent|underline|upper-alpha|upper-latin|upper-roman|uppercase|vertical-ideographic|vertical-text|visible|w-resize|wait|whitespace|zero|true|false|vertical|horizontal)\b</string>
 			<key>name</key>
 			<string>support.constant.property-value.css</string>
 		</dict>
@@ -1980,7 +1961,7 @@
 		<key>variable_setting</key>
 		<dict>
 			<key>begin</key>
-			<string>(\$[A-Za-z0-9_-]+)\s*(\:)</string>
+			<string>\s*(\$[A-Za-z0-9_-]+)\s*(\:)</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
