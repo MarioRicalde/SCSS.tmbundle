@@ -692,7 +692,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>^\s*((@)include)\b ([\w-]+)\s*\(</string>
+					<string>\s*((@)include)\b </string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
@@ -710,9 +710,14 @@
 							<key>name</key>
 							<string>entity.name.function.scss</string>
 						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.text.scss</string>
+						</dict>
 					</dict>
 					<key>end</key>
-					<string>\)</string>
+					<string>[\)|\s\;]</string>
 					<key>name</key>
 					<string>meta.at-rule.include.scss</string>
 					<key>patterns</key>
@@ -720,6 +725,10 @@
 						<dict>
 							<key>include</key>
 							<string>#function_attributes</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#functions</string>
 						</dict>
 					</array>
 				</dict>
