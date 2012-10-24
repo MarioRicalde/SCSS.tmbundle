@@ -178,15 +178,23 @@ end
 	<string>word</string>
 	<key>input</key>
 	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>@C</string>
 	<key>name</key>
 	<string>Insert Color…</string>
-	<key>output</key>
-	<string>replaceSelectedText</string>
+	<key>outputCaret</key>
+	<string>heuristic</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
 	<key>scope</key>
-	<string>source.scss, meta.tag string.quoted -source</string>
+	<string>source.scss</string>
 	<key>uuid</key>
 	<string>24605721-E0AA-4F0E-8311-6219290C7A94</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
