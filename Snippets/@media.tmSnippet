@@ -5,7 +5,7 @@
 	<key>content</key>
 	<string>@media ${1:print} {
 	$0
-	}</string>
+}</string>
 	<key>name</key>
 	<string>@media</string>
 	<key>scope</key>

@@ -7,7 +7,7 @@
 // @TODO: Add docs to $1!
 //
 @mixin ${1:mixin-name}${2:(${3:\$params})} {
-  $0
+	$0
 }</string>
 	<key>name</key>
 	<string>= Shortcut to @mixin</string>
