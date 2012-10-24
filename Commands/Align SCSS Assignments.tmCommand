@@ -130,13 +130,23 @@ end
 </string>
 	<key>input</key>
 	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>@:</string>
 	<key>name</key>
 	<string>Align SCSS Assignments</string>
-	<key>output</key>
-	<string>replaceSelectedText</string>
+	<key>outputCaret</key>
+	<string>heuristic</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>source.scss</string>
 	<key>uuid</key>
 	<string>C5012C1B-2078-47B2-9E60-1CDE6B555AB8</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
