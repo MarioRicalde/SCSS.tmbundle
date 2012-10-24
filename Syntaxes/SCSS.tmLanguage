@@ -688,34 +688,42 @@
 		</dict>
 		<key>at_rule_include</key>
 		<dict>
-			<key>begin</key>
-			<string>\s*((@)(include)\b)</string>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.control.at-rule.include.scss</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.keyword.scss</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>Include with Attributes</string>
-			<key>end</key>
-			<string>((;)|(?=\}))</string>
-			<key>name</key>
-			<string>meta.at-rule.include.scss</string>
 			<key>patterns</key>
 			<array>
 				<dict>
-					<key>include</key>
-					<string>#functions</string>
+					<key>begin</key>
+					<string>^\s*((@)include)\b ([\w-]+)\s*\(</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.at-rule.include.scss</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.keyword.scss</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.scss</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\)</string>
+					<key>name</key>
+					<string>meta.at-rule.include.scss</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#function_attributes</string>
+						</dict>
+					</array>
 				</dict>
-			</array>
+				</array>
 		</dict>
 		<key>at_rule_media</key>
 		<dict>
