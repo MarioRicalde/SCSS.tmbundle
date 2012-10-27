@@ -1739,13 +1739,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.entity.scss</string>
+					<string>punctuation.definition.entity.css</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>(\.)[a-zA-Z0-9_-]+</string>
 			<key>name</key>
-			<string>entity.other.attribute-name.class.scss</string>
+			<string>entity.other.attribute-name.class.css</string>
 		</dict>
 		<key>selector_entities</key>
 		<dict>
@@ -1761,13 +1761,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuationctuation.definition.entity.scss</string>
+					<string>punctuationctuation.definition.entity.css</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>(#)[a-zA-Z][a-zA-Z0-9_-]*</string>
 			<key>name</key>
-			<string>entity.other.attribute-name.id.scss</string>
+			<string>entity.other.attribute-name.id.css</string>
 		</dict>
 		<key>selector_pseudo_class</key>
 		<dict>
@@ -1776,13 +1776,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.entity.scss</string>
+					<string>punctuation.definition.entity.css</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>(:)\b(link|visited|hover|active|focus|target|lang|disabled|enabled|checked|indeterminate|root|nth-child()|nth-last-child()|nth-of-type()|nth-last-of-type()|first-child|last-child|first-of-type|last-of-type|only-child|only-of-type|empty|not|valid|invalid)(\([0-9A-Za-z]*\))?</string>
 			<key>name</key>
-			<string>entity.other.attribute-name.pseudo-class.scss</string>
+			<string>entity.other.attribute-name.pseudo-class.css</string>
 		</dict>
 		<key>selector_pseudo_element</key>
 		<dict>
@@ -1791,13 +1791,13 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>punctuation.definition.entity.scss</string>
+					<string>punctuation.definition.entity.css</string>
 				</dict>
 			</dict>
 			<key>match</key>
 			<string>(:+)\b(after|before|first-letter|first-line|selection)\b</string>
 			<key>name</key>
-			<string>entity.other.attribute-name.pseudo-element.scss</string>
+			<string>entity.other.attribute-name.pseudo-element.css</string>
 		</dict>
 		<key>selector_placeholder</key>
 		<dict>
