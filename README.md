@@ -1,7 +1,7 @@
-SCSS Bundlet for TextMate 2
+SCSS Bundle for TextMate 2
 ==========================
 
-A [Sass & SCSS](http://sass-lang.com/) syntax bundle for [TextMate](https://github.com/textmate/textmate)
+A [SCSS](http://sass-lang.com/) syntax bundle for [TextMate](https://github.com/textmate/textmate)
 
 Click here for the [Sublime Text Package](https://github.com/kuroir/SCSS.tmbundle/tree/SublimeText2) or the [Chocolat Truffle](https://github.com/kuroir/SCSS.tmbundle/tree/Chocolat)
 
