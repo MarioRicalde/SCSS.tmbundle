@@ -1,0 +1,12 @@
+(menu command.new-rule
+    ---
+    (submenu @-Rules snippet.@import snippet.@media snippet.@extend snippet.@debug snippet.@warn)
+    (submenu [Control Directives] snippet.@if snippet.@for snippet.@each snippet.@while)
+    (submenu [Mixin Directives] snippet.@mixin snippet.@include)
+    snippet.@function
+    snippet.interpolation
+    snippet.background
+    ---
+    command.align-scss-assignments
+    ---
+    command.export-to-css)

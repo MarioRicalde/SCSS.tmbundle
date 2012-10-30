@@ -1,0 +1,8 @@
+(name @debug)
+
+(trigger
+    (tab debug))
+
+(only-in source.scss)
+
+(snippet [@debug %{0};])

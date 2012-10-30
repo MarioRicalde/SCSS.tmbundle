@@ -1,0 +1,8 @@
+(name Background)
+
+(trigger
+    (tab background))
+
+(only-in source.scss)
+
+(snippet [background:%{1="%{2="transparent"} image-url('%{3="image.png"}') %{4="left"} %{5="top"} %{6="no-repeat"}"};])

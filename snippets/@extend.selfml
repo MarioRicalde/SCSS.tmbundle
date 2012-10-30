@@ -1,0 +1,8 @@
+(name @extend)
+
+(trigger
+    (tab ++))
+
+(only-in source.scss)
+
+(snippet [@extend %{0};])

@@ -1,0 +1,10 @@
+(name @media)
+
+(trigger
+    (tab media))
+
+(only-in [source.css, source.scss])
+
+(snippet [@media %{1="print"} {
+	%{0}
+}])

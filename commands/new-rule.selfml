@@ -1,0 +1,32 @@
+(trigger
+    (key [[ctrl]B]))
+
+(name [Insert New Rule])
+
+(only-in source.scss)
+
+(input selection line)
+
+(save nothing)
+
+(script [#!/usr/bin/env ruby
+line = ENV['TM_CURRENT_LINE'].dup
+space = line.match(/^\s+/)
+space = space.nil? ? '' : space[0]
+line.strip!
+
+snippet   = <<-EOM
+<space>${1:selector} {
+<space>${0}
+<space>}
+EOM
+
+snippet.gsub!(/\<space\>/, space)
+
+unless line.empty?
+  line.gsub! /\$/, '\$'
+  snippet.sub! 'selector', line
+end
+
+print snippet.chomp
+])

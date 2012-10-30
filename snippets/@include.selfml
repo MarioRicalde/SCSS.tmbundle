@@ -1,0 +1,8 @@
+(name @include)
+
+(trigger
+    (tab +))
+
+(only-in [source.css, source.scss])
+
+(snippet [@include %{0};])

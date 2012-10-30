@@ -1,0 +1,53 @@
+(detector
+    (extension scss)
+    (extension css.scss))
+
+(in [source.css, source.scss]
+    (shell-variables
+        (TM_COMMENT_START //)
+        (TM_COMMENT_DISABLE_INDENT yes))
+    (comment.line //))
+
+(in [source.scss -meta.property-list])
+
+(indentation.decrease [^\s*\}])
+
+(indentation.increase [(^.*\{[^}]*$)])
+
+(in [source.css meta.property-list -meta.property-value,source.scss meta.property-list -meta.property-value])
+
+(in [source.css meta.property-value,source.scss meta.property-value])
+
+(in [source.scss, meta.property-list.css]
+    (pair <
+        >
+        (smart-typing))
+    (pair "
+        "
+        (smart-typing))
+    (pair `[`
+        `]`
+        (smart-typing))
+    (pair '
+        '
+        (smart-typing))
+    (pair [(]
+        [)]
+        (smart-typing))
+    (pair :
+        ;
+        (smart-typing))
+    (pair [{]
+        [}]
+        (smart-typing))
+    (pair /*
+        */
+        (smart-typing)))
+
+(in [source.scss comment.block.scss -source.scss.embedded]
+    (symbol-list
+        (transformation [s/\/\*\*\s*(.*?)\s*\*\//** $1 **/; s/\/\*.*?\*\*\//./; s/\/\*[^\*].*?[^\*]\*\///])))
+
+(in [source.scss meta.selector]
+    (symbol-list
+        (transformation [s/^\s*/CSS: /; s/\s+/ /g])))

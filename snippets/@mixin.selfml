@@ -1,0 +1,13 @@
+(name @mixin)
+
+(trigger
+    (tab =))
+
+(only-in source.scss)
+
+(snippet [// 
+// @TODO: Add docs to %{1}!
+//
+@mixin %{1="mixin-name"}%{2="(%{3="$params"})"} {
+	%{0}
+}])

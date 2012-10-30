@@ -1,0 +1,13 @@
+(name @function)
+
+(trigger
+    (tab function))
+
+(only-in source.scss)
+
+(snippet [// 
+// @TODO: Add docs to %{2}!
+//
+@function %{2="function-name"}($%{1="n"}) {
+	@return $%{1="n"} %{0};
+}])

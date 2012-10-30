@@ -1,0 +1,12 @@
+(name @while)
+
+(trigger
+    (tab while))
+
+(only-in source.scss)
+
+(snippet [$%{3="i"}: %{2="6"};
+@while $%{3="i"} > %{1="0"} {
+	%{4=".item-#{$%{3="i"}\\"}} { width: 2em * $%{3="i"}; }
+	%{0}
+}])

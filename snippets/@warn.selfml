@@ -1,0 +1,8 @@
+(name @warn)
+
+(trigger
+    (tab warn))
+
+(only-in source.scss)
+
+(snippet [@warn "%{0}";])

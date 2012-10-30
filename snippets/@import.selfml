@@ -1,0 +1,8 @@
+(name @import)
+
+(trigger
+    (tab +++))
+
+(only-in source.scss)
+
+(snippet [@import "%{0}";])

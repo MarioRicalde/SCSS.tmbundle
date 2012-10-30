@@ -1,5 +1,5 @@
 Chocolat Truffle for SCSS
-==============================
+============================== 
 
 A [SCSS](http://sass-lang.com/) truffle for [Chocolat](http://www.chocolatapp.com)
 

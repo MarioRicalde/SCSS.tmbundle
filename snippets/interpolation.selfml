@@ -1,0 +1,8 @@
+(name Interpolation)
+
+(trigger
+    (tab [#]))
+
+(only-in source.scss)
+
+(snippet [#{%{0}}])

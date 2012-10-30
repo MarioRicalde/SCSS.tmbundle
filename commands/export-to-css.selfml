@@ -1,0 +1,16 @@
+(trigger)
+
+(name [Export to CSS])
+
+(only-in source.scss)
+
+(input nothing)
+
+(save file)
+
+(script [#!/bin/sh
+SASS_OPTS="-t expanded --scss"
+
+cd ${TM_PROJECT_DIRECTORY}
+sass ${SASS_OPTS} "${TM_FILEPATH}":"${TM_FILENAME%.*}.css"
+echo "exported ${TM_FILENAME%.*}.css"])

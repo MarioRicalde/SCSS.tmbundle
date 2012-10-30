@@ -1,0 +1,10 @@
+(name @if)
+
+(trigger
+    (tab if))
+
+(only-in source.scss)
+
+(snippet [@if %{1="conditions"} {
+	%{0}
+}])
