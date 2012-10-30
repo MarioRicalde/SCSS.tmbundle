@@ -8,13 +8,13 @@
 	<string>#!/usr/bin/env bash
 [[ -f "${TM_SUPPORT_PATH}/lib/bash_init.sh" ]] &amp;&amp; . "${TM_SUPPORT_PATH}/lib/bash_init.sh"
 
-echo "$TM_SELECTED_TEXT" | sass-convert --from sass --to scss</string>
+echo "$TM_SELECTED_TEXT" | sass-convert --from css --to sass</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>name</key>
-	<string>Convert Selection from Sass to SCSS</string>
+	<string>Convert Selection from CSS to Sass</string>
 	<key>outputCaret</key>
 	<string>heuristic</string>
 	<key>outputFormat</key>
@@ -24,7 +24,7 @@ echo "$TM_SELECTED_TEXT" | sass-convert --from sass --to scss</string>
 	<key>scope</key>
 	<string>source.scss</string>
 	<key>uuid</key>
-	<string>4E2E7138-69AA-4BF1-A87E-8C45DE807B10</string>
+	<string>E59EB164-7064-48F2-A0A3-144FB0A21765</string>
 	<key>version</key>
 	<integer>2</integer>
 </dict>
