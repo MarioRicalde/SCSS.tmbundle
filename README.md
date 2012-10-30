@@ -1,7 +1,9 @@
-Sass for TextMate 2 Bundle
+SCSS Bundlet for TextMate 2
 ==========================
 
-A [Sass & SCSS](http://sass-lang.com/) syntax bundle for [TextMate](https://github.com/textmate/textmate) and [click here for Sublime Text 2](https://github.com/kuroir/SCSS.tmbundle/tree/SublimeText2)
+A [Sass & SCSS](http://sass-lang.com/) syntax bundle for [TextMate](https://github.com/textmate/textmate)
+
+Click here for the [Sublime Text Package](https://github.com/kuroir/SCSS.tmbundle/tree/SublimeText2) or the [Chocolat Truffle](https://github.com/kuroir/SCSS.tmbundle/tree/Chocolat)
 
 ## How to Install
 
@@ -17,6 +19,10 @@ A [Sass & SCSS](http://sass-lang.com/) syntax bundle for [TextMate](https://gith
 2. **Open** the new folder `cd ~/Library/Application\ Support/TextMate/Bundles`
 3. **Clone** to your new folder `git clone git://github.com/kuroir/SCSS.tmbundle.git "SCSS.tmbundle"`
 4. **Reload** TextMate Bundles `osascript -e 'tell app "TextMate" to reload bundles'`
+
+### TM2 Available Bundles
+
+*Coming Soon*
 
 ## How to Upgrade
 
