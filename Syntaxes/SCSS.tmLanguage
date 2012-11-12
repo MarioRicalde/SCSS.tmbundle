@@ -9,6 +9,10 @@
 		<string>scss</string>
 		<string>css.scss</string>
 	</array>
+	<key>foldingStartMarker</key>
+	<string>\{\s*$</string>
+	<key>foldingStopMarker</key>
+	<string>^\s*\}</string>
 	<key>keyEquivalent</key>
 	<string>^~S</string>
 	<key>name</key>
@@ -126,34 +130,22 @@
 				</dict>
 			</array>
 		</dict>
-		<key>at_rule_namespace</key>
+		<key>at_rule_content</key>
 		<dict>
 			<key>begin</key>
-			<string>\s*((@)namespace) ([\w-]*)\s*</string>
+			<string>\s*((@)(content))\b</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.control.at-rule.import.scss</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.keyword.scss</string>
-				</dict>
-				<key>3</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.function.scss</string>
+					<string>keyword.control.content.scss</string>
 				</dict>
 			</dict>
-			<key>comment</key>
-			<string>Namespace</string>
 			<key>end</key>
-			<string>\s*((;)|(?=\}))$</string>
+			<string>\;</string>
 			<key>name</key>
-			<string>meta.at-rule.namespace.scss</string>
+			<string>meta.at-rule.import.scss</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -162,222 +154,11 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#string_single</string>
+					<string>#selectors</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#string_double</string>
-				</dict>
-			</array>
-		</dict>
-		<key>at_rule_fontface</key>
-		<dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>begin</key>
-					<string>^\s*((@)font\-face)\s*([\w-]*)</string>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.control.at-rule.fontface.scss</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.keyword.scss</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.function.scss</string>
-						</dict>
-					</dict>
-					<key>comment</key>
-					<string>Font-Face with Attributes</string>
-					<key>end</key>
-					<string></string>
-					<key>name</key>
-					<string>meta.at-rule.fontface.scss</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>#function_attributes</string>
-						</dict>
-					</array>
-				</dict>
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.control.at-rule.fontface.scss</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.keyword.scss</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.function.scss</string>
-						</dict>
-					</dict>
-					<key>comment</key>
-					<string>Simple Font-Face</string>
-					<key>match</key>
-					<string>^\s*((@)font\-face) ([\w-]{1,})</string>
-					<key>name</key>
-					<string>meta.at-rule.mixin.scss</string>
-				</dict>
-			</array>
-		</dict>
-		<key>at_rule_page</key>
-		<dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>begin</key>
-					<string>^\s*((@)page) ([\w-]*)</string>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.control.at-rule.fontface.scss</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.keyword.scss</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.function.scss</string>
-						</dict>
-					</dict>
-					<key>comment</key>
-					<string>Page with Attributes</string>
-					<key>end</key>
-					<string></string>
-					<key>name</key>
-					<string>meta.at-rule.fontface.scss</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>#function_attributes</string>
-						</dict>
-					</array>
-				</dict>
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.control.at-rule.mixin.scss</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.keyword.scss</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.function.scss</string>
-						</dict>
-					</dict>
-					<key>comment</key>
-					<string>Simple Page</string>
-					<key>match</key>
-					<string>^\s*((@)page) ([\w-]{1,})</string>
-					<key>name</key>
-					<string>meta.at-rule.mixin.scss</string>
-				</dict>
-			</array>
-		</dict>
-		<key>at_rule_keyframes</key>
-		<dict>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>begin</key>
-					<string>^\s*((@)(\-[\w\-]*\-)?keyframes)\s*([\w-]*)</string>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.control.at-rule.keyframes.scss</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.keyword.scss</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.keyword.scss</string>
-						</dict>
-						<key>4</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.function.scss</string>
-						</dict>
-					</dict>
-					<key>comment</key>
-					<string>Keyframes with Attributes</string>
-					<key>end</key>
-					<string></string>
-					<key>name</key>
-					<string>meta.at-rule.keyframes.scss</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>#function_attributes</string>
-						</dict>
-					</array>
-				</dict>
-				<dict>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.control.at-rule.keyframes.scss</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.keyword.scss</string>
-						</dict>
-						<key>3</key>
-						<dict>
-							<key>name</key>
-							<string>punctuation.definition.keyword.scss</string>
-						</dict>
-						<key>4</key>
-						<dict>
-							<key>name</key>
-							<string>entity.name.function.scss</string>
-						</dict>
-					</dict>
-					<key>comment</key>
-					<string>Simple Keyframe</string>
-					<key>match</key>
-					<string>^\s*((@)keyframes) ([\w-]{1,})</string>
-					<key>name</key>
-					<string>meta.at-rule.keyframes.scss</string>
+					<string>#property_values</string>
 				</dict>
 			</array>
 		</dict>
@@ -495,6 +276,73 @@
 				<dict>
 					<key>include</key>
 					<string>#property_values</string>
+				</dict>
+			</array>
+		</dict>
+		<key>at_rule_fontface</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>^\s*((@)font\-face)\s*([\w-]*)</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.at-rule.fontface.scss</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.keyword.scss</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.scss</string>
+						</dict>
+					</dict>
+					<key>comment</key>
+					<string>Font-Face with Attributes</string>
+					<key>end</key>
+					<string></string>
+					<key>name</key>
+					<string>meta.at-rule.fontface.scss</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#function_attributes</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.at-rule.fontface.scss</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.keyword.scss</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.scss</string>
+						</dict>
+					</dict>
+					<key>comment</key>
+					<string>Simple Font-Face</string>
+					<key>match</key>
+					<string>^\s*((@)font\-face) ([\w-]{1,})</string>
+					<key>name</key>
+					<string>meta.at-rule.mixin.scss</string>
 				</dict>
 			</array>
 		</dict>
@@ -734,6 +582,83 @@
 				</dict>
 			</array>
 		</dict>
+		<key>at_rule_keyframes</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>^\s*((@)(\-[\w\-]*\-)?keyframes)\s*([\w-]*)</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.at-rule.keyframes.scss</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.keyword.scss</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.keyword.scss</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.scss</string>
+						</dict>
+					</dict>
+					<key>comment</key>
+					<string>Keyframes with Attributes</string>
+					<key>end</key>
+					<string></string>
+					<key>name</key>
+					<string>meta.at-rule.keyframes.scss</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#function_attributes</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.at-rule.keyframes.scss</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.keyword.scss</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.keyword.scss</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.scss</string>
+						</dict>
+					</dict>
+					<key>comment</key>
+					<string>Simple Keyframe</string>
+					<key>match</key>
+					<string>^\s*((@)keyframes) ([\w-]{1,})</string>
+					<key>name</key>
+					<string>meta.at-rule.keyframes.scss</string>
+				</dict>
+			</array>
+		</dict>
 		<key>at_rule_media</key>
 		<dict>
 			<key>patterns</key>
@@ -848,6 +773,50 @@
 				</dict>
 			</array>
 		</dict>
+		<key>at_rule_namespace</key>
+		<dict>
+			<key>begin</key>
+			<string>\s*((@)namespace) ([\w-]*)\s*</string>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.control.at-rule.import.scss</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.keyword.scss</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.scss</string>
+				</dict>
+			</dict>
+			<key>comment</key>
+			<string>Namespace</string>
+			<key>end</key>
+			<string>\s*((;)|(?=\}))$</string>
+			<key>name</key>
+			<string>meta.at-rule.namespace.scss</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#variable</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string_single</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string_double</string>
+				</dict>
+			</array>
+		</dict>
 		<key>at_rule_option</key>
 		<dict>
 			<key>captures</key>
@@ -869,6 +838,73 @@
 			<string>^\s*((@)option\b)\s*</string>
 			<key>name</key>
 			<string>meta.at-rule.option.scss</string>
+		</dict>
+		<key>at_rule_page</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>^\s*((@)page) ([\w-]*)</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.at-rule.fontface.scss</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.keyword.scss</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.scss</string>
+						</dict>
+					</dict>
+					<key>comment</key>
+					<string>Page with Attributes</string>
+					<key>end</key>
+					<string></string>
+					<key>name</key>
+					<string>meta.at-rule.fontface.scss</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#function_attributes</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.at-rule.mixin.scss</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.keyword.scss</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.scss</string>
+						</dict>
+					</dict>
+					<key>comment</key>
+					<string>Simple Page</string>
+					<key>match</key>
+					<string>^\s*((@)page) ([\w-]{1,})</string>
+					<key>name</key>
+					<string>meta.at-rule.mixin.scss</string>
+				</dict>
+			</array>
 		</dict>
 		<key>at_rule_return</key>
 		<dict>
@@ -981,38 +1017,6 @@
 				</dict>
 			</array>
 		</dict>
-		<key>at_rule_content</key>
-		<dict>
-			<key>begin</key>
-			<string>\s*((@)(content))\b</string>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>keyword.control.content.scss</string>
-				</dict>
-			</dict>
-			<key>end</key>
-			<string>\;</string>
-			<key>name</key>
-			<string>meta.at-rule.import.scss</string>
-			<key>patterns</key>
-			<array>
-				<dict>
-					<key>include</key>
-					<string>#variable</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#selectors</string>
-				</dict>
-				<dict>
-					<key>include</key>
-					<string>#property_values</string>
-				</dict>
-			</array>
-		</dict>
 		<key>comment_block</key>
 		<dict>
 			<key>begin</key>
@@ -1051,6 +1055,13 @@
 			<string>\b(aqua|black|blue|fuchsia|gray|green|lime|maroon|navy|olive|orange|purple|red|silver|teal|white|yellow)\b</string>
 			<key>name</key>
 			<string>support.constant.color.w3c-standard-color-name.scss</string>
+		</dict>
+		<key>constant_default</key>
+		<dict>
+			<key>match</key>
+			<string>\!default</string>
+			<key>name</key>
+			<string>keyword.other.default.scss</string>
 		</dict>
 		<key>constant_deprecated_color</key>
 		<dict>
@@ -1125,20 +1136,6 @@
 			<key>name</key>
 			<string>keyword.other.important.scss</string>
 		</dict>
-		<key>constant_default</key>
-		<dict>
-			<key>match</key>
-			<string>\!default</string>
-			<key>name</key>
-			<string>keyword.other.default.scss</string>
-		</dict>
-		<key>constant_optional</key>
-		<dict>
-			<key>match</key>
-			<string>\!optional</string>
-			<key>name</key>
-			<string>keyword.other.optional.scss</string>
-		</dict>
 		<key>constant_mathematical_symbols</key>
 		<dict>
 			<key>match</key>
@@ -1152,6 +1149,13 @@
 			<string>[\+|\-]?(\s*)?([0-9]+(\.[0-9]+)?|\.[0-9]+)</string>
 			<key>name</key>
 			<string>constant.numeric.scss</string>
+		</dict>
+		<key>constant_optional</key>
+		<dict>
+			<key>match</key>
+			<string>\!optional</string>
+			<key>name</key>
+			<string>keyword.other.optional.scss</string>
 		</dict>
 		<key>constant_property_value</key>
 		<dict>
@@ -1769,6 +1773,21 @@
 			<key>name</key>
 			<string>entity.other.attribute-name.id.css</string>
 		</dict>
+		<key>selector_placeholder</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.entity.scss</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(\%)[a-zA-Z0-9_-]+</string>
+			<key>name</key>
+			<string>entity.other.attribute-name.placeholder.scss</string>
+		</dict>
 		<key>selector_pseudo_class</key>
 		<dict>
 			<key>captures</key>
@@ -1798,21 +1817,6 @@
 			<string>(:+)\b(after|before|first-letter|first-line|selection)\b</string>
 			<key>name</key>
 			<string>entity.other.attribute-name.pseudo-element.css</string>
-		</dict>
-		<key>selector_placeholder</key>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>punctuation.definition.entity.scss</string>
-				</dict>
-			</dict>
-			<key>match</key>
-			<string>(\%)[a-zA-Z0-9_-]+</string>
-			<key>name</key>
-			<string>entity.other.attribute-name.placeholder.scss</string>
 		</dict>
 		<key>selectors</key>
 		<dict>
