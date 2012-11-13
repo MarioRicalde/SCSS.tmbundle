@@ -1,5 +1,4 @@
-Sass for Sublime Text 2 Plugin
-==============================
+![](http://i.imgur.com/AipJU.png)
 
 A [Sass & SCSS](http://sass-lang.com/) syntax package for [Sublime Text 2](http://www.sublimetext.com)
 
