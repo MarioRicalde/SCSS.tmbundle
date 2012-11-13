@@ -1,5 +1,4 @@
-Chocolat Truffle for SCSS
-============================== 
+![](http://i.imgur.com/91bA1.png)
 
 A [SCSS](http://sass-lang.com/) truffle for [Chocolat](http://www.chocolatapp.com)
 
