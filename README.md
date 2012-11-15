@@ -27,7 +27,8 @@ A *[SCSS](http://sass-lang.com/) syntax bundle* for [TextMate](https://github.co
 
 ## How to Upgrade
 
-Repeat Install
+1. **Open** the bundle's folder `cd ~/Library/Application\ Support/Avian/Bundles`
+2. **Pull** new version `git pull origin master`
 
 ## Credits
 
