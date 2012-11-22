@@ -25,6 +25,10 @@ A *[SCSS](http://sass-lang.com/) syntax bundle* for [TextMate](https://github.co
 
 *Coming Soon*
 
+### Textastic for iPad
+
+[Instructions](http://www.textasticapp.com/v4/manual/lessons/How_can_I_add_my_own_syntax_definitions__themes_and_templates.html)
+
 ## How to Upgrade
 
 1. **Open** the bundle's folder `cd ~/Library/Application\ Support/Avian/Bundles`
