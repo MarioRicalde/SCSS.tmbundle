@@ -33,7 +33,7 @@ Repeat Install
 
 ## Error loading syntax file?
 
-If your getting this error ([screenshot](http://d.pr/RSdi)), follow these steps to clear the syntax cache:
+If you're getting this error ([screenshot](http://d.pr/RSdi)), follow these steps to clear the syntax cache:
 
 1. **Open** a .scss file
 2. In the **View** menu → **Syntax** → **CSS**
