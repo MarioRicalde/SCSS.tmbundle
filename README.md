@@ -36,19 +36,17 @@ A *[SCSS](http://sass-lang.com/) syntax bundle* for [TextMate](https://github.co
 
 ## Credits
 
-**[Stephen Way](http://github.com/stephenway)** **Current Maintainer** of this Sass syntax highlighter. Currently performing maintenance on the grammar file and improving the experience.
+**[Stephen Way](http://github.com/stephenway)** **Current Maintainer**
 
-**[Mario Ricalde](http://github.com/kuroir)** Rewrote the SCSS Grammar file, made the first release of the bundle, worked on support for Sublime Text 2, and TextMate 2.
+Added support for Chocolat.
 
-**[Charles Roper](http://github.com/charlesr)** Contributed to the Sublime Text 2 Branch and worked on E-TextEditor compatibility in early stages.
+**[Mario Ricalde](http://github.com/kuroir)** **Creator** 
 
-**[Chris Eppstein](http://github.com/chriseppstein)** *(Sass Core Dev Team)* Developed the first TextMate SCSS Bundle. Mario based his grammar off Chris's and also got a lot of feedback from Chris
+Added support for Sublime Text 2, and TextMate 2.
 
-**[doctyper](http://github.com/doctyper)** Contributed with the first Sublime Text 2 hotfix to the original SCSS.tmbundle.
+**[Chris Eppstein](http://github.com/chriseppstein)** Creator of the original TextMate Bundle.
 
-**[Vadim Makeev](https://github.com/pepelsbey)** Major Contributor to the project.
-
-*And many more!*
+**[…and many more.](https://github.com/kuroir/SCSS.tmbundle/graphs/contributors)**
 
 ## License
 
