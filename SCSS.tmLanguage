@@ -665,13 +665,13 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>\s*((@)media)[\w]*\b\s*</string>
+					<string>^\s*((@)media)(?=.*?\{)</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.at-rule.include.scss</string>
+							<string>keyword.control.at-rule.media.scss</string>
 						</dict>
 						<key>2</key>
 						<dict>
@@ -681,11 +681,11 @@
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.operator</string>
+							<string>support.constant.media.scss</string>
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>[\)|\s\;]</string>
+					<string>\s*(?=\{)</string>
 					<key>name</key>
 					<string>meta.at-rule.media.scss</string>
 					<key>patterns</key>
@@ -712,7 +712,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>^\s*((@)mixin) ([\w-]{1,})\s{0,2}\(</string>
+					<string>\s*((@)mixin) ([\w-]*)\s*\(</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
