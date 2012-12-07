@@ -532,7 +532,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>\s*(?=\;)</string>
+					<string>\s*[\)|\s\;]</string>
 					<key>name</key>
 					<string>meta.at-rule.include.scss</string>
 					<key>patterns</key>
