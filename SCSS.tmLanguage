@@ -7,7 +7,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>scss</string>
-		<string>css</string>
+		<string>css.scss</string>
 	</array>
 	<key>foldingStartMarker</key>
 	<string>\{\s*$</string>
@@ -1531,10 +1531,10 @@
 			<key>name</key>
 			<string>support.type.property-name.scss</string>
 		</dict>
-		<key>property_name2</key>
+		<key>property_name_vendor</key>
 		<dict>
 			<key>comment</key>
-			<string>Reversal order is important; KEEP IT. Also when adding new properties add them to the error checker below!</string>
+			<string>Vendor Prefixes</string>
 			<key>match</key>
 			<string>((-moz-|-webkit-)?appearance|(-webkit-|-moz-)?background-clip|(-moz-|-webkit-)?animation(-duration|-delay|-name|-iteration-count)?|(-moz-|-webkit-|-ms-|-o-|-khtml-)?box(-shadow|-sizing)|(-moz-|-webkit-|-ms-|-o-|-khtml-)?border-(bottom-|top-)?(right-|left-)?radius(-bottomleft|-bottomright|-topleft|-topright)?|(-webkit-|-moz-|-ms-)?backface-visibility|(-moz-|-webkit-|-ms-|-o-|-khtml-)?transform(-style)?|(-webkit-|-moz-|-ms-|-o-)?transition(-delay|-duration|-property)?|(-moz-|-webkit-)?overflow-scrolling|(-moz-|-webkit-)?user-select|(-ms-|-o-)?text-overflow|-webkit-mask-(image|size|position)|(-webkit-|-moz-|-ms-)?perspective|(-webkit-)?font-smoothing|(-webkit-|-moz-)?hyphens|(-ms-)?filter|(-webkit-|-ms-)?text-size-adjust|-ms-interpolation-mode|behavior)\b</string>
 			<key>name</key>
@@ -1557,7 +1557,7 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#property_name2</string>
+					<string>#property_name_vendor</string>
 				</dict>
 				<dict>
 					<key>include</key>
