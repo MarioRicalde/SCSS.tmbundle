@@ -1,0 +1,4 @@
+{
+  "extensions": ["scss", "scss.erb"],
+  "hidden_extensions": ["sublime-snippet", "tmLanguage", "tmTheme", "tmSnippet", "tmPreferences"]
+}
