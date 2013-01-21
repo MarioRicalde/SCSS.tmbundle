@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>property:value</string>
+	<string>Property Value Completions</string>
 	<key>scope</key>
 	<string>source.css meta.property-value,source.scss meta.property-value</string>
 	<key>settings</key>

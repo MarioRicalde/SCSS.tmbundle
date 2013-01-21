@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>symbol list:selector</string>
+	<string>Symbol List: Selector</string>
 	<key>scope</key>
-	<string>source.css meta.selector,source.scss meta.selector</string>
+	<string>source.scss meta.selector</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>

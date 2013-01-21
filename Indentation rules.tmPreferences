@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>name</key>
-	<string>Indentation rules</string>
+	<string>Indentation Rules</string>
 	<key>scope</key>
 	<string>source.scss</string>
 	<key>settings</key>
