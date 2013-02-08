@@ -493,28 +493,28 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>\s*(url)\s*(\()\s*</string>
+					<string>\s*(url)?\s*(?:\(|"|')\s*</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>support.function.url.css</string>
+							<string>support.function.url.scss</string>
 						</dict>
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.section.function.css</string>
+							<string>punctuation.section.function.scss</string>
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>\s*(\))\s*</string>
+					<string>\s*(?:"|'|\))\s*</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.section.function.css</string>
+							<string>punctuation.section.function.scss</string>
 						</dict>
 					</dict>
 					<key>patterns</key>
@@ -523,7 +523,7 @@
 							<key>match</key>
 							<string>[^'") \t]+</string>
 							<key>name</key>
-							<string>variable.parameter.url.css</string>
+							<string>variable.parameter.url.scss</string>
 						</dict>
 						<dict>
 							<key>include</key>
@@ -699,15 +699,7 @@
 					<array>
 						<dict>
 							<key>include</key>
-							<string>#function_attributes</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#functions</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>#logical_operators</string>
+							<string>#media-query-list</string>
 						</dict>
 					</array>
 				</dict>
