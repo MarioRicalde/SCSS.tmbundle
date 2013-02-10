@@ -672,7 +672,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>^\s*((@)media)(?=.*?\{)</string>
+					<string>\s*((@)media\b[\w\s]*)\s*(?:.*?\{)?</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
