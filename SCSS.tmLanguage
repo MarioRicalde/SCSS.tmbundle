@@ -672,11 +672,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-<<<<<<< HEAD
 					<string>\s*(?=^\s*@media\s*.*?\{)</string>
-=======
-					<string>\s*((@)media\b[\w\s]*)\s*(?:.*?\{)?</string>
->>>>>>> 42ef77e9fecaca2d931780221a3d451623a61b7a
 					<key>captures</key>
 					<dict>
 						<key>1</key>
