@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Smart Typing Pairs</string>
 	<key>scope</key>
-	<string>source.scss, meta.property-list.css</string>
+	<string>source.scss</string>
 	<key>settings</key>
 	<dict>
 		<key>smartTypingPairs</key>

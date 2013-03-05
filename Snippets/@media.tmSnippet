@@ -9,7 +9,7 @@
 	<key>name</key>
 	<string>@media</string>
 	<key>scope</key>
-	<string>source.css, source.scss</string>
+	<string>source.scss</string>
 	<key>tabTrigger</key>
 	<string>media</string>
 	<key>uuid</key>
