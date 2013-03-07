@@ -8,11 +8,9 @@ A *[SCSS](http://sass-lang.com/) syntax bundle* for [TextMate](https://github.co
 
 ## How to Install
 
-### Git with TextMate 2 *(Recommended)*
+### TextMate 2 *(Recommended)*
 
-1. Make a **new bundles folder** `mkdir -p ~/Library/Application\ Support/Avian/Bundles`
-2. **Open** the new folder `cd ~/Library/Application\ Support/Avian/Bundles`
-3. **Clone** to your new folder `git clone git://github.com/kuroir/SCSS.tmbundle.git "SCSS.tmbundle"`
+Open Preferences, in the Bundles tab, check *SCSS* to automatically install the bundle.
 
 ### Git with TextMate 1
 
