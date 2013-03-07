@@ -19,9 +19,6 @@ Open Preferences, in the Bundles tab, check *SCSS* to automatically install the 
 3. **Clone** to your new folder `git clone git://github.com/kuroir/SCSS.tmbundle.git "SCSS.tmbundle"`
 4. **Reload** TextMate Bundles `osascript -e 'tell app "TextMate" to reload bundles'`
 
-### TM2 Available Bundles
-
-*Coming Soon*
 
 ### Textastic for iPad
 
