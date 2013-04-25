@@ -35,7 +35,7 @@ Open Preferences, in the Bundles tab, check *SCSS* to automatically install the 
 
 Added support for Chocolat.
 
-**[Mario Ricalde](http://github.com/kuroir)** **Creator** 
+**[Mario Ricalde](http://github.com/kuroir) ([Site](http://mario.ricalde.mx))** **Creator** 
 
 Added support for Sublime Text 2, and TextMate 2.
 
