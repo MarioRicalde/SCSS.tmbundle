@@ -26,3 +26,5 @@ Repeat Install
 **[Stephen Way](http://github.com/stephenway)** **Creator & Current Maintainer**
 
 **[…and many more.](https://github.com/kuroir/SCSS.tmbundle/graphs/contributors)**
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/MarioRicalde/scss.tmbundle/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
