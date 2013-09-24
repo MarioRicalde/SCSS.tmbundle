@@ -56,3 +56,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 Except as contained in this notice, the name(s) of the above copyright holders shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization.
 
 Contributors to this project agree to grant all rights to the copyright holder of the primary product. Attribution is maintained in the source control history of the product.
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/MarioRicalde/scss.tmbundle/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
