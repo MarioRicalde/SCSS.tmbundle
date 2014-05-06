@@ -31,17 +31,24 @@ Open Preferences, in the Bundles tab, check *SCSS* to automatically install the 
 
 ## Credits
 
-**[Stephen Way](http://github.com/stephenway)** **Current Maintainer**
+**[Enrique Canals](http://github.com/enriquecanals) ([Site](http://enriquecanals.com))** **Current Maintainer**
 
-Added support for Chocolat.
+Added support for Atom.
 
-**[Mario Ricalde](http://github.com/marioricalde) ([Site](http://mario.ricalde.mx))** **Creator** 
+**[Mario Ricalde](http://github.com/marioricalde) ([Site](http://mario.ricalde.mx))** **Creator & Advisor**
 
 Added support for Sublime Text 2, and TextMate 2.
 
-**[Chris Eppstein](http://github.com/chriseppstein)** Creator of the original TextMate Bundle.
+**[Chris Eppstein](http://github.com/chriseppstein)**
+
+Creator of the original TextMate Bundle.
+
+**[Stephen Way](http://github.com/stephenway)**
+
+Added support for Chocolat.
 
 **[…and many more.](https://github.com/kuroir/SCSS.tmbundle/graphs/contributors)**
+
 
 ## License
 
