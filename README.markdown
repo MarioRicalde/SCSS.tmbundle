@@ -8,7 +8,7 @@ A [Sass & SCSS](http://sass-lang.com/) syntax package for [Sublime Text 2](http:
 
 1. Package Control: **Install Package** `SCSS`
 2. **Restart** Sublime Text
-    
+
 ### Git
 
 1. **Clone** to your packages folder `git clone -b SublimeText2 git://github.com/kuroir/SCSS.tmbundle.git SCSS`
@@ -43,15 +43,28 @@ If your getting this error ([screenshot](http://d.pr/RSdi)), follow these steps 
 
 ## Credits
 
-**[Stephen Way](http://github.com/stephenway)** **Current Maintainer**
+**[Enrique Canals](http://github.com/enriquecanals) ([Site](http://enriquecanals.com))** **Current Maintainer**
 
-**[Mario Ricalde](http://github.com/kuroir)** **Creator** 
+Added support for Atom.
+
+**[Mario Ricalde](http://github.com/marioricalde) ([Site](http://mario.ricalde.mx))** **Creator & Advisor**
+
+Added support for Sublime Text 2, and TextMate 2.
+
+**[Chris Eppstein](http://github.com/chriseppstein)**
+
+Creator of the original TextMate Bundle.
+
+**[Stephen Way](http://github.com/stephenway)**
+
+Added support for Chocolat.
 
 **[…and many more.](https://github.com/kuroir/SCSS.tmbundle/graphs/contributors)**
 
+
 ## License
 
-##### SCSS.tmbundle Copyright (c) 2012 Mario "Kuroir" Ricalde
+##### SCSS.tmbundle Copyright (c) 2012 Mario Ricalde
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
