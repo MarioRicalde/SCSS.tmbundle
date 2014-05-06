@@ -1,0 +1,12 @@
+{
+  "name": "SCSStmbundle.atom",
+  "version": "0.0.0",
+  "description": "An SCSS syntax package for Atom",
+  "repository": "https://github.com/atom/SCSStmbundle.atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}

@@ -1,6 +1,8 @@
 ![](http://i.imgur.com/mFFD1.png)
+### For:
+![](https://atom.io/assets/logo-579cbedf99b80be71b85354646fe9b78.png)
 
-A *[SCSS](http://sass-lang.com/) syntax bundle* for [TextMate](https://github.com/textmate/textmate)
+A *[SCSS](http://sass-lang.com/) syntax bundle* for [Atom](https://github.com/atom/atom)
 
 ## Also Available
 
@@ -8,40 +10,28 @@ A *[SCSS](http://sass-lang.com/) syntax bundle* for [TextMate](https://github.co
 
 ## How to Install
 
-### TextMate 2 *(Recommended)*
-
-Open Preferences, in the Bundles tab, check *SCSS* to automatically install the bundle.
-
-### Git with TextMate 1
-
-1. Make a **new bundles folder** `mkdir -p ~/Library/Application\ Support/TextMate/Bundles`
-2. **Open** the new folder `cd ~/Library/Application\ Support/TextMate/Bundles`
-3. **Clone** to your new folder `git clone git://github.com/kuroir/SCSS.tmbundle.git "SCSS.tmbundle"`
-4. **Reload** TextMate Bundles `osascript -e 'tell app "TextMate" to reload bundles'`
-
-
-### Textastic for iPad
-
-[Instructions](http://www.textasticapp.com/v4/manual/lessons/How_can_I_add_my_own_syntax_definitions__themes_and_templates.html)
-
-## How to Upgrade
-
-1. **Open** the bundle's folder `cd ~/Library/Application\ Support/Avian/Bundles`
-2. **Pull** new version `git pull origin master`
+### Atom Package Manager *(Recommended)*
 
 ## Credits
 
-**[Stephen Way](http://github.com/stephenway)** **Current Maintainer**
+**[Enrique Canals](http://github.com/enriquecanals) ([Site](http://enriquecanals.com))** **Current Maintainer**
 
-Added support for Chocolat.
+Added support for Atom.
 
-**[Mario Ricalde](http://github.com/marioricalde) ([Site](http://mario.ricalde.mx))** **Creator** 
+**[Mario Ricalde](http://github.com/marioricalde) ([Site](http://mario.ricalde.mx))** **Creator & Advisor**
 
 Added support for Sublime Text 2, and TextMate 2.
 
-**[Chris Eppstein](http://github.com/chriseppstein)** Creator of the original TextMate Bundle.
+**[Chris Eppstein](http://github.com/chriseppstein)**
+
+Creator of the original TextMate Bundle.
+
+**[Stephen Way](http://github.com/stephenway)**
+
+Added support for Chocolat.
 
 **[…and many more.](https://github.com/kuroir/SCSS.tmbundle/graphs/contributors)**
+
 
 ## License
 
