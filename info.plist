@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>contactEmailRot13</key>
-	<string>fgrcurapjnl@zr.pbz</string>
+	<string>znevb@evpnyqr.zk</string>
 	<key>contactName</key>
-	<string>Stephen Way</string>
+	<string>Mario Ricalde</string>
 	<key>description</key>
 	<string>&lt;a href="http://sass-lang.com"&gt;Syntactically awesome stylesheets&lt;/a&gt; are translated to well-formatted, standard CSS using the command line tool or a web-framework plugin. This bundle has syntax highlight, lots of snippets, validation, and more.</string>
 	<key>mainMenu</key>
@@ -48,16 +48,6 @@
 				<key>name</key>
 				<string>@-Rules</string>
 			</dict>
-			<key>9E4E44BF-A508-41B0-A75F-71361268FB9C</key>
-			<dict>
-				<key>items</key>
-				<array>
-					<string>A24F91CB-A3E5-4907-8259-5E7645E39BAF</string>
-					<string>ECD46162-8C51-4E8C-A859-CC0B5AD320AC</string>
-				</array>
-				<key>name</key>
-				<string>Mixin Directives</string>
-			</dict>
 			<key>964A8B30-3626-45A3-A599-2D2B41B3C3CB</key>
 			<dict>
 				<key>items</key>
@@ -69,6 +59,16 @@
 				</array>
 				<key>name</key>
 				<string>Control Directives</string>
+			</dict>
+			<key>9E4E44BF-A508-41B0-A75F-71361268FB9C</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>A24F91CB-A3E5-4907-8259-5E7645E39BAF</string>
+					<string>ECD46162-8C51-4E8C-A859-CC0B5AD320AC</string>
+				</array>
+				<key>name</key>
+				<string>Mixin Directives</string>
 			</dict>
 		</dict>
 	</dict>
