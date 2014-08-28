@@ -1698,6 +1698,21 @@
 				</dict>
 			</array>
 		</dict>
+		<key>selector_ampersand_class</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.entity.css</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(\&amp;)[a-zA-Z0-9_-]+</string>
+			<key>name</key>
+			<string>entity.other.attribute-name.class.css</string>
+		</dict>
 		<key>selector_attribute</key>
 		<dict>
 			<key>captures</key>
@@ -1838,6 +1853,10 @@
 				<dict>
 					<key>include</key>
 					<string>#selector_class</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#selector_ampersand_class</string>
 				</dict>
 				<dict>
 					<key>include</key>
