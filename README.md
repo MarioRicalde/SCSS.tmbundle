@@ -4,7 +4,7 @@ A *[SCSS](http://sass-lang.com/) syntax bundle* for [TextMate](https://github.co
 
 ## Also Available
 
-[![SCSS Sublime Text Package](http://i.imgur.com/0VQjy.png)](https://github.com/kuroir/SCSS.tmbundle/tree/SublimeText2) [![SCSS Chocolat Truffle](http://i.imgur.com/NlYle.png)](https://github.com/kuroir/SCSS.tmbundle/tree/Chocolat)
+[![SCSS Sublime Text Package](http://i.imgur.com/0VQjy.png)](https://github.com/MarioRicalde/SCSS.tmbundle/tree/SublimeText2) [![SCSS Chocolat Truffle](http://i.imgur.com/NlYle.png)](https://github.com/MarioRicalde/SCSS.tmbundle/tree/Chocolat)
 
 ## How to Install
 
@@ -16,7 +16,7 @@ Open Preferences, in the Bundles tab, check *SCSS* to automatically install the 
 
 1. Make a **new bundles folder** `mkdir -p ~/Library/Application\ Support/TextMate/Bundles`
 2. **Open** the new folder `cd ~/Library/Application\ Support/TextMate/Bundles`
-3. **Clone** to your new folder `git clone git://github.com/kuroir/SCSS.tmbundle.git "SCSS.tmbundle"`
+3. **Clone** to your new folder `git clone git://github.com/MarioRicalde/SCSS.tmbundle.git "SCSS.tmbundle"`
 4. **Reload** TextMate Bundles `osascript -e 'tell app "TextMate" to reload bundles'`
 
 
@@ -35,7 +35,7 @@ Open Preferences, in the Bundles tab, check *SCSS* to automatically install the 
 
 Added support for Atom.
 
-**[Mario Ricalde](http://github.com/marioricalde) ([Site](http://mario.ricalde.mx))** **Creator & Advisor**
+**[Mario Ricalde](http://github.com/MarioRicalde) ([Site](http://mario.ricalde.mx))** **Creator & Advisor**
 
 Added support for Sublime Text 2, and TextMate 2.
 
@@ -47,7 +47,7 @@ Creator of the original TextMate Bundle.
 
 Added support for Chocolat.
 
-**[…and many more.](https://github.com/kuroir/SCSS.tmbundle/graphs/contributors)**
+**[…and many more.](https://github.com/MarioRicalde/SCSS.tmbundle/graphs/contributors)**
 
 
 ## License
