@@ -485,11 +485,11 @@
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#string-double</string>
+					<string>#string_double</string>
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#string-single</string>
+					<string>#string_single</string>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -527,11 +527,11 @@
 						</dict>
 						<dict>
 							<key>include</key>
-							<string>#string-single</string>
+							<string>#string_single</string>
 						</dict>
 						<dict>
 							<key>include</key>
-							<string>#string-double</string>
+							<string>#string_double</string>
 						</dict>
 					</array>
 				</dict>
