@@ -668,12 +668,24 @@
 		</dict>
 		<key>at_rule_media</key>
 		<dict>
+			<key>begin</key>
+			<string>(?=^\s*@media\s*.*?\{)</string>
+			<key>end</key>
+			<string>\s*(\})</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.property-list.css</string>
+				</dict>
+			</dict>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>\s*(?=^\s*@media\s*.*?\{)</string>
-					<key>captures</key>
+					<string>^\s*((@)media)(?=.*?\{)</string>
+					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
@@ -683,7 +695,7 @@
 						<key>2</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.keyword.scss</string>
+							<string>punctuation.definition.keyword.css</string>
 						</dict>
 						<key>3</key>
 						<dict>
@@ -700,6 +712,27 @@
 						<dict>
 							<key>include</key>
 							<string>#media-query-list</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>\s*(\{)</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.section.property-list.css</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(?=\})</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
 						</dict>
 					</array>
 				</dict>
@@ -1045,6 +1078,116 @@
 			<string>$(\s*)</string>
 			<key>name</key>
 			<string>comment.line.scss</string>
+		</dict>
+		<key>media-query</key>
+		<dict>
+			<key>begin</key>
+			<string>(?i)\s*(only|not)?\s*(all|aural|braille|embossed|handheld|print|projection|screen|tty|tv)?</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.operator.logic.media.scss</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>support.constant.media.scss</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>\s*(?:(,)|(?=[{;]))</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.arbitrary-repitition.css</string>
+				</dict>
+			</dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>\s*(and)?\s*(\()\s*</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.operator.logic.media.scss</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\)</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>begin</key>
+							<string>(?x)
+															(
+																	((min|max)-)?
+																	(
+																			((device-)?(height|width|aspect-ratio))|
+																			(color(-index)?)|monochrome|resolution
+																	)
+															)|grid|scan|orientation
+															\s*(?=[:)])</string>
+							<key>beginCaptures</key>
+							<dict>
+								<key>0</key>
+								<dict>
+									<key>name</key>
+									<string>support.type.property-name.media.scss</string>
+								</dict>
+							</dict>
+							<key>end</key>
+							<string>(:)|(?=\))</string>
+							<key>endCaptures</key>
+							<dict>
+								<key>1</key>
+								<dict>
+									<key>name</key>
+									<string>punctuation.separator.key-value.css</string>
+								</dict>
+							</dict>
+						</dict>
+						<dict>
+							<key>match</key>
+							<string>\b(portrait|landscape|progressive|interlace)</string>
+							<key>name</key>
+							<string>support.constant.property-value.css</string>
+						</dict>
+						<dict>
+							<key>captures</key>
+							<dict>
+								<key>1</key>
+								<dict>
+									<key>name</key>
+									<string>constant.numeric.css</string>
+								</dict>
+								<key>2</key>
+								<dict>
+									<key>name</key>
+									<string>keyword.operator.arithmetic.css</string>
+								</dict>
+								<key>3</key>
+								<dict>
+									<key>name</key>
+									<string>constant.numeric.css</string>
+								</dict>
+							</dict>
+							<key>match</key>
+							<string>\s*(\d+)(/)(\d+)</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#numeric-values</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
 		</dict>
 		<key>constant_color</key>
 		<dict>
