@@ -774,7 +774,7 @@
 					<key>comment</key>
 					<string>Simple Mixin</string>
 					<key>match</key>
-					<string>^\s*((@)mixin) ([\w-]{1,})</string>
+					<string>^\s*((@)mixin) ([\w-]+)</string>
 					<key>name</key>
 					<string>meta.at-rule.mixin.scss</string>
 				</dict>
@@ -907,7 +907,7 @@
 					<key>comment</key>
 					<string>Simple Page</string>
 					<key>match</key>
-					<string>^\s*((@)page) ([\w-]{1,})</string>
+					<string>^\s*((@)page) ([\w-]+)</string>
 					<key>name</key>
 					<string>meta.at-rule.mixin.scss</string>
 				</dict>
@@ -1295,7 +1295,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>([\w-]{1,})(\()\s*</string>
+					<string>([\w-]+)(\()\s*</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -1329,7 +1329,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>([\w-]{1,})</string>
+					<string>([\w-]+)</string>
 					<key>name</key>
 					<string>support.function.misc.scss</string>
 				</dict>
